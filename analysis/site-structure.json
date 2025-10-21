@@ -1,0 +1,180 @@
+{
+  "site_info": {
+    "site_name": "가평 휴먼타운 펜션 (Gapyeong Humantown Pension)",
+    "base_url": "https://humantown.co.kr",
+    "contact": "T.1833-9306",
+    "address": {
+      "road": "경기 가평군 가평읍 북한강변로 882",
+      "parcel": "경기 가평군 가평읍 이화리 23-2"
+    },
+    "business_info": {
+      "registration": "132-81-12613",
+      "representative": "홍순옥"
+    }
+  },
+
+  "navigation_structure": {
+    "main_menu": [
+      {
+        "id": "about",
+        "label": "ABOUT",
+        "submenu": [
+          {"label": "펜션소개", "url": "/about.html"},
+          {"label": "외경보기", "url": "/view.html"}
+        ]
+      },
+      {
+        "id": "rooms",
+        "label": "ROOMS",
+        "total_rooms": 22,
+        "url_pattern": "/room.html?room_id={id}",
+        "rooms_list": "See rooms_data.json"
+      },
+      {
+        "id": "special",
+        "label": "SPECIAL",
+        "total_facilities": 6,
+        "submenu": [
+          {"label": "수영장", "url": "/special1.html"},
+          {"label": "바베큐", "url": "/special2.html"},
+          {"label": "족구장/농구장", "url": "/special3.html"},
+          {"label": "카페", "url": "/special4.html"},
+          {"label": "산책로", "url": "/special5.html"},
+          {"label": "어린이놀이터", "url": "/special6.html"}
+        ]
+      },
+      {
+        "id": "reserve",
+        "label": "RESERVE",
+        "submenu": [
+          {"label": "예약안내", "url": "/reservation.html"}
+        ]
+      },
+      {
+        "id": "travel",
+        "label": "TRAVEL",
+        "submenu": [
+          {"label": "주변여행지", "url": "/travel.html"}
+        ]
+      },
+      {
+        "id": "location",
+        "label": "LOCATION",
+        "submenu": [
+          {"label": "오시는길", "url": "/traffic.html"}
+        ]
+      }
+    ]
+  },
+
+  "pages_analyzed": {
+    "home": {
+      "url": "/index.html",
+      "sections": [
+        "Hero Slider",
+        "Special Facilities (6 cards)",
+        "Rooms List (24 cards shown)",
+        "Landscape Gallery",
+        "Reservation Guide",
+        "Directions Preview"
+      ]
+    },
+    "about": {
+      "url": "/about.html",
+      "structure": "Introduction text with simple layout"
+    },
+    "view": {
+      "url": "/view.html",
+      "structure": "Image gallery with prev/next navigation"
+    },
+    "rooms": {
+      "url_pattern": "/room.html?room_id={id}",
+      "total_found": 22,
+      "structure": {
+        "sections": [
+          "Room name (H3 heading)",
+          "Room type description",
+          "Image carousel",
+          "Specifications table (size, capacity, type)",
+          "Price table (seasonal + day-based)",
+          "Amenities list (20-26 items)",
+          "Reservation CTA buttons"
+        ]
+      }
+    },
+    "facilities": {
+      "url_pattern": "/special{number}.html",
+      "total": 6,
+      "structure": "Carousel with images + descriptive text"
+    },
+    "reservation": {
+      "url": "/reservation.html",
+      "features": [
+        "Room selection table",
+        "Price information (peak/off-season/standard)",
+        "Cancellation policy (16 notice items)",
+        "Real-time booking button (Naver Maps integration)"
+      ]
+    },
+    "travel": {
+      "url": "/travel.html",
+      "total_attractions": 6,
+      "layout": "Image-text card list with distance info"
+    },
+    "location": {
+      "url": "/traffic.html",
+      "features": [
+        "Daum Map embedded (100% width, 360px height)",
+        "Dual address format (road + parcel)",
+        "Direct booking links to Naver Map and Yanolja"
+      ]
+    }
+  },
+
+  "technical_stack": {
+    "framework": "Vanilla JavaScript (no framework detected)",
+    "css": "Custom CSS (no framework detected)",
+    "third_party": [
+      {
+        "name": "Happytalk Chat SDK",
+        "purpose": "Real-time customer support chat"
+      },
+      {
+        "name": "Daum Map Lander",
+        "purpose": "Embedded map for directions"
+      },
+      {
+        "name": "Naver Maps",
+        "purpose": "Real-time reservation integration"
+      },
+      {
+        "name": "Yanolja",
+        "purpose": "Alternative booking platform"
+      }
+    ],
+    "images": {
+      "format": "webp, png, jpg",
+      "optimization": "webp used for travel page images"
+    }
+  },
+
+  "design_features": {
+    "responsive": true,
+    "mobile_menu": "Hamburger menu button",
+    "navigation": "Sticky header with multi-level menu",
+    "carousel": "Prev/Next arrow buttons for image galleries",
+    "cta_buttons": "실시간예약 (Real-time reservation) - multiple placements",
+    "multilingual": "Korean + English subtitles/taglines"
+  },
+
+  "user_flow": {
+    "primary": [
+      "Home → Browse rooms/facilities → View details → Reserve (Naver Maps)",
+      "Home → Check location → Contact via phone/chat → Reserve"
+    ],
+    "secondary": [
+      "Travel info → Explore attractions → Book room",
+      "About → View landscape → Browse rooms → Reserve"
+    ]
+  }
+}
