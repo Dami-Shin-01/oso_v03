@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import { travelImages } from '@/lib/unsplash-images';
 
@@ -16,7 +18,7 @@ const attractions: Attraction[] = [
     id: 'nami-island',
     name: '남이섬',
     nameEng: 'Nami Island',
-    description: '드라마 '겨울연가' 촬영지로 유명한 아름다운 섬. 사계절 내내 아름다운 자연경관을 자랑하며, 메타세콰이어 길과 은행나무 길이 특히 유명합니다.',
+    description: '드라마 \'겨울연가\' 촬영지로 유명한 아름다운 섬. 사계절 내내 아름다운 자연경관을 자랑하며, 메타세콰이어 길과 은행나무 길이 특히 유명합니다.',
     distance: '약 15km',
     time: '차량 20분',
     highlights: ['메타세콰이어 길', '자전거 대여', '공연 및 전시', '포토존']

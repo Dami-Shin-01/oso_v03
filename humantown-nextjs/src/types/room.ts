@@ -29,14 +29,15 @@ export interface RoomPricing {
 export interface Room {
   id: string;
   name: string;
-  name_english: string;
-  size_pyeong: number;
-  size_sqm: number;
-  capacity: RoomCapacity;
-  type: string;
-  type_english: string;
-  pricing: RoomPricing;
-  amenities: string[];
+  name_english?: string;
+  size_pyeong?: number;
+  size_sqm?: number;
+  capacity?: RoomCapacity;
+  type?: string;
+  type_english?: string;
+  pricing?: RoomPricing;
+  amenities?: string[];
+  amenities_count?: number;
   image_url?: string;
   images?: string[];
 }

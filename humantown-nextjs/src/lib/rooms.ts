@@ -30,7 +30,7 @@ export function getTotalRoomCount(): number {
  */
 export function getRoomsByCapacity(minCapacity: number): Room[] {
   const rooms = getAllRooms();
-  return rooms.filter(room => room.capacity?.maximum >= minCapacity);
+  return rooms.filter(room => room.capacity && room.capacity.maximum >= minCapacity);
 }
 
 /**

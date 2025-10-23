@@ -15,18 +15,10 @@ const pageVariants = {
   animate: {
     opacity: 1,
     y: 0,
-    transition: {
-      duration: 0.5,
-      ease: 'easeOut',
-    },
   },
   exit: {
     opacity: 0,
     y: -20,
-    transition: {
-      duration: 0.3,
-      ease: 'easeIn',
-    },
   },
 };
 
@@ -37,6 +29,10 @@ export default function PageTransition({ children }: PageTransitionProps) {
       animate="animate"
       exit="exit"
       variants={pageVariants}
+      transition={{
+        duration: 0.5,
+        ease: [0.4, 0, 0.2, 1],
+      }}
     >
       {children}
     </motion.div>

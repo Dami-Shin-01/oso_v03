@@ -35,11 +35,6 @@ export default function RevealOnScroll({
       opacity: 1,
       x: 0,
       y: 0,
-      transition: {
-        duration,
-        delay,
-        ease: 'easeOut',
-      },
     },
   };
 
@@ -49,6 +44,11 @@ export default function RevealOnScroll({
       initial="hidden"
       animate={isInView ? 'visible' : 'hidden'}
       variants={variants}
+      transition={{
+        duration,
+        delay,
+        ease: [0.4, 0, 0.2, 1],
+      }}
     >
       {children}
     </motion.div>

@@ -46,8 +46,8 @@ export default function RoomDetailPage() {
   }
 
   // Get room images
-  const roomType = room.type?.includes('64평') || room.size_pyeong >= 50 ? 'premium'
-    : room.size_pyeong >= 30 ? 'deluxe'
+  const roomType = room.type?.includes('64평') || (room.size_pyeong ?? 0) >= 50 ? 'premium'
+    : (room.size_pyeong ?? 0) >= 30 ? 'deluxe'
     : 'default';
   const imageSet = roomImagesByType[roomType];
   const images = room.images || [imageSet.main, ...imageSet.thumbnails];
@@ -194,27 +194,29 @@ export default function RoomDetailPage() {
               </div>
 
               {/* Capacity Info */}
-              <div style={{
-                background: '#fff',
-                padding: '30px',
-                border: '1px solid var(--color-border)',
-                borderRadius: 'var(--radius)'
-              }}>
-                <h3 style={{
-                  fontSize: '18px',
-                  fontWeight: 'bold',
-                  color: 'var(--color-text)',
-                  marginBottom: '15px'
+              {room.capacity && (
+                <div style={{
+                  background: '#fff',
+                  padding: '30px',
+                  border: '1px solid var(--color-border)',
+                  borderRadius: 'var(--radius)'
                 }}>
-                  수용 인원
-                </h3>
-                <p style={{ fontSize: '16px', color: 'var(--color-text)', marginBottom: '8px' }}>
-                  기준: {room.capacity.standard}인
-                </p>
-                <p style={{ fontSize: '16px', color: 'var(--color-text)' }}>
-                  최대: {room.capacity.maximum}인
-                </p>
-              </div>
+                  <h3 style={{
+                    fontSize: '18px',
+                    fontWeight: 'bold',
+                    color: 'var(--color-text)',
+                    marginBottom: '15px'
+                  }}>
+                    수용 인원
+                  </h3>
+                  <p style={{ fontSize: '16px', color: 'var(--color-text)', marginBottom: '8px' }}>
+                    기준: {room.capacity.standard}인
+                  </p>
+                  <p style={{ fontSize: '16px', color: 'var(--color-text)' }}>
+                    최대: {room.capacity.maximum}인
+                  </p>
+                </div>
+              )}
 
               {/* Room Type */}
               {room.type && (

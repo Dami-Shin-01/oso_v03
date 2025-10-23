@@ -19,7 +19,7 @@ export default function ScaleOnHover({
       whileHover={{ scale }}
       transition={{
         duration: 0.3,
-        ease: 'easeOut',
+        ease: [0.4, 0, 0.2, 1],
       }}
       className={className}
     >
