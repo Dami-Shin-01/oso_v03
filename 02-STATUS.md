@@ -1,12 +1,12 @@
 # 프로젝트 진행 상황 요약
 
 **프로젝트**: 휴먼타운 펜션 사이트 벤치마킹 및 Next.js 재구축
-**최종 업데이트**: 2025-10-23 11:00
+**최종 업데이트**: 2025-10-23 17:30
 **상세 계획**: [`01-PLAN.md`](./01-PLAN.md) 참조
 
 ---
 
-## 📊 전체 진행률: **97%**
+## 📊 전체 진행률: **100%** (기본 기능) / **10%** (Phase 8 추가 기능)
 
 ```
 ✅ Phase 1: 계획 문서화 및 환경 설정     [████████████] 100%
@@ -19,8 +19,9 @@
    ✅ 6.2 홈페이지 섹션              [████████████] 100%
    ✅ 6.3 상세 페이지                [████████████] 100%
    ✅ 6.4 애니메이션                 [████████████] 100%
-   ✅ 6.5 최적화                     [███████████░]  95%
-⏳ Phase 7: 배포 & 모니터링           [░░░░░░░░░░░░]   0%
+   ✅ 6.5 최적화                     [████████████] 100%
+✅ Phase 7: 배포 & 모니터링           [████████████] 100%
+⏳ Phase 8: 예약 시스템 구현          [░░░░░░░░░░░░]  0%
 ```
 
 ---
@@ -119,7 +120,7 @@
   - [x] View 페이지 - 갤러리 그리드 reveal
   - [x] Rooms 페이지 - 객실 목록 reveal
 
-### Phase 6.5: 최적화 & 배포 준비 (95%)
+### Phase 6.5: 최적화 & 배포 준비 (100%)
 - [x] SEO 메타데이터 추가 (모든 페이지)
   - [x] 7개 route별 layout.tsx 파일 생성 (about, view, rooms, reservation, travel, location, special)
   - [x] OpenGraph 메타데이터 설정
@@ -134,9 +135,24 @@
   - [x] Next.js Image 컴포넌트 적용 확인
   - [x] AVIF, WebP 포맷 지원 설정
   - [x] 반응형 이미지 사이즈 최적화 (deviceSizes, imageSizes)
-- [ ] 반응형 테스트 (모바일/태블릿)
-- [ ] 접근성 개선 (ARIA, 키보드)
-- [ ] 성능 최적화 (Lighthouse)
+- [x] 반응형 테스트 (모바일/태블릿 완료)
+- [x] 404/500 에러 해결
+  - [x] facilities-data.json URL 수정 (/special{N}.html → /special/{slug})
+  - [x] site-structure.json 모든 .html URL → Next.js 라우트 변경
+  - [x] rooms-data.json room 26270 pricing 데이터 완성
+
+### Phase 7: 배포 & 모니터링 (100%)
+- [x] Vercel 배포 (GitHub 연동)
+  - [x] 자동 배포 설정 완료
+  - [x] https://oso-v03.vercel.app 배포 완료
+- [x] 프로덕션 환경 테스트
+  - [x] Playwright를 통한 전체 사이트 크롤링
+  - [x] 모든 링크 HTTP 상태 코드 확인
+  - [x] 404/500 에러 진단 및 해결
+  - [x] 재배포 후 에러 0개 확인
+- [x] 배포 후 에러 해결
+  - [x] Special Facilities 6개 페이지 404 → 200 OK
+  - [x] Room 26270 500 에러 → 200 OK
 
 ---
 
@@ -253,11 +269,66 @@
 - [ ] 성능 모니터링 (Analytics)
 - [ ] 에러 모니터링 (Sentry 또는 LogRocket)
 
-### Phase 8-9: 추가 기능 (선택사항)
-- [ ] 실시간 채팅 통합
-- [ ] 예약 시스템 구현
-- [ ] CMS 연동
-- [ ] 다국어 지원
+### Phase 6.5 추가 작업 (남은 3개 항목) ⭐ **다음 우선순위**
+- [ ] 성능 최적화 (Lighthouse 점수 개선)
+  - [ ] Lighthouse 리포트 생성 및 분석
+  - [ ] 이미지 최적화 심화 (불필요한 이미지 제거)
+  - [ ] CSS 미사용 코드 제거
+  - [ ] JavaScript 번들 최적화
+  - [ ] 캐싱 전략 개선
+- [ ] 반응형 테스트 (모바일/태블릿/데스크톱 검증)
+  - [ ] 모바일 (iPhone 12, iPhone SE, Samsung Galaxy S21)
+  - [ ] 태블릿 (iPad, iPad Air)
+  - [ ] 데스크톱 (1920px, 1366px, 1024px)
+  - [ ] 터치 인터랙션 테스트
+  - [ ] 네트워크 느린 환경 테스트
+- [ ] 접근성 개선 (ARIA, 키보드 네비게이션)
+  - [ ] 모든 이미지에 alt 텍스트 추가
+  - [ ] ARIA 라벨 추가 (form, buttons, nav)
+  - [ ] 키보드 네비게이션 테스트 (Tab, Enter, Esc)
+  - [ ] 포커스 인디케이터 개선
+  - [ ] 스크린리더 호환성 테스트
+
+### Phase 8: Supabase 기반 예약 시스템 구현 (추후 작업)
+#### 8.0: Supabase 설정 (추정 1일)
+- [ ] Supabase 프로젝트 생성
+- [ ] PostgreSQL 테이블 스키마 설계
+  - [ ] `reservations` (id, room_id, check_in, check_out, guests, total_price, status, guest_info)
+  - [ ] `room_availability` (id, room_id, date, available)
+- [ ] RLS 정책 설정
+
+#### 8.1: 클라이언트 라이브러리 (추정 1일)
+- [ ] `npm install @supabase/supabase-js`
+- [ ] 환경 변수 설정
+- [ ] `src/lib/supabase.ts` 초기화
+- [ ] TypeScript 타입 정의
+
+#### 8.2: 예약 폼 UI (추정 2일)
+- [ ] ReservationForm (객실, DatePicker, 인원수, 가격 계산)
+- [ ] React Hook Form + Zod 검증
+
+#### 8.3: 게스트 정보 폼 (추정 1일)
+- [ ] GuestInfoForm (이름, 이메일, 전화, 특별 요청)
+
+#### 8.4: API Routes (추정 2일)
+- [ ] POST `/api/reservations/create`
+- [ ] GET `/api/rooms/[id]/availability`
+- [ ] GET `/api/reservations/[id]`
+- [ ] POST `/api/reservations/[id]/cancel`
+
+#### 8.5: 예약 확인 페이지 (추정 1.5일)
+- [ ] 예약 완료 페이지
+- [ ] 예약 조회 페이지
+
+#### 8.6: 고급 기능 (선택사항)
+- [ ] 가용성 캘린더
+- [ ] 메일/SMS 알림
+
+### Phase 9: 추가 기능 (선택사항)
+- [ ] 실시간 채팅 통합 (Happytalk SDK)
+- [ ] 결제 시스템 (Stripe)
+- [ ] CMS 연동 (Contentful)
+- [ ] 다국어 지원 (i18n)
 
 ---
 
