@@ -125,7 +125,7 @@ export default function TravelPage() {
         <section style={{ marginBottom: '80px' }}>
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(450px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))',
             gap: '50px'
           }}>
             {attractions.map((attraction) => (

@@ -22,6 +22,11 @@
   --foreground: var(--color-text);
 }
 
+/* Prevent horizontal scroll */
+html, body {
+  overflow-x: hidden;
+}
+
 @theme inline {
   /* Colors */
   --color-primary-light: var(--color-gold-light);
@@ -792,6 +797,11 @@ a:hover {
 .main_visual .swiper-container {
   width: 100%;
   height: 100%;
+  overflow: hidden;
+}
+
+.main_visual .swiper-wrapper {
+  overflow: hidden;
 }
 
 .main_visual .swiper-slide {
