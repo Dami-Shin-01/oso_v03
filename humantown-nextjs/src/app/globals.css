@@ -792,21 +792,25 @@ a:hover {
   width: 100%;
   height: 100vh; /* Full viewport height */
   min-height: 600px;
+  overflow: hidden;
 }
 
-.main_visual .swiper-container {
+.main_visual .swiper-container,
+.main_visual .swiper {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .main_visual .swiper-wrapper {
-  overflow: hidden;
+  width: 100% !important;
+  overflow: hidden !important;
 }
 
 .main_visual .swiper-slide {
   width: 100%;
   height: 100%;
+  flex-shrink: 0;
 }
 
 /* Slide Images */
