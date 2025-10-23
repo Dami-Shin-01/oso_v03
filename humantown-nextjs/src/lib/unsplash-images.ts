@@ -46,6 +46,29 @@ export const commonImages = {
   reserveButton: '/icons/reserve-floating.svg',
 };
 
+// 외경 사진 (View 페이지)
+export const exteriorImages = [
+  getUnsplashUrl('1602002162244-1b6d63e9a4e3', 1200, 800), // 산 속 리조트 전경
+  getUnsplashUrl('1542314831-068cd1dbfeeb', 1200, 800), // 호수와 산 풍경
+  getUnsplashUrl('1566073771239-c0ebddbb6cd0', 1200, 800), // 자연 경관
+  getUnsplashUrl('1464822759023-fed622ff2c3b', 1200, 800), // 산 풍경
+  getUnsplashUrl('1506905925346-21bda4d32df4', 1200, 800), // 산과 호수
+  getUnsplashUrl('1472214103451-9374bd1c798e', 1200, 800), // 자연 속 건물
+  getUnsplashUrl('1506905925346-21bda4d32df4', 1200, 800), // 평화로운 풍경
+  getUnsplashUrl('1441974231531-c6227db76b6e', 1200, 800), // 산책로
+  getUnsplashUrl('1476514525504-03c3c41f41fc', 1200, 800), // 북한강변 이미지
+];
+
+// 주변 여행지 이미지 (Travel 페이지)
+export const travelImages = {
+  'nami-island': getUnsplashUrl('1506905925346-21bda4d32df4', 800, 600), // 남이섬
+  'petite-france': getUnsplashUrl('1502602898657-3e91760cbb34', 800, 600), // 쁘띠프랑스
+  'morning-calm': getUnsplashUrl('1470058869958-2a77ade41c02', 800, 600), // 아침고요수목원
+  'jarasum': getUnsplashUrl('1542314831-068cd1dbfeeb', 800, 600), // 자라섬
+  'rail-bike': getUnsplashUrl('1464822759023-fed622ff2c3b', 800, 600), // 레일바이크
+  'zip-line': getUnsplashUrl('1506905925346-21bda4d32df4', 800, 600), // 짚와이어
+};
+
 // 객실별 이미지 매핑 (22개 객실)
 export const roomImagesByType: Record<string, { main: string; thumbnails: string[] }> = {
   default: {

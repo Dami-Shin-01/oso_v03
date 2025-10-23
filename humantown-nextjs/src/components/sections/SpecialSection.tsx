@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import FacilityCard from '@/components/ui/FacilityCard';
 import facilitiesData from '@/lib/data/facilities-data.json';
+import { RevealOnScroll, FadeIn } from '@/components/animations';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -14,23 +15,26 @@ export default function SpecialSection() {
 
   return (
     <section className="main_special">
-      <div className="container" style={{ textAlign: 'center', marginBottom: '60px' }}>
-        <h2
-          style={{
-            fontSize: '44px',
-            fontFamily: 'var(--font-serif)',
-            color: 'var(--color-text)',
-            marginBottom: '15px',
-          }}
-        >
-          SPECIAL
-        </h2>
-        <p style={{ fontSize: '16px', color: 'var(--color-text-light)' }}>
-          휴먼타운 펜션만의 특별한 부대시설
-        </p>
-      </div>
+      <FadeIn delay={0.2}>
+        <div className="container" style={{ textAlign: 'center', marginBottom: '60px' }}>
+          <h2
+            style={{
+              fontSize: '44px',
+              fontFamily: 'var(--font-serif)',
+              color: 'var(--color-text)',
+              marginBottom: '15px',
+            }}
+          >
+            SPECIAL
+          </h2>
+          <p style={{ fontSize: '16px', color: 'var(--color-text-light)' }}>
+            휴먼타운 펜션만의 특별한 부대시설
+          </p>
+        </div>
+      </FadeIn>
 
-      <Swiper
+      <RevealOnScroll delay={0.3} direction="up">
+        <Swiper
         modules={[Navigation]}
         spaceBetween={30}
         slidesPerView={1}
@@ -66,6 +70,7 @@ export default function SpecialSection() {
           <div className="swiper-button-next"></div>
         </div>
       </Swiper>
+      </RevealOnScroll>
     </section>
   );
 }

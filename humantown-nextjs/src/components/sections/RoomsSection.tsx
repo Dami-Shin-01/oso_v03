@@ -5,6 +5,7 @@ import { Navigation } from 'swiper/modules';
 import RoomCard from '@/components/ui/RoomCard';
 import roomsData from '@/lib/data/rooms-data.json';
 import Link from 'next/link';
+import { RevealOnScroll, FadeIn } from '@/components/animations';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -18,24 +19,27 @@ export default function RoomsSection() {
 
   return (
     <section className="main_rooms" style={{ padding: '100px 0', background: '#fff' }}>
-      <div className="container" style={{ textAlign: 'center', marginBottom: '60px' }}>
-        <h2
-          style={{
-            fontSize: '44px',
-            fontFamily: 'var(--font-serif)',
-            color: 'var(--color-text)',
-            marginBottom: '15px',
-          }}
-        >
-          ROOMS
-        </h2>
-        <p style={{ fontSize: '16px', color: 'var(--color-text-light)' }}>
-          자연 속에서 편안한 휴식을 위한 22개의 객실
-        </p>
-      </div>
+      <FadeIn delay={0.2}>
+        <div className="container" style={{ textAlign: 'center', marginBottom: '60px' }}>
+          <h2
+            style={{
+              fontSize: '44px',
+              fontFamily: 'var(--font-serif)',
+              color: 'var(--color-text)',
+              marginBottom: '15px',
+            }}
+          >
+            ROOMS
+          </h2>
+          <p style={{ fontSize: '16px', color: 'var(--color-text-light)' }}>
+            자연 속에서 편안한 휴식을 위한 22개의 객실
+          </p>
+        </div>
+      </FadeIn>
 
-      <div style={{ maxWidth: '1400px', margin: '0 auto', padding: '0 20px' }}>
-        <Swiper
+      <RevealOnScroll delay={0.3} direction="up">
+        <div style={{ maxWidth: '1400px', margin: '0 auto', padding: '0 20px' }}>
+          <Swiper
           modules={[Navigation]}
           spaceBetween={30}
           slidesPerView={1}
@@ -81,10 +85,12 @@ export default function RoomsSection() {
             }}
           ></div>
         </Swiper>
-      </div>
+        </div>
+      </RevealOnScroll>
 
       {/* View All Rooms Link */}
-      <div style={{ textAlign: 'center', marginTop: '60px' }}>
+      <FadeIn delay={0.5}>
+        <div style={{ textAlign: 'center', marginTop: '60px' }}>
         <Link
           href="/rooms"
           style={{
@@ -105,7 +111,8 @@ export default function RoomsSection() {
         >
           전체 객실 보기 ({roomsData.total_rooms}개)
         </Link>
-      </div>
+        </div>
+      </FadeIn>
     </section>
   );
 }

@@ -1,0 +1,327 @@
+'use client';
+
+export default function LocationPage() {
+  return (
+    <div style={{ minHeight: '100vh', paddingTop: '120px', paddingBottom: '100px' }}>
+      {/* Page Header */}
+      <section style={{
+        background: 'var(--color-bg-light)',
+        padding: '60px 0',
+        marginBottom: '80px'
+      }}>
+        <div className="container" style={{ textAlign: 'center' }}>
+          <h1 style={{
+            fontSize: '48px',
+            fontFamily: 'var(--font-heading)',
+            color: 'var(--color-primary)',
+            marginBottom: '20px'
+          }}>
+            LOCATION
+          </h1>
+          <p style={{
+            fontSize: '18px',
+            fontFamily: 'var(--font-serif)',
+            color: 'var(--color-text-light)'
+          }}>
+            오시는 길
+          </p>
+        </div>
+      </section>
+
+      <div className="container">
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          {/* Address & Contact */}
+          <section style={{ marginBottom: '60px' }}>
+            <div style={{
+              background: 'var(--color-dark)',
+              color: '#fff',
+              padding: '50px 40px',
+              borderRadius: 'var(--radius)',
+              textAlign: 'center'
+            }}>
+              <h2 style={{
+                fontSize: '32px',
+                fontFamily: 'var(--font-serif)',
+                marginBottom: '30px'
+              }}>
+                휴먼타운 펜션
+              </h2>
+              <p style={{ fontSize: '18px', marginBottom: '15px' }}>
+                📍 경기 가평군 가평읍 북한강변로 882 (이화리 23-2)
+              </p>
+              <p style={{ fontSize: '18px', marginBottom: '30px' }}>
+                📞 T. 1833-9306
+              </p>
+              <div style={{
+                display: 'flex',
+                gap: '15px',
+                justifyContent: 'center',
+                flexWrap: 'wrap'
+              }}>
+                <a
+                  href="tel:1833-9306"
+                  style={{
+                    padding: '12px 30px',
+                    background: 'var(--color-gold)',
+                    color: '#fff',
+                    borderRadius: 'var(--radius)',
+                    textDecoration: 'none',
+                    fontSize: '15px',
+                    fontWeight: 'bold',
+                    transition: 'background 0.3s'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = 'var(--color-gold-dark)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = 'var(--color-gold)';
+                  }}
+                >
+                  전화 걸기
+                </a>
+                <button
+                  onClick={() => {
+                    navigator.clipboard.writeText('경기 가평군 가평읍 북한강변로 882');
+                    alert('주소가 복사되었습니다.');
+                  }}
+                  style={{
+                    padding: '12px 30px',
+                    background: 'rgba(255,255,255,0.2)',
+                    color: '#fff',
+                    border: '1px solid rgba(255,255,255,0.3)',
+                    borderRadius: 'var(--radius)',
+                    cursor: 'pointer',
+                    fontSize: '15px',
+                    fontWeight: 'bold',
+                    transition: 'background 0.3s'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = 'rgba(255,255,255,0.3)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = 'rgba(255,255,255,0.2)';
+                  }}
+                >
+                  주소 복사
+                </button>
+              </div>
+            </div>
+          </section>
+
+          {/* Map */}
+          <section style={{ marginBottom: '80px' }}>
+            <h2 style={{
+              fontSize: '28px',
+              fontFamily: 'var(--font-serif)',
+              color: 'var(--color-text)',
+              marginBottom: '30px',
+              textAlign: 'center'
+            }}>
+              지도
+            </h2>
+            <div style={{
+              width: '100%',
+              height: '450px',
+              background: 'var(--color-bg-light)',
+              borderRadius: 'var(--radius)',
+              overflow: 'hidden',
+              border: '1px solid var(--color-border)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}>
+              <div style={{ textAlign: 'center', padding: '40px' }}>
+                <p style={{
+                  fontSize: '16px',
+                  color: 'var(--color-text-light)',
+                  marginBottom: '20px'
+                }}>
+                  지도는 여기에 표시됩니다
+                </p>
+                <p style={{ fontSize: '14px', color: 'var(--color-text-light)' }}>
+                  실제 구현 시 Kakao Map 또는 Google Maps API를 사용하세요
+                </p>
+                <div style={{ marginTop: '20px' }}>
+                  <a
+                    href="https://map.kakao.com/link/search/경기 가평군 가평읍 북한강변로 882"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: 'inline-block',
+                      padding: '10px 25px',
+                      background: 'var(--color-gold)',
+                      color: '#fff',
+                      borderRadius: 'var(--radius)',
+                      textDecoration: 'none',
+                      fontSize: '14px',
+                      marginRight: '10px'
+                    }}
+                  >
+                    카카오맵 보기
+                  </a>
+                  <a
+                    href="https://www.google.com/maps/search/경기+가평군+가평읍+북한강변로+882"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: 'inline-block',
+                      padding: '10px 25px',
+                      background: 'var(--color-primary)',
+                      color: '#fff',
+                      borderRadius: 'var(--radius)',
+                      textDecoration: 'none',
+                      fontSize: '14px'
+                    }}
+                  >
+                    구글맵 보기
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Directions */}
+          <section style={{ marginBottom: '80px' }}>
+            <h2 style={{
+              fontSize: '28px',
+              fontFamily: 'var(--font-serif)',
+              color: 'var(--color-text)',
+              marginBottom: '40px',
+              textAlign: 'center'
+            }}>
+              오시는 방법
+            </h2>
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
+              gap: '40px'
+            }}>
+              {/* By Car */}
+              <div style={{
+                background: '#fff',
+                padding: '40px',
+                border: '1px solid var(--color-border)',
+                borderRadius: 'var(--radius)'
+              }}>
+                <div style={{ fontSize: '36px', marginBottom: '20px', textAlign: 'center' }}>
+                  🚗
+                </div>
+                <h3 style={{
+                  fontSize: '22px',
+                  fontWeight: 'bold',
+                  color: 'var(--color-text)',
+                  marginBottom: '20px',
+                  textAlign: 'center'
+                }}>
+                  자가용 이용 시
+                </h3>
+                <div style={{
+                  fontSize: '15px',
+                  lineHeight: '1.8',
+                  color: 'var(--color-text)'
+                }}>
+                  <p style={{ marginBottom: '15px', fontWeight: 'bold', color: 'var(--color-gold)' }}>
+                    서울 출발 (약 1시간)
+                  </p>
+                  <p style={{ marginBottom: '20px' }}>
+                    경춘고속도로 → 가평IC → 북한강변로 방면<br />
+                    → 북한강변로 882 도착
+                  </p>
+                  <p style={{ marginBottom: '15px', fontWeight: 'bold', color: 'var(--color-gold)' }}>
+                    춘천 출발 (약 40분)
+                  </p>
+                  <p>
+                    경춘고속도로 → 설악IC → 가평 방면<br />
+                    → 북한강변로 → 북한강변로 882 도착
+                  </p>
+                </div>
+              </div>
+
+              {/* By Public Transport */}
+              <div style={{
+                background: '#fff',
+                padding: '40px',
+                border: '1px solid var(--color-border)',
+                borderRadius: 'var(--radius)'
+              }}>
+                <div style={{ fontSize: '36px', marginBottom: '20px', textAlign: 'center' }}>
+                  🚌
+                </div>
+                <h3 style={{
+                  fontSize: '22px',
+                  fontWeight: 'bold',
+                  color: 'var(--color-text)',
+                  marginBottom: '20px',
+                  textAlign: 'center'
+                }}>
+                  대중교통 이용 시
+                </h3>
+                <div style={{
+                  fontSize: '15px',
+                  lineHeight: '1.8',
+                  color: 'var(--color-text)'
+                }}>
+                  <p style={{ marginBottom: '15px', fontWeight: 'bold', color: 'var(--color-gold)' }}>
+                    ITX-청춘 이용
+                  </p>
+                  <p style={{ marginBottom: '20px' }}>
+                    용산역/청량리역 출발 → 가평역 하차<br />
+                    → 택시 이용 (약 10분)
+                  </p>
+                  <p style={{ marginBottom: '15px', fontWeight: 'bold', color: 'var(--color-gold)' }}>
+                    버스 이용
+                  </p>
+                  <p style={{ marginBottom: '15px' }}>
+                    동서울터미널 → 가평터미널 하차<br />
+                    → 택시 이용 (약 10분)
+                  </p>
+                  <p style={{
+                    fontSize: '13px',
+                    color: 'var(--color-text-light)',
+                    marginTop: '20px',
+                    padding: '15px',
+                    background: 'var(--color-bg-light)',
+                    borderRadius: '8px'
+                  }}>
+                    ※ 가평역/가평터미널에서 픽업 서비스가 필요하신 경우<br />
+                    사전 문의 바랍니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Parking Info */}
+          <section>
+            <div style={{
+              background: 'var(--color-bg-light)',
+              padding: '40px',
+              borderRadius: 'var(--radius)',
+              textAlign: 'center'
+            }}>
+              <h3 style={{
+                fontSize: '24px',
+                fontFamily: 'var(--font-serif)',
+                color: 'var(--color-text)',
+                marginBottom: '20px'
+              }}>
+                주차 안내
+              </h3>
+              <p style={{
+                fontSize: '15px',
+                lineHeight: '1.8',
+                color: 'var(--color-text-light)',
+                maxWidth: '600px',
+                margin: '0 auto'
+              }}>
+                • 각 객실마다 주차 공간이 마련되어 있습니다<br />
+                • 넓은 주차장으로 대형 차량도 주차 가능합니다<br />
+                • 주차 요금은 무료입니다
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -3,6 +3,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade, Navigation } from 'swiper/modules';
 import { heroImages } from '@/lib/unsplash-images';
+import { FadeIn } from '@/components/animations';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -63,11 +64,13 @@ export default function HeroSection() {
               style={{ backgroundImage: `url('${slide.image}')` }}
             >
               {slide.overlay && (
-                <div className="txt_overlay">
-                  <h1>{slide.overlay.title}</h1>
-                  <p>{slide.overlay.subtitle}</p>
-                  <span>{slide.overlay.description}</span>
-                </div>
+                <FadeIn delay={0.5} duration={0.8}>
+                  <div className="txt_overlay">
+                    <h1>{slide.overlay.title}</h1>
+                    <p>{slide.overlay.subtitle}</p>
+                    <span>{slide.overlay.description}</span>
+                  </div>
+                </FadeIn>
               )}
             </div>
           </SwiperSlide>
@@ -81,11 +84,13 @@ export default function HeroSection() {
       </Swiper>
 
       {/* Scroll Down Indicator */}
-      <div className="scroll_down">
-        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M15 5L15 25M15 25L10 20M15 25L20 20" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
-      </div>
+      <FadeIn delay={1} duration={0.8}>
+        <div className="scroll_down">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 5L15 25M15 25L10 20M15 25L20 20" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
+      </FadeIn>
     </section>
   );
 }
