@@ -12,6 +12,7 @@ import 'swiper/css/navigation';
 
 interface HeroSlide {
   image: string;
+  altText: string;
   overlay?: {
     title: string;
     subtitle: string;
@@ -22,6 +23,7 @@ interface HeroSlide {
 const heroSlides: HeroSlide[] = [
   {
     image: heroImages.slide1,
+    altText: '휴먼타운 펜션의 아름다운 자연 경관',
     overlay: {
       title: 'Welcome',
       subtitle: 'Humantown Pension',
@@ -30,9 +32,11 @@ const heroSlides: HeroSlide[] = [
   },
   {
     image: heroImages.slide2,
+    altText: '휴먼타운 펜션의 객실 전망',
   },
   {
     image: heroImages.slide3,
+    altText: '휴먼타운 펜션의 야경',
   },
 ];
 
@@ -62,6 +66,8 @@ export default function HeroSection() {
             <div
               className="img"
               style={{ backgroundImage: `url('${slide.image}')` }}
+              role="img"
+              aria-label={slide.altText}
             >
               {slide.overlay && (
                 <FadeIn delay={0.5} duration={0.8}>
@@ -78,15 +84,15 @@ export default function HeroSection() {
 
         {/* Navigation Arrows */}
         <div className="arw_box">
-          <div className="swiper-button-prev"></div>
-          <div className="swiper-button-next"></div>
+          <div className="swiper-button-prev" role="button" tabIndex={0} aria-label="이전 슬라이드"></div>
+          <div className="swiper-button-next" role="button" tabIndex={0} aria-label="다음 슬라이드"></div>
         </div>
       </Swiper>
 
       {/* Scroll Down Indicator */}
       <FadeIn delay={1} duration={0.8}>
-        <div className="scroll_down">
-          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className="scroll_down" aria-label="아래로 스크롤하여 더보기">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M15 5L15 25M15 25L10 20M15 25L20 20" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </div>

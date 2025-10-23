@@ -26,7 +26,12 @@ export default function RoomCard({ room, variant = 'default' }: RoomCardProps) {
       <Link href={roomUrl} className="link" aria-label={room.name}></Link>
 
       {/* Main Image */}
-      <div className="img" style={{ backgroundImage: `url('${mainImage}')` }}></div>
+      <div
+        className="img"
+        style={{ backgroundImage: `url('${mainImage}')` }}
+        role="img"
+        aria-label={`${room.name} 객실 대표 이미지`}
+      ></div>
 
       {/* Room Info Wrapper */}
       <div className="room_inner_wrap clear">
@@ -58,6 +63,8 @@ export default function RoomCard({ room, variant = 'default' }: RoomCardProps) {
                 <li
                   key={index}
                   style={{ backgroundImage: `url('${thumb}')` }}
+                  role="img"
+                  aria-label={`${room.name} 객실 사진 ${index + 2}`}
                 ></li>
               ))}
             </ul>

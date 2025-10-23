@@ -17,14 +17,14 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="footer_wrap">
+      <footer className="footer_wrap" role="contentinfo">
         <div className="inner">
           <div className="footer">
             {/* Phone Number */}
-            <div className="tel">T.1833-9306</div>
+            <div className="tel" aria-label="전화번호">T.1833-9306</div>
 
             {/* Address Information */}
-            <div className="address">
+            <div className="address" role="region" aria-label="주소 및 사업자 정보">
               <p>경기 가평군 가평읍 북한강변로 882 (이화리 23-2)</p>
               <p>사업자등록번호: 132-81-12613</p>
               <p>대표: 홍순옥</p>
@@ -33,20 +33,21 @@ export default function Footer() {
 
           {/* Privacy Policy Link */}
           <div className="privacy">
-            <Link href="/privacy">개인정보처리방침</Link>
+            <Link href="/privacy" aria-label="개인정보처리방침 보기">개인정보처리방침</Link>
           </div>
 
           {/* Copyright */}
-          <div className="copy">
+          <div className="copy" aria-label="저작권 정보">
             Copyright © Humantown Pension. All rights reserved.
           </div>
         </div>
       </footer>
 
       {/* Floating Reservation Button */}
-      <div className={`ft_btn_reserve ${showFloatingButton ? 'on' : ''}`}>
+      <div className={`ft_btn_reserve ${showFloatingButton ? 'on' : ''}`} aria-label="실시간 예약 버튼">
         <Link
           href="/reservation"
+          aria-label="실시간 예약하기"
           style={{
             display: 'flex',
             alignItems: 'center',

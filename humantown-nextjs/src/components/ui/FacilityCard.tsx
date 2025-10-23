@@ -20,7 +20,12 @@ export default function FacilityCard({ facility, index }: FacilityCardProps) {
       <Link href={facility.url} className="link" aria-label={facility.name_english}></Link>
 
       {/* Main Image */}
-      <div className="img" style={{ backgroundImage: `url('${imagePath}')` }}></div>
+      <div
+        className="img"
+        style={{ backgroundImage: `url('${imagePath}')` }}
+        role="img"
+        aria-label={`${facility.name_english} - ${facility.name}`}
+      ></div>
 
       {/* Text Content */}
       <div className="txt_box">

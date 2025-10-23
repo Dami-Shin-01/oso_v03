@@ -83,14 +83,21 @@ export default function Header() {
     }
   };
 
+  // Keyboard support for mobile menu
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Escape' && isMobileMenuOpen) {
+      toggleMobileMenu();
+    }
+  };
+
   return (
     <>
-      <header className={`header ${isScrolled ? 'on' : ''}`}>
+      <header className={`header ${isScrolled ? 'on' : ''}`} role="banner">
         <div className="hd_cont">
           <div className={`hd_inner ${isScrolled ? 'scrolled' : ''}`}>
             {/* Logo (Default - Centered) */}
             <h1 className="logo" style={{ opacity: isScrolled ? 0 : 1 }}>
-              <Link href="/">
+              <Link href="/" aria-label="휴먼타운 펜션 홈">
                 HUMANTOWN
                 <span>Gapyeong Pension</span>
               </Link>
@@ -98,11 +105,11 @@ export default function Header() {
 
             {/* Logo (Scrolled State - Left Aligned) */}
             <h1 className="logo2" style={{ display: isScrolled ? 'inline-block' : 'none' }}>
-              <Link href="/">HUMANTOWN</Link>
+              <Link href="/" aria-label="휴먼타운 펜션 홈">HUMANTOWN</Link>
             </h1>
 
             {/* Desktop Navigation */}
-            <nav className="hd_lnb hidden lg:block">
+            <nav className="hd_lnb hidden lg:block" aria-label="메인 메뉴">
               <ul className="hd_lnb01">
                 {navigation.slice(0, 3).map((item) => (
                   <li
@@ -111,13 +118,13 @@ export default function Header() {
                     onMouseEnter={() => setActiveDropdown(item.id)}
                     onMouseLeave={() => setActiveDropdown(null)}
                   >
-                    <span className="depth1_a">{item.label}</span>
+                    <span className="depth1_a" role="button" aria-haspopup={!!item.submenu} aria-expanded={activeDropdown === item.id}>{item.label}</span>
                     {item.submenu && (
-                      <div className={`depth_box ${activeDropdown === item.id ? 'on' : ''}`}>
+                      <div className={`depth_box ${activeDropdown === item.id ? 'on' : ''}`} role="menu">
                         <ul>
                           {item.submenu.map((subitem, idx) => (
-                            <li key={idx}>
-                              <Link href={subitem.url}>{subitem.label}</Link>
+                            <li key={idx} role="none">
+                              <Link href={subitem.url} role="menuitem">{subitem.label}</Link>
                             </li>
                           ))}
                         </ul>
@@ -135,13 +142,13 @@ export default function Header() {
                     onMouseEnter={() => setActiveDropdown(item.id)}
                     onMouseLeave={() => setActiveDropdown(null)}
                   >
-                    <span className="depth1_a">{item.label}</span>
+                    <span className="depth1_a" role="button" aria-haspopup={!!item.submenu} aria-expanded={activeDropdown === item.id}>{item.label}</span>
                     {item.submenu && (
-                      <div className={`depth_box ${activeDropdown === item.id ? 'on' : ''}`}>
+                      <div className={`depth_box ${activeDropdown === item.id ? 'on' : ''}`} role="menu">
                         <ul>
                           {item.submenu.map((subitem, idx) => (
-                            <li key={idx}>
-                              <Link href={subitem.url}>{subitem.label}</Link>
+                            <li key={idx} role="none">
+                              <Link href={subitem.url} role="menuitem">{subitem.label}</Link>
                             </li>
                           ))}
                         </ul>
@@ -156,14 +163,17 @@ export default function Header() {
 
             {/* Reservation Button (Desktop) */}
             <div className="btn_hd_res hidden lg:block">
-              <Link href="/reservation">실시간예약</Link>
+              <Link href="/reservation" aria-label="실시간 예약하기">실시간예약</Link>
             </div>
 
             {/* Mobile Menu Button */}
             <button
               className="btn_menu lg:hidden"
               onClick={toggleMobileMenu}
-              aria-label="메뉴"
+              onKeyDown={handleKeyDown}
+              aria-label="메뉴 열기"
+              aria-controls="mobile-menu"
+              aria-expanded={isMobileMenuOpen}
               style={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -185,24 +195,25 @@ export default function Header() {
       </header>
 
       {/* Mobile Sidebar Menu */}
-      <aside className={`aside ${isMobileMenuOpen ? 'on' : ''}`}>
+      <aside className={`aside ${isMobileMenuOpen ? 'on' : ''}`} id="mobile-menu" aria-label="모바일 메뉴">
         <div className="aisde_inner">
           <div className="aside_box">
             <button
               className="btn_close"
               onClick={toggleMobileMenu}
-              aria-label="닫기"
+              onKeyDown={handleKeyDown}
+              aria-label="메뉴 닫기"
             />
 
-            <ul>
+            <ul role="navigation" aria-label="메인 메뉴">
               {navigation.map((item) => (
                 <li key={item.id}>
-                  <span className="depth1">{item.label}</span>
+                  <span className="depth1" role="button" aria-haspopup={!!item.submenu}>{item.label}</span>
                   {item.submenu && (
-                    <ul className="depth_list">
+                    <ul className="depth_list" role="menu">
                       {item.submenu.map((subitem, idx) => (
-                        <li key={idx}>
-                          <Link href={subitem.url}>{subitem.label}</Link>
+                        <li key={idx} role="none">
+                          <Link href={subitem.url} role="menuitem">{subitem.label}</Link>
                         </li>
                       ))}
                     </ul>
@@ -212,7 +223,7 @@ export default function Header() {
             </ul>
 
             <div className="btn_aside_res">
-              <Link href="/reservation">실시간예약</Link>
+              <Link href="/reservation" aria-label="실시간 예약하기">실시간예약</Link>
             </div>
           </div>
         </div>
