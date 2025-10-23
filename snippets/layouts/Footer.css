@@ -1,0 +1,129 @@
+/**
+ * Footer Component Styles
+ *
+ * Features:
+ * - Dark background with centered content
+ * - Phone number in large, light gray text
+ * - Address and business info in subdued color
+ * - Privacy policy link with border
+ * - Copyright in small text
+ * - Floating reservation button
+ */
+
+/* ===== FOOTER BASE STYLES ===== */
+.footer_wrap {
+  text-align: center;
+  word-break: keep-all;
+  padding: 30px 0;
+  position: relative;
+  z-index: 2;
+  background: #1f1d1c; /* Dark background */
+}
+
+.footer_wrap a {
+  letter-spacing: -0.05em;
+}
+
+.footer_wrap .footer {
+  overflow: hidden;
+  text-align: center;
+}
+
+/* ===== PHONE NUMBER ===== */
+.footer_wrap .footer .tel {
+  padding-bottom: 10px;
+  font-size: 22px;
+  color: #b5b5b5; /* Light gray */
+}
+
+/* ===== ADDRESS INFORMATION ===== */
+.footer_wrap .footer .address {
+  font-size: 13px;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.3); /* Very subtle white */
+}
+
+.footer_wrap .footer .address p {
+  display: inline-block;
+  margin: 0 1.15em;
+  color: inherit;
+}
+
+/* ===== PRIVACY POLICY LINK ===== */
+.footer_wrap .privacy {
+  display: inline-block;
+  color: #777;
+  font-size: 13px;
+  border: 1px solid #444;
+  padding: 0 10px;
+}
+
+/* ===== COPYRIGHT ===== */
+.footer_wrap .copy {
+  text-align: center;
+  font-size: 11px;
+  line-height: 1.45;
+  margin-top: 0.5em;
+  color: rgba(255, 255, 255, 0.2); /* Very subtle white */
+}
+
+/* ===== FLOATING RESERVATION BUTTON ===== */
+.ft_btn_reserve.on {
+  position: fixed;
+  bottom: 80px;
+  right: 7px;
+  z-index: 999;
+}
+
+.ft_btn_reserve.on > a > img {
+  width: 75px;
+  height: 75px;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+
+/* 1023px and below */
+@media only screen and (max-width: 1023px) {
+  .footer_wrap .btn_top {
+    display: none;
+  }
+}
+
+/* 640px and below */
+@media only screen and (max-width: 640px) {
+  .footer_wrap {
+    padding: 20px 0 10px;
+  }
+
+  .footer_wrap .footer .tel {
+    font-size: 18px;
+  }
+
+  .footer_wrap .footer .address {
+    font-size: 12px;
+  }
+
+  .footer_wrap .footer .address p {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .footer_wrap .privacy {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .footer_wrap .copy {
+    font-size: 10px;
+  }
+
+  .ft_btn_reserve.on {
+    bottom: 60px;
+    right: 5px;
+  }
+
+  .ft_btn_reserve.on > a > img {
+    width: 60px;
+    height: 60px;
+  }
+}

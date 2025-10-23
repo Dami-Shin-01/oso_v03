@@ -1,0 +1,82 @@
+<!-- Facility Card Component -->
+<!--
+  Description: Card component for displaying facility/special features
+  Features:
+    - Large image (470px height)
+    - Facility number badge (SPECIAL01, SPECIAL02, etc.)
+    - Title in English + Korean
+    - Description text
+    - "View More" link
+    - Opacity transition on active state
+  Used in: Home page SPECIAL section, Facility listing
+-->
+
+<div class="facility-card swiper-slide">
+  <!-- Link wrapper for entire card -->
+  <a href="/special1.html" class="link"></a>
+
+  <!-- Main Image -->
+  <div class="img" style="background-image: url('/images/facilities/swimming-pool.jpg');">
+    <!-- Background image set via inline style or CSS -->
+  </div>
+
+  <!-- Text Content -->
+  <div class="txt_box">
+    <!-- Facility Number Badge -->
+    <span class="special_txt">SPECIAL01</span>
+
+    <!-- Title (English + Korean) -->
+    <strong>SWIMMING POOL</strong>
+    <p>
+      수영장
+      <span class="special_txt">시원한 물놀이를 즐길 수 있는 야외수영장</span>
+    </p>
+
+    <!-- More Link -->
+    <a href="/special1.html" class="btn_more small">자세히보기</a>
+  </div>
+</div>
+
+<!-- Example: Second Facility Card -->
+<div class="facility-card swiper-slide">
+  <a href="/special2.html" class="link"></a>
+
+  <div class="img" style="background-image: url('/images/facilities/bbq.jpg');"></div>
+
+  <div class="txt_box">
+    <span class="special_txt">SPECIAL02</span>
+    <strong>BARBECUE</strong>
+    <p>
+      바베큐
+      <span class="special_txt">개별 바비큐 시설 제공</span>
+    </p>
+    <a href="/special2.html" class="btn_more small">자세히보기</a>
+  </div>
+</div>
+
+<!-- Usage Notes -->
+<!--
+  DATA STRUCTURE:
+  {
+    "id": 1,
+    "name": "수영장",
+    "name_english": "SWIMMING POOL",
+    "url": "/special1.html",
+    "description": "시원한 물놀이를 즐길 수 있는 야외수영장",
+    "type": "야외시설"
+  }
+
+  STYLING:
+  - Card opacity: 0.5 default, 1.0 when active/next
+  - Image height: 470px (desktop), responsive on smaller screens
+  - Badge: 13px, light gray (#999)
+  - Title: 26px, Lora serif font, #444
+  - Description: 15px, #666
+  - Button: text-only, hover to gold (#b2946b)
+
+  CAROUSEL BEHAVIOR:
+  - Used in Swiper slider
+  - Multiple cards visible at once
+  - Active and next slide have full opacity
+  - Arrow navigation on sides
+-->

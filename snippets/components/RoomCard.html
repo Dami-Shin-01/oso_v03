@@ -1,0 +1,91 @@
+<!-- Room Card Component -->
+<!--
+  Description: Card component for displaying room information
+  Features:
+    - Large main image (500px height)
+    - Room name and description
+    - 3 thumbnail images at bottom
+    - CTA button
+    - Hover effects
+  Used in: Home page room list, Room listing page
+-->
+
+<div class="room-card swiper-slide">
+  <!-- Link wrapper for entire card -->
+  <a href="/room.html?room_id=26262" class="link"></a>
+
+  <!-- Main Image -->
+  <div class="img" style="background-image: url('/images/rooms/pine-scent-main.jpg');">
+    <!-- Background image set via inline style or CSS -->
+  </div>
+
+  <!-- Room Info Wrapper -->
+  <div class="room_inner_wrap clear">
+    <!-- Left: Text Content -->
+    <div class="room_inner_box">
+      <strong>잣내음동</strong>
+      <p>36평 / 기준 6인 / 최대 8인</p>
+      <a href="/room.html?room_id=26262" class="btn_more compact">객실보기</a>
+    </div>
+
+    <!-- Right: Thumbnail Images -->
+    <div class="btm_img">
+      <ul>
+        <li style="background-image: url('/images/rooms/pine-scent-thumb1.jpg');"></li>
+        <li style="background-image: url('/images/rooms/pine-scent-thumb2.jpg');"></li>
+        <li style="background-image: url('/images/rooms/pine-scent-thumb3.jpg');"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--
+  Alternative: Compact Room Card (for sub-pages)
+  Smaller layout with no thumbnails, different button style
+-->
+<div class="room-card room-card-compact swiper-slide">
+  <a href="/room.html?room_id=26263" class="link"></a>
+
+  <!-- Main Image (smaller height) -->
+  <div class="img" style="background-image: url('/images/rooms/room2-main.jpg');"></div>
+
+  <!-- Room Info (full width, no thumbnails) -->
+  <div class="room_inner_wrap">
+    <div class="room_inner_box">
+      <strong>편백나무동</strong>
+      <p>24평 / 기준 4인 / 최대 6인</p>
+      <a href="/room.html?room_id=26263" class="btn_more small">자세히보기</a>
+    </div>
+  </div>
+</div>
+
+<!-- Usage Notes -->
+<!--
+  DATA STRUCTURE:
+  {
+    "id": "26262",
+    "name": "잣내음동",
+    "name_english": "Pine Scent Building",
+    "size_pyeong": 36.00,
+    "capacity": {
+      "standard": 6,
+      "maximum": 8
+    },
+    "images": [
+      "main.jpg",
+      "thumb1.jpg",
+      "thumb2.jpg",
+      "thumb3.jpg"
+    ]
+  }
+
+  STYLING:
+  - Main image: 500px height (desktop), 300-350px (tablet), 220px (mobile)
+  - Thumbnails: 130px height (desktop), 120px (tablet), 80px (mobile)
+  - Room name: 30px, Noto Serif KR
+  - Description: 15px, #666
+  - Button: Dark variant with icon
+
+  HOVER EFFECTS:
+  - Button text color changes to gold (#b2946b)
+-->

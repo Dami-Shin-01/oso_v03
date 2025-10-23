@@ -1,0 +1,152 @@
+/**
+ * Button Component Styles
+ *
+ * Three button variants:
+ * 1. Primary Button - Gold/brown background for main CTAs
+ * 2. Dark Button - Dark background with icon for secondary actions
+ * 3. Text Button - Text-only link for tertiary actions
+ */
+
+/* ===== 1. PRIMARY BUTTON ===== */
+/* Used for: Reservation, Main CTAs */
+.btn-primary {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 2.57;
+  padding: 0 1.86em;
+  color: #fff;
+  background: #a08560; /* Gold/brown */
+  transition: all 0.3s;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.btn-primary:hover {
+  text-decoration: underline;
+}
+
+/* Variant: Full-width (mobile) */
+.btn-primary.full-width {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+}
+
+/* ===== 2. DARK BUTTON ===== */
+/* Used for: View Details, Explore */
+.btn-dark {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 3.58;
+  letter-spacing: -0.02em;
+  width: 14.83em;
+  padding: 0 1.5em;
+  background: url('../images/common/spe_view_w.png') no-repeat 175px center #312f2d;
+  color: #fff;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.btn-dark:hover {
+  color: #b2946b; /* Gold hover color */
+}
+
+/* Variant: Compact */
+.btn-dark.compact {
+  line-height: 3.5;
+  width: 13em;
+  background: #393b39;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-dark.compact:hover {
+  color: #b2946b;
+}
+
+/* ===== 3. TEXT BUTTON (More Link) ===== */
+/* Used for: More Info, Learn More, Details */
+.btn-more {
+  display: inline-block;
+  padding: 1.25em 4.83em 1.25em 0;
+  font-size: 13px;
+  letter-spacing: 0.1px;
+  transition: all 0.3s;
+  color: inherit; /* Inherits from parent */
+}
+
+.btn-more:hover {
+  color: #b2946b; /* Gold hover color */
+}
+
+/* Variant: Small */
+.btn-more.small {
+  font-size: 12px;
+  padding-right: 0;
+}
+
+/* Variant: Light (for dark backgrounds) */
+.btn-more.light {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-more.light:hover {
+  color: #b2946b;
+}
+
+/* ===== BUTTON GROUP ===== */
+.btn-wrap {
+  text-align: center;
+  position: relative;
+}
+
+.btn-wrap .btn-primary,
+.btn-wrap .btn-dark,
+.btn-wrap .btn-more {
+  margin: 0 0.5em;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+
+/* 1200px and below */
+@media only screen and (max-width: 1200px) {
+  .btn-primary {
+    font-size: 14px;
+  }
+}
+
+/* 1023px and below */
+@media only screen and (max-width: 1023px) {
+  .btn-primary {
+    padding: 0 1.2em;
+  }
+}
+
+/* 640px and below */
+@media only screen and (max-width: 640px) {
+  .btn-primary {
+    font-size: 13px;
+  }
+
+  .btn-dark {
+    font-size: 12px;
+    line-height: 3.08;
+    width: auto;
+    background-position: 150px center;
+  }
+
+  .btn-more {
+    font-size: 12px;
+  }
+}
+
+/* 479px and below */
+@media only screen and (max-width: 479px) {
+  .btn-primary.full-width {
+    font-size: 14px;
+  }
+
+  .btn-dark {
+    background-position: center;
+  }
+}

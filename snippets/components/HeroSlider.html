@@ -1,0 +1,90 @@
+<!-- Hero Slider Component -->
+<!--
+  Description: Main hero slider for homepage
+  Features:
+    - Full-width background images
+    - Swiper carousel with auto-play
+    - Navigation arrows (prev/next)
+    - Fade transition
+    - Welcome text overlay (optional)
+  Used in: Homepage main visual section
+-->
+
+<section class="main_visual">
+  <div class="swiper-container visual-swiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="img" style="background-image: url('/images/hero/slide1.jpg');">
+          <!-- Optional: Welcome Text Overlay -->
+          <div class="txt_overlay">
+            <h1>Welcome</h1>
+            <p>Humantown Pension</p>
+            <span>Relaxation in Nature</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="img" style="background-image: url('/images/hero/slide2.jpg');"></div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <div class="img" style="background-image: url('/images/hero/slide3.jpg');"></div>
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <div class="arw_box">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+
+  <!-- Scroll Down Indicator (optional) -->
+  <div class="scroll_down">
+    <img src="/images/common/scroll_down.png" alt="Scroll Down">
+  </div>
+</section>
+
+<!-- JavaScript Initialization -->
+<script>
+  // Initialize Swiper
+  const heroSwiper = new Swiper('.visual-swiper', {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    navigation: {
+      nextEl: '.arw_box .swiper-button-next',
+      prevEl: '.arw_box .swiper-button-prev',
+    },
+    speed: 1000,
+  });
+</script>
+
+<!-- Usage Notes -->
+<!--
+  STYLING:
+  - Full viewport height recommended
+  - Background images should be optimized (1920px width)
+  - Images use cover positioning for responsiveness
+
+  SWIPER OPTIONS:
+  - loop: true (infinite loop)
+  - autoplay: 5 seconds delay
+  - effect: fade (smooth transition)
+  - navigation: arrow buttons
+
+  TEXT OVERLAY (optional):
+  - Position: center or bottom-left
+  - Font: Cinzel for heading, Lora for subheading
+  - Colors: White with subtle shadow
+-->

@@ -1,0 +1,1500 @@
+@import "tailwindcss";
+
+/* Humantown Pension Design System */
+:root {
+  /* Primary Colors (Gold/Brown) */
+  --color-gold-light: #dec48e;
+  --color-gold: #b2946b;
+  --color-gold-dark: #a08560;
+
+  /* Neutral Colors */
+  --color-dark: #1f1d1c;
+  --color-dark-200: #312f2d;
+  --color-dark-300: #393b39;
+  --color-text: #333333;
+  --color-text-light: #666666;
+  --color-text-lighter: #999999;
+  --color-bg-light: #f5f5f5;
+  --color-white: #ffffff;
+
+  /* Default Theme */
+  --background: var(--color-white);
+  --foreground: var(--color-text);
+}
+
+@theme inline {
+  /* Colors */
+  --color-primary-light: var(--color-gold-light);
+  --color-primary: var(--color-gold);
+  --color-primary-dark: var(--color-gold-dark);
+
+  --color-dark: var(--color-dark);
+  --color-dark-200: var(--color-dark-200);
+  --color-dark-300: var(--color-dark-300);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Typography */
+  --font-heading: 'Cinzel', serif;
+  --font-serif: 'Lora', serif;
+  --font-sans: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Font Sizes */
+  --font-size-xs: 0.6875rem;    /* 11px */
+  --font-size-sm: 0.75rem;       /* 12px */
+  --font-size-base: 0.875rem;    /* 14px */
+  --font-size-md: 0.9375rem;     /* 15px */
+  --font-size-lg: 1rem;          /* 16px */
+  --font-size-xl: 1.125rem;      /* 18px */
+  --font-size-2xl: 1.375rem;     /* 22px */
+  --font-size-3xl: 1.625rem;     /* 26px */
+  --font-size-4xl: 1.875rem;     /* 30px */
+  --font-size-5xl: 2.0625rem;    /* 33px */
+  --font-size-6xl: 3.75rem;      /* 60px */
+  --font-size-7xl: 5.1875rem;    /* 83px */
+
+  /* Spacing (8px base) */
+  --spacing-1: 0.5rem;   /* 8px */
+  --spacing-2: 1rem;     /* 16px */
+  --spacing-3: 1.5rem;   /* 24px */
+  --spacing-4: 2rem;     /* 32px */
+  --spacing-5: 2.5rem;   /* 40px */
+  --spacing-6: 3rem;     /* 48px */
+  --spacing-8: 4rem;     /* 64px */
+
+  /* Container */
+  --container-max-width: 87.5rem;  /* 1400px */
+
+  /* Breakpoints */
+  --breakpoint-xs: 30rem;       /* 479px */
+  --breakpoint-sm: 40rem;       /* 640px */
+  --breakpoint-md: 48rem;       /* 768px */
+  --breakpoint-lg: 53.75rem;    /* 860px */
+  --breakpoint-xl: 64rem;       /* 1024px */
+  --breakpoint-2xl: 75rem;      /* 1200px */
+  --breakpoint-3xl: 80rem;      /* 1280px */
+  --breakpoint-4xl: 103.125rem; /* 1650px */
+
+  /* Border Radius (Angular design - minimal radius) */
+  --radius-none: 0;
+  --radius-sm: 0.125rem;
+  --radius: 0.25rem;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Base */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+/* Utility Classes */
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.clear::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/**
+ * Header Component Styles
+ *
+ * Features:
+ * - Fixed position header with transparent dark background
+ * - Centered logo that transitions to left on scroll
+ * - Two-column navigation menu with dropdown
+ * - Reservation CTA button
+ * - Mobile hamburger menu and sidebar
+ * - Fully responsive design
+ */
+
+/* ===== HEADER BASE STYLES ===== */
+.header,
+.header * {
+  transition: all 0.3s;
+}
+
+.header {
+  z-index: 90;
+  position: fixed;
+  width: 100%;
+}
+
+.header .hd_cont {
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 91;
+  background: rgba(36, 38, 35, 0.9);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header .hd_inner {
+  text-align: center;
+  width: 1140px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  padding: 30px 0 0;
+}
+
+.header .hd_inner:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ===== LOGO STYLES ===== */
+.header .logo {
+  font-size: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 90;
+  transition: none;
+}
+
+.header .logo a,
+.header .logo2 a {
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  color: #dec48e; /* Gold color */
+  font-family: 'Cinzel', serif;
+}
+
+.header .logo span {
+  display: block;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  margin-top: 7px;
+  letter-spacing: 0.05px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.header .logo2 {
+  font-size: 21px;
+  display: none;
+  vertical-align: middle;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 90;
+  transform: translateY(-50%);
+  transition: none;
+}
+
+/* ===== NAVIGATION STYLES ===== */
+.header .hd_lnb:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header .hd_lnb ul,
+.header .hd_lnb ul .depth1 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header .hd_lnb ul .depth1 {
+  font-size: 16px;
+  position: relative;
+  text-align: center;
+}
+
+.header .hd_lnb ul .depth1 .depth1_a {
+  line-height: 5.7;
+  padding: 0 1.25em;
+  width: 80px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  font-size: inherit;
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  transition: none;
+  position: relative;
+  z-index: 5;
+}
+
+/* Dropdown Menu */
+.header .hd_lnb ul .depth1 .depth_box {
+  position: absolute;
+  left: 50%;
+  top: -800%;
+  width: 100%;
+  transform: translateX(-50%);
+  z-index: -1;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.header .hd_lnb ul .depth1 .depth_box.on {
+  top: calc(100% + 12px);
+}
+
+.header .hd_lnb ul .depth1 .depth_box li {
+  font-size: 14px;
+  line-height: 1;
+  padding: 5px 0;
+  color: #333;
+}
+
+.header .hd_lnb ul .depth1 .depth_box li + li {
+  margin-top: 4px;
+}
+
+.header .hd_lnb ul .depth1 .depth_box li a {
+  display: block;
+  font-size: inherit;
+  color: inherit;
+}
+
+.header .hd_lnb ul .depth1 .depth_box li a:hover {
+  text-decoration: underline;
+}
+
+.header .hd_lnb .hd_lnb01 {
+  float: left;
+}
+
+.header .hd_lnb .hd_lnb02 {
+  float: right;
+}
+
+/* Dropdown Background */
+.header .hd_lnb_bg {
+  position: absolute;
+  left: 0;
+  top: -800px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #e5e5e5;
+  z-index: -1;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 680px;
+  transition: all 0.5s;
+}
+
+.header .hd_lnb_bg.on {
+  top: 121px;
+}
+
+/* ===== RESERVATION BUTTON ===== */
+.header .btn_hd_res {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header .btn_hd_res a {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 2.57;
+  padding: 0 1.86em;
+  color: #fff;
+  background: #a08560;
+}
+
+.header .btn_hd_res:hover {
+  text-decoration: underline;
+}
+
+/* ===== MOBILE MENU BUTTON ===== */
+.header .btn_menu {
+  display: none;
+  height: 23px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.header .btn_menu img {
+  height: 100%;
+}
+
+/* ===== SCROLLED STATE (header.on) ===== */
+.header.on .hd_cont {
+  background: rgba(36, 38, 35, 0.9);
+}
+
+.header.on .hd_lnb,
+.header.on .btn_hd_res {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header.on .hd_inner {
+  width: calc(100% - 90px);
+  margin: 0 auto;
+  text-align: left;
+  padding: 0;
+}
+
+.header.on .hd_lnb {
+  padding-left: 250px;
+}
+
+.header.on .hd_lnb ul .depth1 .depth1_a {
+  line-height: 4.69;
+  width: auto;
+  padding: 0 1.56em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.header.on .hd_lnb .hd_lnb01,
+.header.on .hd_lnb .hd_lnb02 {
+  float: inherit;
+}
+
+.header.on .hd_lnb_bg.on {
+  top: 76px;
+}
+
+/* ===== MOBILE SIDEBAR ===== */
+.aside .btn_close,
+.aside_bg {
+  display: none;
+}
+
+.aside .aisde_inner {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  height: 100%;
+  z-index: 991;
+  width: calc(100% - 14%);
+  overflow-y: auto;
+  background: #303030;
+  transition: all 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.aside.on .aisde_inner {
+  right: 0;
+}
+
+.aside .aside_box {
+  height: 100%;
+  padding: 10px 0 0;
+}
+
+.aside .btn_close {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 27px;
+  height: 27px;
+  background-size: contain;
+  z-index: 990;
+}
+
+.aside.on .btn_close {
+  display: block;
+}
+
+.aside .depth1 {
+  font-size: 17px;
+  line-height: 3.52;
+  padding: 0 1.47em;
+  letter-spacing: -0.05em;
+  color: #fff;
+  display: block;
+  font-family: 'Lora', serif;
+}
+
+.aside .depth_list {
+  display: none;
+  transition: none;
+  background: #fafafa;
+}
+
+.aside .depth_list li {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.aside .depth_list li a {
+  font-size: 15px;
+  line-height: 3.2;
+  padding: 0 1.47em;
+  display: block;
+  color: #666;
+}
+
+.aside .btn_aside_res {
+  padding: 20px;
+}
+
+.aside .btn_aside_res a {
+  padding: 12px;
+  font-size: 15px;
+  color: #fff;
+  background: #a08560;
+  text-align: center;
+  display: block;
+}
+
+.aside_bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 900;
+  background: rgba(0, 0, 0, 0.7);
+  transition: all 0.5s;
+}
+
+.aside_bg.on {
+  display: block;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+
+/* 1280px and below */
+@media screen and (max-width: 1280px) {
+  .header .hd_inner,
+  .header.on .hd_inner {
+    width: calc(100% - 90px);
+  }
+
+  .header .logo,
+  .header .logo2 a {
+    font-size: 25px;
+  }
+
+  .header .hd_lnb ul .depth1,
+  .header .btn_hd_res a {
+    font-size: 15px;
+  }
+
+  .header.on .hd_lnb {
+    padding-left: 215px;
+  }
+
+  .header .hd_lnb_bg.on {
+    top: 104px;
+  }
+
+  .header.on .hd_lnb_bg.on {
+    top: 80px;
+  }
+}
+
+/* 1200px and below */
+@media only screen and (max-width: 1200px) {
+  .header .logo,
+  .header .logo2 a {
+    font-size: 20px;
+  }
+
+  .header .hd_lnb ul .depth1,
+  .header .btn_hd_res a {
+    font-size: 14px;
+  }
+
+  .header .hd_lnb ul .depth1 .depth1_a {
+    width: auto;
+  }
+
+  .header.on .hd_lnb {
+    padding-left: 160px;
+  }
+
+  .header .hd_lnb ul .depth1 .depth_box li {
+    font-size: 13px;
+  }
+
+  .header .hd_lnb_bg.on {
+    top: 98px;
+  }
+
+  .header.on .hd_lnb_bg.on {
+    top: 75px;
+  }
+}
+
+/* 1023px and below */
+@media only screen and (max-width: 1023px) {
+  .header .hd_inner,
+  .header.on .hd_inner {
+    width: calc(100% - 60px);
+  }
+
+  .header .hd_lnb ul .depth1 .depth1_a {
+    padding: 0 1em;
+  }
+
+  .header .btn_hd_res a {
+    padding: 0 1.2em;
+  }
+
+  .header.on .hd_lnb {
+    padding-left: 140px;
+  }
+}
+
+/* 860px and below - Mobile Menu Appears */
+@media only screen and (max-width: 860px) {
+  .header .hd_inner,
+  .header.on .hd_inner {
+    padding: 19px 0;
+    text-align: left;
+  }
+
+  .header .logo,
+  .header .logo2 a {
+    font-size: 22px;
+    position: static;
+    transform: none;
+    display: inline-block !important;
+    opacity: 1 !important;
+  }
+
+  .header.on .logo2 {
+    display: none !important;
+  }
+
+  .header .logo span,
+  .header .hd_lnb_bg.on,
+  .header.on .hd_lnb_bg.on {
+    display: none;
+  }
+
+  .header .hd_lnb,
+  .header.on .hd_lnb,
+  .header.on .btn_hd_res {
+    display: none;
+  }
+
+  .header .btn_menu {
+    display: inline-block;
+  }
+}
+
+/* 640px and below */
+@media only screen and (max-width: 640px) {
+  .header .hd_inner,
+  .header.on .hd_inner {
+    width: calc(100% - 30px);
+  }
+
+  .aside .depth1 {
+    font-size: 15px;
+  }
+
+  .aside .depth_list li a {
+    font-size: 13px;
+  }
+}
+
+/* 479px and below */
+@media only screen and (max-width: 479px) {
+  .aside {
+    width: calc(100% - 50px);
+  }
+}
+/**
+ * Footer Component Styles
+ *
+ * Features:
+ * - Dark background with centered content
+ * - Phone number in large, light gray text
+ * - Address and business info in subdued color
+ * - Privacy policy link with border
+ * - Copyright in small text
+ * - Floating reservation button
+ */
+
+/* ===== FOOTER BASE STYLES ===== */
+.footer_wrap {
+  text-align: center;
+  word-break: keep-all;
+  padding: 30px 0;
+  position: relative;
+  z-index: 2;
+  background: #1f1d1c; /* Dark background */
+}
+
+.footer_wrap a {
+  letter-spacing: -0.05em;
+}
+
+.footer_wrap .footer {
+  overflow: hidden;
+  text-align: center;
+}
+
+/* ===== PHONE NUMBER ===== */
+.footer_wrap .footer .tel {
+  padding-bottom: 10px;
+  font-size: 22px;
+  color: #b5b5b5; /* Light gray */
+}
+
+/* ===== ADDRESS INFORMATION ===== */
+.footer_wrap .footer .address {
+  font-size: 13px;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.3); /* Very subtle white */
+}
+
+.footer_wrap .footer .address p {
+  display: inline-block;
+  margin: 0 1.15em;
+  color: inherit;
+}
+
+/* ===== PRIVACY POLICY LINK ===== */
+.footer_wrap .privacy {
+  display: inline-block;
+  color: #777;
+  font-size: 13px;
+  border: 1px solid #444;
+  padding: 0 10px;
+}
+
+/* ===== COPYRIGHT ===== */
+.footer_wrap .copy {
+  text-align: center;
+  font-size: 11px;
+  line-height: 1.45;
+  margin-top: 0.5em;
+  color: rgba(255, 255, 255, 0.2); /* Very subtle white */
+}
+
+/* ===== FLOATING RESERVATION BUTTON ===== */
+.ft_btn_reserve.on {
+  position: fixed;
+  bottom: 80px;
+  right: 7px;
+  z-index: 999;
+}
+
+.ft_btn_reserve.on > a > img {
+  width: 75px;
+  height: 75px;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+
+/* 1023px and below */
+@media only screen and (max-width: 1023px) {
+  .footer_wrap .btn_top {
+    display: none;
+  }
+}
+
+/* 640px and below */
+@media only screen and (max-width: 640px) {
+  .footer_wrap {
+    padding: 20px 0 10px;
+  }
+
+  .footer_wrap .footer .tel {
+    font-size: 18px;
+  }
+
+  .footer_wrap .footer .address {
+    font-size: 12px;
+  }
+
+  .footer_wrap .footer .address p {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .footer_wrap .privacy {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .footer_wrap .copy {
+    font-size: 10px;
+  }
+
+  .ft_btn_reserve.on {
+    bottom: 60px;
+    right: 5px;
+  }
+
+  .ft_btn_reserve.on > a > img {
+    width: 60px;
+    height: 60px;
+  }
+}
+/**
+ * Hero Slider Component Styles
+ *
+ * Features:
+ * - Full-width hero section
+ * - Background image slides
+ * - Navigation arrows
+ * - Text overlay
+ * - Scroll down indicator
+ */
+
+/* ===== HERO SLIDER BASE STYLES ===== */
+.main_visual {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  min-height: 600px;
+}
+
+.main_visual .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.main_visual .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+/* Slide Images */
+.main_visual .swiper-slide .img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* ===== TEXT OVERLAY (Optional) ===== */
+.main_visual .txt_overlay {
+  position: absolute;
+  bottom: 150px;
+  right: 100px;
+  color: #fff;
+  text-align: right;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.main_visual .txt_overlay h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  color: #dec48e; /* Gold color */
+}
+
+.main_visual .txt_overlay p {
+  font-family: 'Lora', serif;
+  font-size: 32px;
+  line-height: 1.5;
+  margin: 10px 0 0;
+}
+
+.main_visual .txt_overlay span {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  display: block;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+/* ===== NAVIGATION ARROWS ===== */
+.main_visual .arw_box {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.main_visual .arw_box > div {
+  display: inline-block;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.main_visual .arw_box .swiper-button-prev {
+  float: left;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.main_visual .arw_box .swiper-button-prev::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 15px;
+  height: 15px;
+  border-left: 3px solid var(--color-gold);
+  border-bottom: 3px solid var(--color-gold);
+}
+
+.main_visual .arw_box .swiper-button-next {
+  float: right;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.main_visual .arw_box .swiper-button-next::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-135deg);
+  width: 15px;
+  height: 15px;
+  border-left: 3px solid var(--color-gold);
+  border-bottom: 3px solid var(--color-gold);
+}
+
+.main_visual .arw_box .swiper-button-prev:after,
+.main_visual .arw_box .swiper-button-next:after {
+  display: none; /* Hide default Swiper arrows */
+}
+
+/* ===== SCROLL DOWN INDICATOR ===== */
+.main_visual .scroll_down {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  z-index: 5;
+  animation: bounce 2s infinite;
+}
+
+.main_visual .scroll_down svg,
+.main_visual .scroll_down img {
+  display: inline-block;
+  width: 30px;
+  height: auto;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-5px);
+  }
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+
+/* 1200px and below */
+@media only screen and (max-width: 1200px) {
+  .main_visual {
+    height: 80vh;
+    min-height: 500px;
+  }
+
+  .main_visual .txt_overlay h1 {
+    font-size: 50px;
+  }
+
+  .main_visual .txt_overlay p {
+    font-size: 28px;
+  }
+}
+
+/* 860px and below */
+@media only screen and (max-width: 860px) {
+  .main_visual {
+    height: 70vh;
+    min-height: 400px;
+  }
+
+  .main_visual .txt_overlay {
+    bottom: 100px;
+    right: 50px;
+  }
+
+  .main_visual .txt_overlay h1 {
+    font-size: 40px;
+  }
+
+  .main_visual .txt_overlay p {
+    font-size: 22px;
+  }
+
+  .main_visual .txt_overlay span {
+    font-size: 12px;
+  }
+
+  .main_visual .arw_box .swiper-button-prev,
+  .main_visual .arw_box .swiper-button-next {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* 640px and below */
+@media only screen and (max-width: 640px) {
+  .main_visual {
+    height: 60vh;
+    min-height: 350px;
+  }
+
+  .main_visual .txt_overlay {
+    bottom: 80px;
+    right: 30px;
+  }
+
+  .main_visual .txt_overlay h1 {
+    font-size: 32px;
+  }
+
+  .main_visual .txt_overlay p {
+    font-size: 18px;
+  }
+
+  .main_visual .arw_box {
+    bottom: 30px;
+  }
+
+  .main_visual .arw_box .swiper-button-prev,
+  .main_visual .arw_box .swiper-button-next {
+    width: 35px;
+    height: 35px;
+    padding: 10px 15px;
+  }
+}
+/**
+ * Facility Card Component Styles
+ *
+ * Features:
+ * - Large image with background cover
+ * - Facility number badge (SPECIAL01, etc.)
+ * - English title in serif font
+ * - Korean name and description
+ * - Opacity transition for carousel
+ * - Hover effect on "More" button
+ */
+
+/* ===== FACILITY CARD BASE STYLES ===== */
+.facility-card {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.facility-card.swiper-slide-active,
+.facility-card.swiper-slide-next {
+  opacity: 1;
+}
+
+/* Clickable overlay */
+.facility-card .link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Main Image */
+.facility-card .img {
+  height: 470px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ===== TEXT CONTENT BOX ===== */
+.facility-card .txt_box {
+  background: #fff;
+  padding: 15px 0;
+  position: relative;
+  text-align: left;
+}
+
+/* Facility Number Badge (SPECIAL01, etc.) */
+.facility-card .txt_box .special_txt {
+  font-size: 13px;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+  line-height: 1.46;
+  font-weight: 300;
+  color: #999; /* Light gray */
+  display: block;
+  font-family: 'Noto Sans KR', arial, helvetica, sans-serif;
+}
+
+/* Title (English) */
+.facility-card .txt_box strong {
+  font-size: 26px;
+  line-height: 1.15;
+  margin: 8px 0 0;
+  font-weight: 400;
+  display: block;
+  color: #444;
+  font-family: 'Lora', serif;
+}
+
+/* Description (Korean name + details) */
+.facility-card .txt_box p {
+  font-size: 15px;
+  line-height: 1.4;
+  margin-top: 5px;
+  color: #666;
+}
+
+/* Hide additional description in paragraph */
+.facility-card .txt_box p .special_txt {
+  display: none;
+}
+
+/* More Button */
+.facility-card .txt_box .btn_more {
+  margin-top: 0.83em;
+  color: #444;
+  font-size: 12px;
+}
+
+.facility-card:hover .txt_box .btn_more {
+  color: #b2946b; /* Gold on hover */
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+
+/* 1200px and below */
+@media only screen and (max-width: 1200px) {
+  .facility-card .img {
+    height: 400px;
+  }
+
+  .facility-card .txt_box strong {
+    font-size: 24px;
+  }
+}
+
+/* 1023px and below */
+@media only screen and (max-width: 1023px) {
+  .facility-card .img {
+    height: 350px;
+  }
+
+  .facility-card .txt_box strong {
+    font-size: 22px;
+  }
+
+  .facility-card .txt_box p {
+    font-size: 14px;
+  }
+}
+
+/* 860px and below */
+@media only screen and (max-width: 860px) {
+  .facility-card .img {
+    height: 300px;
+  }
+
+  .facility-card .txt_box {
+    padding: 12px 0;
+  }
+
+  .facility-card .txt_box strong {
+    font-size: 20px;
+  }
+}
+
+/* 640px and below */
+@media only screen and (max-width: 640px) {
+  .facility-card .img {
+    height: 250px;
+  }
+
+  .facility-card .txt_box .special_txt {
+    font-size: 12px;
+  }
+
+  .facility-card .txt_box strong {
+    font-size: 18px;
+  }
+
+  .facility-card .txt_box p {
+    font-size: 13px;
+  }
+
+  .facility-card .txt_box .btn_more {
+    font-size: 11px;
+  }
+}
+
+/* ===== CONTAINER SECTION STYLES ===== */
+/* Styles for the SPECIAL section container */
+.main_special {
+  position: relative;
+  z-index: 0;
+  margin: 0 auto;
+  padding: 70px 0 0;
+}
+
+.main_special:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 50%;
+  background: #f5f5f5; /* Light gray background */
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.main_special .swiper-container {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+/* Navigation Arrows */
+.main_special .arw_box {
+  position: absolute;
+  left: 50%;
+  top: 215px;
+  margin-left: 585px;
+}
+
+.main_special .arw_box > div {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 20px;
+  width: auto;
+  height: auto;
+  position: static;
+}
+
+.main_special .arw_box .swiper-button-next.swiper-button-disabled,
+.main_special .arw_box .swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
+}
+
+.main_special .arw_box .swiper-button-prev {
+  padding-left: 16px;
+}
+
+.main_special .arw_box .swiper-button-next {
+  padding-right: 16px;
+}
+
+/* Responsive container adjustments */
+@media only screen and (max-width: 1023px) {
+  .main_special {
+    padding: 50px 0 0;
+  }
+
+  .main_special .arw_box {
+    position: static;
+    text-align: center;
+    margin: 20px 0;
+  }
+}
+/**
+ * Room Card Component Styles
+ *
+ * Features:
+ * - Large main image with background cover
+ * - Split layout: text on left, thumbnails on right
+ * - Room name in serif font
+ * - Hover effects on button
+ * - Fully responsive
+ */
+
+/* ===== ROOM CARD BASE STYLES ===== */
+.room-card {
+  position: relative;
+  background: #fff;
+  opacity: 0 !important;
+}
+
+.room-card.swiper-slide-visible {
+  opacity: 1 !important;
+}
+
+/* Clickable overlay */
+.room-card .link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Main Image */
+.room-card .img {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ===== ROOM INFO WRAPPER ===== */
+.room-card .room_inner_wrap {
+  overflow: hidden;
+  text-align: left;
+}
+
+.room-card .room_inner_wrap .room_inner_box,
+.room-card .room_inner_wrap .btm_img {
+  width: 50%;
+}
+
+/* Left Side: Text Content */
+.room-card .room_inner_wrap .room_inner_box {
+  float: left;
+  padding: 20px 0 0;
+}
+
+.room-card .room_inner_wrap .room_inner_box strong {
+  font-size: 30px;
+  line-height: 1.47;
+  color: #444;
+  font-family: 'Noto Serif KR', serif;
+  display: block;
+}
+
+.room-card .room_inner_wrap .room_inner_box p {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #666;
+}
+
+.room-card .room_inner_wrap .room_inner_box .btn_more {
+  margin-top: 2.08em;
+  font-size: 12px;
+  padding: 0;
+  line-height: 3.5;
+  width: 13em;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  background: #393b39;
+  display: inline-block;
+}
+
+.room-card:hover .room_inner_wrap .room_inner_box .btn_more {
+  color: #b2946b;
+}
+
+/* Right Side: Thumbnail Images */
+.room-card .room_inner_wrap .btm_img {
+  float: right;
+}
+
+.room-card .room_inner_wrap .btm_img ul {
+  font-size: 0;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.room-card .room_inner_wrap .btm_img ul li {
+  height: 130px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 28%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.room-card .room_inner_wrap .btm_img ul li + li {
+  margin-left: 7px;
+}
+
+/* ===== COMPACT VARIANT (for sub-pages) ===== */
+.room-card-compact .img {
+  height: 280px;
+}
+
+.room-card-compact .room_inner_wrap {
+  margin-top: -49px;
+}
+
+.room-card-compact .room_inner_wrap .room_inner_box {
+  float: inherit;
+  width: 100%;
+  padding: 0;
+}
+
+.room-card-compact .room_inner_wrap .room_inner_box strong {
+  font-size: 20px;
+  padding: 0.5em 0.75em;
+  color: #fff;
+  font-family: 'Noto Sans KR', sans-serif;
+  background: rgba(178, 148, 107, 0.9); /* Gold overlay */
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+
+.room-card-compact .room_inner_wrap .room_inner_box p {
+  font-size: 15px;
+  line-height: 1.47;
+  margin: 0.67em 1em 0;
+}
+
+.room-card-compact .room_inner_wrap .room_inner_box .btn_more {
+  color: #444;
+  padding-left: 1.25em;
+  padding-right: 4.83em;
+  background: none;
+  font-size: 12px;
+  margin-top: 0;
+  width: auto;
+}
+
+.room-card-compact .room_inner_wrap .btm_img {
+  display: none;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+
+/* 1200px and below */
+@media only screen and (max-width: 1200px) {
+  .room-card .img {
+    height: 400px;
+  }
+
+  .room-card .room_inner_wrap .btm_img ul li {
+    height: 160px;
+  }
+}
+
+/* 1023px and below */
+@media only screen and (max-width: 1023px) {
+  .room-card .img {
+    height: 350px;
+  }
+
+  .room-card .room_inner_wrap .room_inner_box strong {
+    font-size: 28px;
+  }
+
+  .room-card .room_inner_wrap .btm_img ul li {
+    height: 120px;
+  }
+}
+
+/* 860px and below */
+@media only screen and (max-width: 860px) {
+  .room-card .img {
+    height: 300px;
+  }
+
+  .room-card .room_inner_wrap .room_inner_box .btn_more {
+    width: 12em;
+    line-height: 3;
+  }
+}
+
+/* 640px and below */
+@media only screen and (max-width: 640px) {
+  .room-card .img {
+    height: 220px;
+  }
+
+  .room-card .room_inner_wrap .room_inner_box,
+  .room-card .room_inner_wrap .btm_img {
+    width: 100%;
+  }
+
+  .room-card .room_inner_wrap .room_inner_box {
+    float: inherit;
+    padding: 5px 0;
+  }
+
+  .room-card .room_inner_wrap .room_inner_box strong {
+    font-size: 23px;
+  }
+
+  .room-card .room_inner_wrap .room_inner_box p {
+    font-size: 14px;
+  }
+
+  .room-card .room_inner_wrap .btm_img {
+    float: inherit;
+  }
+
+  .room-card .room_inner_wrap .btm_img ul {
+    margin-top: 25px;
+  }
+
+  .room-card .room_inner_wrap .btm_img ul li {
+    height: 80px;
+    width: calc(33.3% - 4.67px);
+  }
+
+  /* Compact variant */
+  .room-card-compact .img {
+    height: 260px;
+  }
+
+  .room-card-compact .room_inner_wrap .room_inner_box .btn_more {
+    padding-left: 10px;
+  }
+}
+
+/* ===== UTILITY CLASSES ===== */
+.clear {
+  clear: both;
+}
+
+.clear:after {
+  content: '';
+  display: table;
+  clear: both;
+}

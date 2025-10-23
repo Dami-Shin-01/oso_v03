@@ -1,0 +1,182 @@
+<!-- Header Component -->
+<!--
+  Description: Fixed header with logo, navigation menu, and reservation button
+  Features:
+    - Fixed position at top
+    - Centered logo with brand name
+    - Two-column navigation (left: ABOUT, ROOMS, SPECIAL / right: RESERVE, TRAVEL, LOCATION)
+    - Dropdown submenu on hover
+    - Sticky scroll behavior with 'on' class
+    - Mobile hamburger menu
+-->
+
+<header class="header">
+  <div class="hd_cont">
+    <div class="hd_inner">
+      <!-- Logo (Default - Centered) -->
+      <h1 class="logo">
+        <a href="/">
+          HUMANTOWN
+          <span>Gapyeong Pension</span>
+        </a>
+      </h1>
+
+      <!-- Logo (Scrolled State - Left Aligned) -->
+      <h1 class="logo2">
+        <a href="/">HUMANTOWN</a>
+      </h1>
+
+      <!-- Desktop Navigation -->
+      <nav class="hd_lnb">
+        <!-- Left Navigation Group -->
+        <ul class="hd_lnb01">
+          <!-- ABOUT -->
+          <li class="depth1">
+            <a href="#" class="depth1_a">ABOUT</a>
+            <div class="depth_box">
+              <ul>
+                <li><a href="/about.html">펜션소개</a></li>
+                <li><a href="/view.html">외경보기</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- ROOMS -->
+          <li class="depth1">
+            <a href="#" class="depth1_a">ROOMS</a>
+            <div class="depth_box">
+              <ul>
+                <li><a href="/room.html?room_id=1">객실 목록</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- SPECIAL -->
+          <li class="depth1">
+            <a href="#" class="depth1_a">SPECIAL</a>
+            <div class="depth_box">
+              <ul>
+                <li><a href="/special1.html">수영장</a></li>
+                <li><a href="/special2.html">바베큐</a></li>
+                <li><a href="/special3.html">족구장/농구장</a></li>
+                <li><a href="/special4.html">카페</a></li>
+                <li><a href="/special5.html">산책로</a></li>
+                <li><a href="/special6.html">어린이놀이터</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Right Navigation Group -->
+        <ul class="hd_lnb02">
+          <!-- RESERVE -->
+          <li class="depth1">
+            <a href="#" class="depth1_a">RESERVE</a>
+            <div class="depth_box">
+              <ul>
+                <li><a href="/reservation.html">예약안내</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- TRAVEL -->
+          <li class="depth1">
+            <a href="#" class="depth1_a">TRAVEL</a>
+            <div class="depth_box">
+              <ul>
+                <li><a href="/travel.html">주변여행지</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- LOCATION -->
+          <li class="depth1">
+            <a href="#" class="depth1_a">LOCATION</a>
+            <div class="depth_box">
+              <ul>
+                <li><a href="/traffic.html">오시는길</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Dropdown Background Overlay -->
+        <div class="hd_lnb_bg"></div>
+      </nav>
+
+      <!-- Reservation Button (Desktop) -->
+      <div class="btn_hd_res">
+        <a href="/reservation.html">실시간예약</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="btn_menu">
+        <img src="/images/icon_menu.png" alt="메뉴">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Sidebar Menu -->
+<aside class="aside">
+  <div class="aisde_inner">
+    <div class="aside_box">
+      <!-- Close Button -->
+      <div class="btn_close"></div>
+
+      <!-- Mobile Navigation -->
+      <ul>
+        <li>
+          <a href="#" class="depth1">ABOUT</a>
+          <ul class="depth_list">
+            <li><a href="/about.html">펜션소개</a></li>
+            <li><a href="/view.html">외경보기</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="depth1">ROOMS</a>
+          <ul class="depth_list">
+            <li><a href="/room.html?room_id=1">객실 목록</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="depth1">SPECIAL</a>
+          <ul class="depth_list">
+            <li><a href="/special1.html">수영장</a></li>
+            <li><a href="/special2.html">바베큐</a></li>
+            <li><a href="/special3.html">족구장/농구장</a></li>
+            <li><a href="/special4.html">카페</a></li>
+            <li><a href="/special5.html">산책로</a></li>
+            <li><a href="/special6.html">어린이놀이터</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="depth1">RESERVE</a>
+          <ul class="depth_list">
+            <li><a href="/reservation.html">예약안내</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="depth1">TRAVEL</a>
+          <ul class="depth_list">
+            <li><a href="/travel.html">주변여행지</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="depth1">LOCATION</a>
+          <ul class="depth_list">
+            <li><a href="/traffic.html">오시는길</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Mobile Reservation Button -->
+      <div class="btn_aside_res">
+        <a href="/reservation.html">실시간예약</a>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<!-- Mobile Sidebar Background Overlay -->
+<div class="aside_bg"></div>

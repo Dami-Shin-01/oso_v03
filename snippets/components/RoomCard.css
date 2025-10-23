@@ -1,0 +1,245 @@
+/**
+ * Room Card Component Styles
+ *
+ * Features:
+ * - Large main image with background cover
+ * - Split layout: text on left, thumbnails on right
+ * - Room name in serif font
+ * - Hover effects on button
+ * - Fully responsive
+ */
+
+/* ===== ROOM CARD BASE STYLES ===== */
+.room-card {
+  position: relative;
+  background: #fff;
+  opacity: 0 !important;
+}
+
+.room-card.swiper-slide-visible {
+  opacity: 1 !important;
+}
+
+/* Clickable overlay */
+.room-card .link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Main Image */
+.room-card .img {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ===== ROOM INFO WRAPPER ===== */
+.room-card .room_inner_wrap {
+  overflow: hidden;
+  text-align: left;
+}
+
+.room-card .room_inner_wrap .room_inner_box,
+.room-card .room_inner_wrap .btm_img {
+  width: 50%;
+}
+
+/* Left Side: Text Content */
+.room-card .room_inner_wrap .room_inner_box {
+  float: left;
+  padding: 20px 0 0;
+}
+
+.room-card .room_inner_wrap .room_inner_box strong {
+  font-size: 30px;
+  line-height: 1.47;
+  color: #444;
+  font-family: 'Noto Serif KR', serif;
+  display: block;
+}
+
+.room-card .room_inner_wrap .room_inner_box p {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #666;
+}
+
+.room-card .room_inner_wrap .room_inner_box .btn_more {
+  margin-top: 2.08em;
+  font-size: 12px;
+  padding: 0;
+  line-height: 3.5;
+  width: 13em;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  background: #393b39;
+  display: inline-block;
+}
+
+.room-card:hover .room_inner_wrap .room_inner_box .btn_more {
+  color: #b2946b;
+}
+
+/* Right Side: Thumbnail Images */
+.room-card .room_inner_wrap .btm_img {
+  float: right;
+}
+
+.room-card .room_inner_wrap .btm_img ul {
+  font-size: 0;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.room-card .room_inner_wrap .btm_img ul li {
+  height: 130px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 28%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.room-card .room_inner_wrap .btm_img ul li + li {
+  margin-left: 7px;
+}
+
+/* ===== COMPACT VARIANT (for sub-pages) ===== */
+.room-card-compact .img {
+  height: 280px;
+}
+
+.room-card-compact .room_inner_wrap {
+  margin-top: -49px;
+}
+
+.room-card-compact .room_inner_wrap .room_inner_box {
+  float: inherit;
+  width: 100%;
+  padding: 0;
+}
+
+.room-card-compact .room_inner_wrap .room_inner_box strong {
+  font-size: 20px;
+  padding: 0.5em 0.75em;
+  color: #fff;
+  font-family: 'Noto Sans KR', sans-serif;
+  background: rgba(178, 148, 107, 0.9); /* Gold overlay */
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+
+.room-card-compact .room_inner_wrap .room_inner_box p {
+  font-size: 15px;
+  line-height: 1.47;
+  margin: 0.67em 1em 0;
+}
+
+.room-card-compact .room_inner_wrap .room_inner_box .btn_more {
+  color: #444;
+  padding-left: 1.25em;
+  padding-right: 4.83em;
+  background: none;
+  font-size: 12px;
+  margin-top: 0;
+  width: auto;
+}
+
+.room-card-compact .room_inner_wrap .btm_img {
+  display: none;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+
+/* 1200px and below */
+@media only screen and (max-width: 1200px) {
+  .room-card .img {
+    height: 400px;
+  }
+
+  .room-card .room_inner_wrap .btm_img ul li {
+    height: 160px;
+  }
+}
+
+/* 1023px and below */
+@media only screen and (max-width: 1023px) {
+  .room-card .img {
+    height: 350px;
+  }
+
+  .room-card .room_inner_wrap .room_inner_box strong {
+    font-size: 28px;
+  }
+
+  .room-card .room_inner_wrap .btm_img ul li {
+    height: 120px;
+  }
+}
+
+/* 860px and below */
+@media only screen and (max-width: 860px) {
+  .room-card .img {
+    height: 300px;
+  }
+
+  .room-card .room_inner_wrap .room_inner_box .btn_more {
+    background: url('../images/common/spe_view_w.png') no-repeat 97px center #312f2d;
+    width: 12em;
+    line-height: 3;
+  }
+}
+
+/* 640px and below */
+@media only screen and (max-width: 640px) {
+  .room-card .img {
+    height: 220px;
+  }
+
+  .room-card .room_inner_wrap .room_inner_box,
+  .room-card .room_inner_wrap .btm_img {
+    width: 100%;
+  }
+
+  .room-card .room_inner_wrap .room_inner_box {
+    float: inherit;
+    padding: 5px 0;
+  }
+
+  .room-card .room_inner_wrap .room_inner_box strong {
+    font-size: 23px;
+  }
+
+  .room-card .room_inner_wrap .room_inner_box p {
+    font-size: 14px;
+  }
+
+  .room-card .room_inner_wrap .btm_img {
+    float: inherit;
+  }
+
+  .room-card .room_inner_wrap .btm_img ul {
+    margin-top: 25px;
+  }
+
+  .room-card .room_inner_wrap .btm_img ul li {
+    height: 80px;
+    width: calc(33.3% - 4.67px);
+  }
+
+  /* Compact variant */
+  .room-card-compact .img {
+    height: 260px;
+  }
+
+  .room-card-compact .room_inner_wrap .room_inner_box .btn_more {
+    padding-left: 10px;
+  }
+}
