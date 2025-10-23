@@ -1,0 +1,751 @@
+{
+  "timestamp": "2025-10-23T16:52:02.106Z",
+  "devices": [
+    {
+      "name": "iPhone 12",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "pages": [
+        {
+          "name": "home",
+          "url": "https://oso-v03.vercel.app",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 2490,
+            "clientWidth": 390,
+            "hasHorizontalScroll": true,
+            "viewportWidth": 390,
+            "viewportHeight": 844
+          },
+          "screenshot": "responsive-screenshots\\iphone-12-home.png",
+          "warning": "Horizontal scroll detected: 2490px > 390px"
+        },
+        {
+          "name": "about",
+          "url": "https://oso-v03.vercel.app/about",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 390,
+            "clientWidth": 390,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 390,
+            "viewportHeight": 844
+          },
+          "screenshot": "responsive-screenshots\\iphone-12-about.png"
+        },
+        {
+          "name": "rooms",
+          "url": "https://oso-v03.vercel.app/rooms",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 390,
+            "clientWidth": 390,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 390,
+            "viewportHeight": 844
+          },
+          "screenshot": "responsive-screenshots\\iphone-12-rooms.png"
+        },
+        {
+          "name": "swimming-pool",
+          "url": "https://oso-v03.vercel.app/special/swimming-pool",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 390,
+            "clientWidth": 390,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 390,
+            "viewportHeight": 844
+          },
+          "screenshot": "responsive-screenshots\\iphone-12-swimming-pool.png"
+        },
+        {
+          "name": "travel",
+          "url": "https://oso-v03.vercel.app/travel",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 390,
+            "clientWidth": 390,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 390,
+            "viewportHeight": 844
+          },
+          "screenshot": "responsive-screenshots\\iphone-12-travel.png"
+        },
+        {
+          "name": "location",
+          "url": "https://oso-v03.vercel.app/location",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 390,
+            "clientWidth": 390,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 390,
+            "viewportHeight": 844
+          },
+          "screenshot": "responsive-screenshots\\iphone-12-location.png"
+        }
+      ]
+    },
+    {
+      "name": "iPhone SE",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "pages": [
+        {
+          "name": "home",
+          "url": "https://oso-v03.vercel.app",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 2400,
+            "clientWidth": 375,
+            "hasHorizontalScroll": true,
+            "viewportWidth": 375,
+            "viewportHeight": 667
+          },
+          "screenshot": "responsive-screenshots\\iphone-se-home.png",
+          "warning": "Horizontal scroll detected: 2400px > 375px"
+        },
+        {
+          "name": "about",
+          "url": "https://oso-v03.vercel.app/about",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 375,
+            "clientWidth": 375,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 375,
+            "viewportHeight": 667
+          },
+          "screenshot": "responsive-screenshots\\iphone-se-about.png"
+        },
+        {
+          "name": "rooms",
+          "url": "https://oso-v03.vercel.app/rooms",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 375,
+            "clientWidth": 375,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 375,
+            "viewportHeight": 667
+          },
+          "screenshot": "responsive-screenshots\\iphone-se-rooms.png"
+        },
+        {
+          "name": "swimming-pool",
+          "url": "https://oso-v03.vercel.app/special/swimming-pool",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 375,
+            "clientWidth": 375,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 375,
+            "viewportHeight": 667
+          },
+          "screenshot": "responsive-screenshots\\iphone-se-swimming-pool.png"
+        },
+        {
+          "name": "travel",
+          "url": "https://oso-v03.vercel.app/travel",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 375,
+            "clientWidth": 375,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 375,
+            "viewportHeight": 667
+          },
+          "screenshot": "responsive-screenshots\\iphone-se-travel.png"
+        },
+        {
+          "name": "location",
+          "url": "https://oso-v03.vercel.app/location",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 375,
+            "clientWidth": 375,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 375,
+            "viewportHeight": 667
+          },
+          "screenshot": "responsive-screenshots\\iphone-se-location.png"
+        }
+      ]
+    },
+    {
+      "name": "Samsung Galaxy S21",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "pages": [
+        {
+          "name": "home",
+          "url": "https://oso-v03.vercel.app",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 2310,
+            "clientWidth": 360,
+            "hasHorizontalScroll": true,
+            "viewportWidth": 360,
+            "viewportHeight": 800
+          },
+          "screenshot": "responsive-screenshots\\samsung-galaxy-s21-home.png",
+          "warning": "Horizontal scroll detected: 2310px > 360px"
+        },
+        {
+          "name": "about",
+          "url": "https://oso-v03.vercel.app/about",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 360,
+            "clientWidth": 360,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 360,
+            "viewportHeight": 800
+          },
+          "screenshot": "responsive-screenshots\\samsung-galaxy-s21-about.png"
+        },
+        {
+          "name": "rooms",
+          "url": "https://oso-v03.vercel.app/rooms",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 360,
+            "clientWidth": 360,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 360,
+            "viewportHeight": 800
+          },
+          "screenshot": "responsive-screenshots\\samsung-galaxy-s21-rooms.png"
+        },
+        {
+          "name": "swimming-pool",
+          "url": "https://oso-v03.vercel.app/special/swimming-pool",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 360,
+            "clientWidth": 360,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 360,
+            "viewportHeight": 800
+          },
+          "screenshot": "responsive-screenshots\\samsung-galaxy-s21-swimming-pool.png"
+        },
+        {
+          "name": "travel",
+          "url": "https://oso-v03.vercel.app/travel",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 360,
+            "clientWidth": 360,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 360,
+            "viewportHeight": 800
+          },
+          "screenshot": "responsive-screenshots\\samsung-galaxy-s21-travel.png"
+        },
+        {
+          "name": "location",
+          "url": "https://oso-v03.vercel.app/location",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 360,
+            "clientWidth": 360,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 360,
+            "viewportHeight": 800
+          },
+          "screenshot": "responsive-screenshots\\samsung-galaxy-s21-location.png"
+        }
+      ]
+    },
+    {
+      "name": "iPad",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "pages": [
+        {
+          "name": "home",
+          "url": "https://oso-v03.vercel.app",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 2344,
+            "clientWidth": 768,
+            "hasHorizontalScroll": true,
+            "viewportWidth": 768,
+            "viewportHeight": 1024
+          },
+          "screenshot": "responsive-screenshots\\ipad-home.png",
+          "warning": "Horizontal scroll detected: 2344px > 768px"
+        },
+        {
+          "name": "about",
+          "url": "https://oso-v03.vercel.app/about",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 768,
+            "clientWidth": 768,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 768,
+            "viewportHeight": 1024
+          },
+          "screenshot": "responsive-screenshots\\ipad-about.png"
+        },
+        {
+          "name": "rooms",
+          "url": "https://oso-v03.vercel.app/rooms",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 768,
+            "clientWidth": 768,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 768,
+            "viewportHeight": 1024
+          },
+          "screenshot": "responsive-screenshots\\ipad-rooms.png"
+        },
+        {
+          "name": "swimming-pool",
+          "url": "https://oso-v03.vercel.app/special/swimming-pool",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 768,
+            "clientWidth": 768,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 768,
+            "viewportHeight": 1024
+          },
+          "screenshot": "responsive-screenshots\\ipad-swimming-pool.png"
+        },
+        {
+          "name": "travel",
+          "url": "https://oso-v03.vercel.app/travel",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 768,
+            "clientWidth": 768,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 768,
+            "viewportHeight": 1024
+          },
+          "screenshot": "responsive-screenshots\\ipad-travel.png"
+        },
+        {
+          "name": "location",
+          "url": "https://oso-v03.vercel.app/location",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 768,
+            "clientWidth": 768,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 768,
+            "viewportHeight": 1024
+          },
+          "screenshot": "responsive-screenshots\\ipad-location.png"
+        }
+      ]
+    },
+    {
+      "name": "iPad Air",
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "pages": [
+        {
+          "name": "home",
+          "url": "https://oso-v03.vercel.app",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 2500,
+            "clientWidth": 820,
+            "hasHorizontalScroll": true,
+            "viewportWidth": 820,
+            "viewportHeight": 1180
+          },
+          "screenshot": "responsive-screenshots\\ipad-air-home.png",
+          "warning": "Horizontal scroll detected: 2500px > 820px"
+        },
+        {
+          "name": "about",
+          "url": "https://oso-v03.vercel.app/about",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 820,
+            "clientWidth": 820,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 820,
+            "viewportHeight": 1180
+          },
+          "screenshot": "responsive-screenshots\\ipad-air-about.png"
+        },
+        {
+          "name": "rooms",
+          "url": "https://oso-v03.vercel.app/rooms",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 820,
+            "clientWidth": 820,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 820,
+            "viewportHeight": 1180
+          },
+          "screenshot": "responsive-screenshots\\ipad-air-rooms.png"
+        },
+        {
+          "name": "swimming-pool",
+          "url": "https://oso-v03.vercel.app/special/swimming-pool",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 820,
+            "clientWidth": 820,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 820,
+            "viewportHeight": 1180
+          },
+          "screenshot": "responsive-screenshots\\ipad-air-swimming-pool.png"
+        },
+        {
+          "name": "travel",
+          "url": "https://oso-v03.vercel.app/travel",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 820,
+            "clientWidth": 820,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 820,
+            "viewportHeight": 1180
+          },
+          "screenshot": "responsive-screenshots\\ipad-air-travel.png"
+        },
+        {
+          "name": "location",
+          "url": "https://oso-v03.vercel.app/location",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 820,
+            "clientWidth": 820,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 820,
+            "viewportHeight": 1180
+          },
+          "screenshot": "responsive-screenshots\\ipad-air-location.png"
+        }
+      ]
+    },
+    {
+      "name": "Desktop 1920",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "pages": [
+        {
+          "name": "home",
+          "url": "https://oso-v03.vercel.app",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 3090,
+            "clientWidth": 1920,
+            "hasHorizontalScroll": true,
+            "viewportWidth": 1920,
+            "viewportHeight": 1080
+          },
+          "screenshot": "responsive-screenshots\\desktop-1920-home.png",
+          "warning": "Horizontal scroll detected: 3090px > 1920px"
+        },
+        {
+          "name": "about",
+          "url": "https://oso-v03.vercel.app/about",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 1920,
+            "clientWidth": 1920,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 1920,
+            "viewportHeight": 1080
+          },
+          "screenshot": "responsive-screenshots\\desktop-1920-about.png"
+        },
+        {
+          "name": "rooms",
+          "url": "https://oso-v03.vercel.app/rooms",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 1920,
+            "clientWidth": 1920,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 1920,
+            "viewportHeight": 1080
+          },
+          "screenshot": "responsive-screenshots\\desktop-1920-rooms.png"
+        },
+        {
+          "name": "swimming-pool",
+          "url": "https://oso-v03.vercel.app/special/swimming-pool",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 1920,
+            "clientWidth": 1920,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 1920,
+            "viewportHeight": 1080
+          },
+          "screenshot": "responsive-screenshots\\desktop-1920-swimming-pool.png"
+        },
+        {
+          "name": "travel",
+          "url": "https://oso-v03.vercel.app/travel",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 1920,
+            "clientWidth": 1920,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 1920,
+            "viewportHeight": 1080
+          },
+          "screenshot": "responsive-screenshots\\desktop-1920-travel.png"
+        },
+        {
+          "name": "location",
+          "url": "https://oso-v03.vercel.app/location",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 1920,
+            "clientWidth": 1920,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 1920,
+            "viewportHeight": 1080
+          },
+          "screenshot": "responsive-screenshots\\desktop-1920-location.png"
+        }
+      ]
+    },
+    {
+      "name": "Desktop 1366",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "pages": [
+        {
+          "name": "home",
+          "url": "https://oso-v03.vercel.app",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 2762,
+            "clientWidth": 1366,
+            "hasHorizontalScroll": true,
+            "viewportWidth": 1366,
+            "viewportHeight": 768
+          },
+          "screenshot": "responsive-screenshots\\desktop-1366-home.png",
+          "warning": "Horizontal scroll detected: 2762px > 1366px"
+        },
+        {
+          "name": "about",
+          "url": "https://oso-v03.vercel.app/about",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 1366,
+            "clientWidth": 1366,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 1366,
+            "viewportHeight": 768
+          },
+          "screenshot": "responsive-screenshots\\desktop-1366-about.png"
+        },
+        {
+          "name": "rooms",
+          "url": "https://oso-v03.vercel.app/rooms",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 1366,
+            "clientWidth": 1366,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 1366,
+            "viewportHeight": 768
+          },
+          "screenshot": "responsive-screenshots\\desktop-1366-rooms.png"
+        },
+        {
+          "name": "swimming-pool",
+          "url": "https://oso-v03.vercel.app/special/swimming-pool",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 1366,
+            "clientWidth": 1366,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 1366,
+            "viewportHeight": 768
+          },
+          "screenshot": "responsive-screenshots\\desktop-1366-swimming-pool.png"
+        },
+        {
+          "name": "travel",
+          "url": "https://oso-v03.vercel.app/travel",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 1366,
+            "clientWidth": 1366,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 1366,
+            "viewportHeight": 768
+          },
+          "screenshot": "responsive-screenshots\\desktop-1366-travel.png"
+        },
+        {
+          "name": "location",
+          "url": "https://oso-v03.vercel.app/location",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 1366,
+            "clientWidth": 1366,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 1366,
+            "viewportHeight": 768
+          },
+          "screenshot": "responsive-screenshots\\desktop-1366-location.png"
+        }
+      ]
+    },
+    {
+      "name": "Desktop 1024",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "pages": [
+        {
+          "name": "home",
+          "url": "https://oso-v03.vercel.app",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 2078,
+            "clientWidth": 1024,
+            "hasHorizontalScroll": true,
+            "viewportWidth": 1024,
+            "viewportHeight": 768
+          },
+          "screenshot": "responsive-screenshots\\desktop-1024-home.png",
+          "warning": "Horizontal scroll detected: 2078px > 1024px"
+        },
+        {
+          "name": "about",
+          "url": "https://oso-v03.vercel.app/about",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 1024,
+            "clientWidth": 1024,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 1024,
+            "viewportHeight": 768
+          },
+          "screenshot": "responsive-screenshots\\desktop-1024-about.png"
+        },
+        {
+          "name": "rooms",
+          "url": "https://oso-v03.vercel.app/rooms",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 1024,
+            "clientWidth": 1024,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 1024,
+            "viewportHeight": 768
+          },
+          "screenshot": "responsive-screenshots\\desktop-1024-rooms.png"
+        },
+        {
+          "name": "swimming-pool",
+          "url": "https://oso-v03.vercel.app/special/swimming-pool",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 1024,
+            "clientWidth": 1024,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 1024,
+            "viewportHeight": 768
+          },
+          "screenshot": "responsive-screenshots\\desktop-1024-swimming-pool.png"
+        },
+        {
+          "name": "travel",
+          "url": "https://oso-v03.vercel.app/travel",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 1024,
+            "clientWidth": 1024,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 1024,
+            "viewportHeight": 768
+          },
+          "screenshot": "responsive-screenshots\\desktop-1024-travel.png"
+        },
+        {
+          "name": "location",
+          "url": "https://oso-v03.vercel.app/location",
+          "status": "success",
+          "layoutCheck": {
+            "scrollWidth": 1024,
+            "clientWidth": 1024,
+            "hasHorizontalScroll": false,
+            "viewportWidth": 1024,
+            "viewportHeight": 768
+          },
+          "screenshot": "responsive-screenshots\\desktop-1024-location.png"
+        }
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "device": "iPhone 12",
+      "page": "home",
+      "issue": "Horizontal scroll detected: 2490px > 390px"
+    },
+    {
+      "device": "iPhone SE",
+      "page": "home",
+      "issue": "Horizontal scroll detected: 2400px > 375px"
+    },
+    {
+      "device": "Samsung Galaxy S21",
+      "page": "home",
+      "issue": "Horizontal scroll detected: 2310px > 360px"
+    },
+    {
+      "device": "iPad",
+      "page": "home",
+      "issue": "Horizontal scroll detected: 2344px > 768px"
+    },
+    {
+      "device": "iPad Air",
+      "page": "home",
+      "issue": "Horizontal scroll detected: 2500px > 820px"
+    },
+    {
+      "device": "Desktop 1920",
+      "page": "home",
+      "issue": "Horizontal scroll detected: 3090px > 1920px"
+    },
+    {
+      "device": "Desktop 1366",
+      "page": "home",
+      "issue": "Horizontal scroll detected: 2762px > 1366px"
+    },
+    {
+      "device": "Desktop 1024",
+      "page": "home",
+      "issue": "Horizontal scroll detected: 2078px > 1024px"
+    }
+  ]
+}
