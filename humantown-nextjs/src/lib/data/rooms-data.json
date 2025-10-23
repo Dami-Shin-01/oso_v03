@@ -115,6 +115,16 @@
           "weekday": 480000,
           "friday": 490000,
           "weekend": 500000
+        },
+        "standard": {
+          "weekday": 350000,
+          "friday": 380000,
+          "weekend": 400000
+        },
+        "off_season": {
+          "weekday": 280000,
+          "friday": 310000,
+          "weekend": 330000
         }
       },
       "amenities_count": 12

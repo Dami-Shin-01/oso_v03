@@ -19,8 +19,8 @@
         "id": "about",
         "label": "ABOUT",
         "submenu": [
-          {"label": "펜션소개", "url": "/about.html"},
-          {"label": "외경보기", "url": "/view.html"}
+          {"label": "펜션소개", "url": "/about"},
+          {"label": "외경보기", "url": "/view"}
         ]
       },
       {
@@ -35,33 +35,33 @@
         "label": "SPECIAL",
         "total_facilities": 6,
         "submenu": [
-          {"label": "수영장", "url": "/special1.html"},
-          {"label": "바베큐", "url": "/special2.html"},
-          {"label": "족구장/농구장", "url": "/special3.html"},
-          {"label": "카페", "url": "/special4.html"},
-          {"label": "산책로", "url": "/special5.html"},
-          {"label": "어린이놀이터", "url": "/special6.html"}
+          {"label": "수영장", "url": "/special/swimming-pool"},
+          {"label": "바베큐", "url": "/special/barbecue"},
+          {"label": "족구장/농구장", "url": "/special/sports"},
+          {"label": "카페", "url": "/special/cafe"},
+          {"label": "산책로", "url": "/special/trail"},
+          {"label": "어린이놀이터", "url": "/special/playground"}
         ]
       },
       {
         "id": "reserve",
         "label": "RESERVE",
         "submenu": [
-          {"label": "예약안내", "url": "/reservation.html"}
+          {"label": "예약안내", "url": "/reservation"}
         ]
       },
       {
         "id": "travel",
         "label": "TRAVEL",
         "submenu": [
-          {"label": "주변여행지", "url": "/travel.html"}
+          {"label": "주변여행지", "url": "/travel"}
         ]
       },
       {
         "id": "location",
         "label": "LOCATION",
         "submenu": [
-          {"label": "오시는길", "url": "/traffic.html"}
+          {"label": "오시는길", "url": "/location"}
         ]
       }
     ]

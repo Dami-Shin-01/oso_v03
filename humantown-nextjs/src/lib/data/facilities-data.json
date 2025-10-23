@@ -7,7 +7,7 @@
       "id": 1,
       "name": "수영장",
       "name_english": "SWIMMING POOL",
-      "url": "/special1.html",
+      "url": "/special/swimming-pool",
       "description": "시원한 물놀이를 즐길 수 있는 야외수영장",
       "description_english": "Outdoor pool for refreshing water activities",
       "type": "야외시설 (Outdoor facility)"
@@ -16,7 +16,7 @@
       "id": 2,
       "name": "바베큐",
       "name_english": "BARBECUE",
-      "url": "/special2.html",
+      "url": "/special/barbecue",
       "description": "개별 바비큐 시설 제공",
       "type": "야외시설 (Outdoor facility)",
       "note": "Each room has individual BBQ facilities"
@@ -25,7 +25,7 @@
       "id": 3,
       "name": "족구장/농구장",
       "name_english": "FOOT VOLLEYBALL COURT / BASKETBALL COURT",
-      "url": "/special3.html",
+      "url": "/special/sports",
       "description": "운동과 레크리에이션을 즐길 수 있는 운동장",
       "type": "야외시설 (Outdoor facility)"
     },
@@ -33,7 +33,7 @@
       "id": 4,
       "name": "카페",
       "name_english": "CAFE",
-      "url": "/special4.html",
+      "url": "/special/cafe",
       "description": "편안한 휴식과 음료를 즐길 수 있는 카페",
       "type": "실내시설 (Indoor facility)"
     },
@@ -41,7 +41,7 @@
       "id": 5,
       "name": "산책로",
       "name_english": "WALKING TRAIL",
-      "url": "/special5.html",
+      "url": "/special/trail",
       "description": "자연 속에서 여유로운 산책을 즐길 수 있는 산책로",
       "type": "야외시설 (Outdoor facility)"
     },
@@ -49,7 +49,7 @@
       "id": 6,
       "name": "어린이놀이터",
       "name_english": "CHILDREN'S PLAYGROUND",
-      "url": "/special6.html",
+      "url": "/special/playground",
       "description": "어린이들이 안전하게 놀 수 있는 놀이터",
       "type": "야외시설 (Outdoor facility)"
     }
