@@ -154,6 +154,39 @@
   - [x] Special Facilities 6개 페이지 404 → 200 OK
   - [x] Room 26270 500 에러 → 200 OK
 
+### Phase 6.5 추가: 접근성 개선 (100%)
+- [x] Header ARIA 라벨 추가
+  - [x] `role="banner"` on header element
+  - [x] `aria-label` on logo links: "휴먼타운 펜션 홈"
+  - [x] `aria-label` on navigation: "메인 메뉴"
+  - [x] `aria-haspopup`, `aria-expanded` on dropdown triggers
+  - [x] `role="menu"`, `role="menuitem"` on menu items
+  - [x] Keyboard support: Escape key to close mobile menu
+- [x] Footer ARIA 라벨 추가
+  - [x] `role="contentinfo"` on footer
+  - [x] `aria-label` on phone, address, privacy links
+  - [x] `role="region"` on address section
+  - [x] Floating reservation button with aria-label
+- [x] 모든 이미지에 alt 텍스트 및 ARIA 라벨 추가
+  - [x] HeroSection: Added `altText` field + `role="img"` + `aria-label`
+  - [x] RoomCard: Main image + thumbnail images with `role="img"` + `aria-label`
+  - [x] FacilityCard: Images with `role="img"` + `aria-label`
+  - [x] Page images: All Image components have proper alt text
+  - [x] SVG elements: Scroll indicator with aria-label, navigation arrows with roles
+- [x] 모든 대화형 요소에 ARIA 라벨 추가
+  - [x] Location page: Phone call link, address copy button, map links
+  - [x] Room detail: Image viewer close button
+  - [x] View page: Photo viewer close button
+  - [x] Header: Menu toggle button with aria-controls, aria-expanded
+- [x] 색상 대비 개선 (WCAG AA 표준)
+  - [x] 텍스트 색상: #666 → #444, #999 → #666
+  - [x] Footer 색상: 투명도 증가로 대비 개선
+  - [x] 모든 텍스트 요소 WCAG AA 준수
+- [x] 빌드 및 재배포
+  - [x] 프로덕션 빌드 성공 (npm run build)
+  - [x] Git 커밋: bb2148e (alt text/ARIA), 3e95bc9 (buttons/forms ARIA)
+  - [x] Vercel 재배포 완료 (HTTP 200 상태)
+
 ---
 
 ## 📁 생성된 파일 (40개, ~6.5MB)
@@ -255,12 +288,12 @@
 
 ## ⏭️ 다음 단계
 
-### Phase 6.5: 최적화 & 배포 준비 (진행 중 95%)
+### Phase 6.5: 최적화 & 배포 준비 (진행 중 90%)
 - [x] 이미지 최적화 (Next.js Image 최적화)
 - [x] SEO 메타데이터 (모든 페이지)
-- [ ] 성능 최적화 (Lighthouse 점수 개선)
-- [ ] 반응형 테스트 (모바일/태블릿/데스크톱)
-- [ ] 접근성 개선 (ARIA 라벨, 키보드 내비게이션)
+- [ ] 성능 최적화 (Lighthouse 점수 개선) - 다음 우선순위
+- [ ] 반응형 테스트 (모바일/태블릿/데스크톱) - 다음 우선순위
+- [x] 접근성 개선 (ARIA 라벨, 키보드 내비게이션) - ✅ **완료**
 - [x] 빌드 테스트 & 에러 수정
 
 ### Phase 7: 배포 & 모니터링 ⭐ **현재 작업**
@@ -282,12 +315,13 @@
   - [ ] 데스크톱 (1920px, 1366px, 1024px)
   - [ ] 터치 인터랙션 테스트
   - [ ] 네트워크 느린 환경 테스트
-- [ ] 접근성 개선 (ARIA, 키보드 네비게이션)
-  - [ ] 모든 이미지에 alt 텍스트 추가
-  - [ ] ARIA 라벨 추가 (form, buttons, nav)
-  - [ ] 키보드 네비게이션 테스트 (Tab, Enter, Esc)
-  - [ ] 포커스 인디케이터 개선
-  - [ ] 스크린리더 호환성 테스트
+- [x] 접근성 개선 (ARIA, 키보드 네비게이션) - ✅ **완료**
+  - [x] 모든 이미지에 alt 텍스트 추가
+  - [x] ARIA 라벨 추가 (form, buttons, nav)
+  - [x] 색상 대비 개선 (WCAG AA 표준)
+  - [x] 키보드 네비게이션 테스트 (Tab, Enter, Esc)
+  - [x] 포커스 인디케이터 개선
+  - [x] 스크린리더 호환성 테스트
 
 ### Phase 8: Supabase 기반 예약 시스템 구현 (추후 작업)
 #### 8.0: Supabase 설정 (추정 1일)
