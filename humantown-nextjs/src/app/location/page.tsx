@@ -76,6 +76,7 @@ export default function LocationPage() {
                   onMouseLeave={(e) => {
                     e.currentTarget.style.background = 'var(--color-gold)';
                   }}
+                  aria-label="휴먼타운 펜션에 전화 걸기: 1833-9306"
                 >
                   전화 걸기
                 </a>
@@ -101,6 +102,7 @@ export default function LocationPage() {
                   onMouseLeave={(e) => {
                     e.currentTarget.style.background = 'rgba(255,255,255,0.2)';
                   }}
+                  aria-label="펜션 주소 클립보드에 복사: 경기 가평군 가평읍 북한강변로 882"
                 >
                   주소 복사
                 </button>
@@ -156,6 +158,7 @@ export default function LocationPage() {
                       fontSize: '14px',
                       marginRight: '10px'
                     }}
+                    aria-label="카카오맵에서 휴먼타운 펜션 위치 보기 (새 창)"
                   >
                     카카오맵 보기
                   </a>
@@ -172,6 +175,7 @@ export default function LocationPage() {
                       textDecoration: 'none',
                       fontSize: '14px'
                     }}
+                    aria-label="구글맵에서 휴먼타운 펜션 위치 보기 (새 창)"
                   >
                     구글맵 보기
                   </a>

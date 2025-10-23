@@ -428,6 +428,7 @@ export default function RoomDetailPage() {
               justifyContent: 'center'
             }}
             onClick={() => setSelectedImage(null)}
+            aria-label="이미지 보기 닫기"
           >
             ×
           </button>

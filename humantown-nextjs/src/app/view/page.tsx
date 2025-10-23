@@ -185,6 +185,7 @@ export default function ViewPage() {
             onMouseLeave={(e) => {
               e.currentTarget.style.background = 'rgba(255,255,255,0.2)';
             }}
+            aria-label="사진 보기 닫기"
           >
             ×
           </button>
