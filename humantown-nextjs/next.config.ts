@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 
+// Cache invalidation marker: v2 (2025-10-24)
+// Force rebuild to clear Vercel image optimization cache
 const nextConfig: NextConfig = {
   // Image optimization
   images: {
