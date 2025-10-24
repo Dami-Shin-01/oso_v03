@@ -44,13 +44,13 @@ export default function LocationPage() {
                 fontFamily: 'var(--font-serif)',
                 marginBottom: '30px'
               }}>
-                휴먼타운 펜션
+                오소캠핑바베큐
               </h2>
               <p style={{ fontSize: '18px', marginBottom: '15px' }}>
-                📍 경기 가평군 가평읍 북한강변로 882 (이화리 23-2)
+                📍 경기 평택시 지산로 282-31  
               </p>
               <p style={{ fontSize: '18px', marginBottom: '30px' }}>
-                📞 T. 1833-9306
+                📞 T.0507-1380-0203 
               </p>
               <div style={{
                 display: 'flex',
@@ -76,13 +76,13 @@ export default function LocationPage() {
                   onMouseLeave={(e) => {
                     e.currentTarget.style.background = 'var(--color-gold)';
                   }}
-                  aria-label="휴먼타운 펜션에 전화 걸기: 1833-9306"
+                  aria-label="오소캠핑바베큐에 전화 걸기: 0507-1380-0203"
                 >
                   전화 걸기
                 </a>
                 <button
                   onClick={() => {
-                    navigator.clipboard.writeText('경기 가평군 가평읍 북한강변로 882');
+                    navigator.clipboard.writeText('경기 평택시 지산로 282-31');
                     alert('주소가 복사되었습니다.');
                   }}
                   style={{
@@ -102,7 +102,7 @@ export default function LocationPage() {
                   onMouseLeave={(e) => {
                     e.currentTarget.style.background = 'rgba(255,255,255,0.2)';
                   }}
-                  aria-label="펜션 주소 클립보드에 복사: 경기 가평군 가평읍 북한강변로 882"
+                  aria-label="주소 클립보드에 복사: 경기 평택시 지산로 282-31"
                 >
                   주소 복사
                 </button>
@@ -145,7 +145,7 @@ export default function LocationPage() {
                 </p>
                 <div style={{ marginTop: '20px' }}>
                   <a
-                    href="https://map.kakao.com/link/search/경기 가평군 가평읍 북한강변로 882"
+                    href="https://map.kakao.com/link/search/경기 평택시 지산로 282-31"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
@@ -158,12 +158,12 @@ export default function LocationPage() {
                       fontSize: '14px',
                       marginRight: '10px'
                     }}
-                    aria-label="카카오맵에서 휴먼타운 펜션 위치 보기 (새 창)"
+                    aria-label="카카오맵에서 오소캠핑바베큐 위치 보기 (새 창)"
                   >
                     카카오맵 보기
                   </a>
                   <a
-                    href="https://www.google.com/maps/search/경기+가평군+가평읍+북한강변로+882"
+                    href="https://www.google.com/maps/search/경기+평택시+지산로+282-31"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
@@ -175,7 +175,7 @@ export default function LocationPage() {
                       textDecoration: 'none',
                       fontSize: '14px'
                     }}
-                    aria-label="구글맵에서 휴먼타운 펜션 위치 보기 (새 창)"
+                    aria-label="구글맵에서 오소캠핑바베큐 위치 보기 (새 창)"
                   >
                     구글맵 보기
                   </a>
@@ -318,7 +318,6 @@ export default function LocationPage() {
                 maxWidth: '600px',
                 margin: '0 auto'
               }}>
-                • 각 객실마다 주차 공간이 마련되어 있습니다<br />
                 • 넓은 주차장으로 대형 차량도 주차 가능합니다<br />
                 • 주차 요금은 무료입니다
               </p>

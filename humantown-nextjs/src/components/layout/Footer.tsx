@@ -21,13 +21,13 @@ export default function Footer() {
         <div className="inner">
           <div className="footer">
             {/* Phone Number */}
-            <div className="tel" aria-label="전화번호">T.0507-1380-0203</div>
+            <div className="tel" aria-label="전화번호">T.1833-9306</div>
 
             {/* Address Information */}
             <div className="address" role="region" aria-label="주소 및 사업자 정보">
-              <p>경기 평택시 지산로 282-31</p>
-              <p>사업자등록번호: ----</p>
-              <p>대표: OSO CAMPING BBQ</p>
+              <p>경기 평택시 지산로 282-31 </p>
+              <p>사업자등록번호: 330-81-03775</p>
+              <p>대표: 소민화, 전민근</p>
             </div>
           </div>
 

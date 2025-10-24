@@ -31,7 +31,7 @@ export default function ViewPage() {
               fontFamily: 'var(--font-serif)',
               color: 'var(--color-text-light)'
             }}>
-              휴먼타운 펜션 외경
+              오소캠핑바베큐 시설 외경
             </p>
           </div>
         </section>
@@ -56,8 +56,8 @@ export default function ViewPage() {
               maxWidth: '600px',
               margin: '0 auto'
             }}>
-              북한강변의 아름다운 자연 속에 자리한 휴먼타운 펜션의 외경을 감상하세요.
-              사계절 각기 다른 매력을 선사하는 펜션의 모습을 담았습니다.
+              부락한 한 자락 속에 위치한 오소 캠핑바베큐의 외경을 감상하세요.
+              사계절 각기 다른 매력을 선사하는 오소의 모습을 담았습니다.
             </p>
           </section>
         </RevealOnScroll>
@@ -96,7 +96,7 @@ export default function ViewPage() {
                 >
                   <Image
                     src={image}
-                    alt={`휴먼타운 펜션 외경 ${index + 1}`}
+                    alt={`오소캠핑바베큐 외경 ${index + 1}`}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     style={{ objectFit: 'cover' }}
@@ -113,7 +113,7 @@ export default function ViewPage() {
                     fontSize: '14px',
                     fontWeight: '500'
                   }}>
-                    휴먼타운 펜션 {index + 1}
+                    오소 캠핑바베큐 {index + 1}
                   </div>
                 </div>
               ))}
@@ -133,7 +133,7 @@ export default function ViewPage() {
                 color: 'var(--color-text-light)',
                 lineHeight: '1.8'
               }}>
-                * 실제 펜션의 모습은 계절과 날씨에 따라 다를 수 있습니다.<br />
+                * 실제 시설의 모습은 계절과 날씨에 따라 다를 수 있습니다.<br />
                 * 사진을 클릭하시면 크게 보실 수 있습니다.
               </p>
             </div>

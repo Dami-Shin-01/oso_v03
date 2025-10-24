@@ -15,22 +15,22 @@ const navigation: NavItem[] = [
     id: 'about',
     label: 'ABOUT',
     submenu: [
-      { label: '펜션소개', url: '/about' },
-      { label: '외경보기', url: '/view' },
+      { label: '소개', url: '/about' },
+      { label: '외관보기', url: '/view' },
     ],
   },
   {
     id: 'rooms',
     label: 'ROOMS',
-    submenu: [{ label: '객실 목록', url: '/rooms' }],
+    submenu: [{ label: '공간 목록', url: '/rooms' }],
   },
   {
     id: 'special',
     label: 'SPECIAL',
     submenu: [
-      { label: '수영장', url: '/special/swimming-pool' },
+      { label: '물놀이장', url: '/special/swimming-pool' },
       { label: '바베큐', url: '/special/barbecue' },
-      { label: '족구장/농구장', url: '/special/sports' },
+      { label: '잔디광장', url: '/special/sports' },
       { label: '카페', url: '/special/cafe' },
       { label: '산책로', url: '/special/trail' },
       { label: '어린이놀이터', url: '/special/playground' },
@@ -105,7 +105,7 @@ export default function Header() {
 
             {/* Logo (Scrolled State - Left Aligned) */}
             <h1 className="logo2" style={{ display: isScrolled ? 'inline-block' : 'none' }}>
-              <Link href="/" aria-label="오소캠핑바베큐 홈">OSO CAMPING BBQ</Link>
+              <Link href="/" aria-label="오소캠핑바베큐 홈">OSO CAMPINGBBQ</Link>
             </h1>
 
             {/* Desktop Navigation */}

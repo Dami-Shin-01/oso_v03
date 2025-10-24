@@ -59,17 +59,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div style={{ marginTop: '100px', padding: '60px 0', background: 'var(--color-dark)', color: '#fff' }}>
-            <h3 style={{ fontSize: '33px', fontFamily: 'var(--font-serif)', marginBottom: '20px' }}>
-              Phase 6.2 완료
-            </h3>
-            <p style={{ opacity: 0.8 }}>
-              ✓ Hero Section 구현 완료<br />
-              ✓ Special Section 구현 완료 (6개 부대시설)<br />
-              ✓ Rooms Section 구현 완료 (22개 객실)<br />
-              다음: 상세 페이지, 애니메이션, 최적화
-            </p>
-          </div>
+
         </div>
       </div>
     </>

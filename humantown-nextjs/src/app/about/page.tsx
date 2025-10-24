@@ -56,7 +56,7 @@ export default function AboutPage() {
             }}>
               <p style={{ marginBottom: '20px' }}>
                 OSO 캠핑바베큐는 경기도 평택시에 위치한 캠핑 감성의 셀프 바베큐장입니다.
-                프라이빗룸 5개와 VIP동 1개, 총 6개의 프리미엄 공간과
+                프라이빗룸 5개와 VIP동 1개, 총 6개의 프리미엄 공간과 텐트동, 야외테이블 공간,
                 풍부한 부대시설을 갖추고 있습니다.
               </p>
               <p style={{ marginBottom: '20px' }}>
@@ -106,7 +106,7 @@ export default function AboutPage() {
                   icon: '🍖'
                 },
                 {
-                  title: '평택 중심부',
+                  title: '서울 1시간 거리',
                   description: '접근성 우수\n넓은 주차 공간',
                   icon: '🚗'
                 }

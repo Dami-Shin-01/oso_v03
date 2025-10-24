@@ -27,12 +27,12 @@ const notoSansKR = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  title: "가평 휴먼타운 펜션 (Gapyeong Humantown Pension)",
-  description: "경기 가평군 가평읍 북한강변로 882 위치한 고급스러운 펜션입니다. 22개 객실과 수영장, BBQ 등 다양한 부대시설을 갖추고 있습니다.",
-  keywords: ["가평펜션", "휴먼타운", "펜션", "가평", "북한강", "수영장", "BBQ"],
+  title: "오소 캠핑바베큐 (Oso Camping BBQ)",
+  description: "경기 평택시 지산로 282-31에 위치한 편안한 캠핑 감성 셀프 바베큐장입니다. 6개의 프리미엄 공간과 야외 테이블, 9개의 텐트동, 물놀이장, 잔디광장 등 다양한 부대시설을 갖추고 있습니다.",
+  keywords: ["오소 캠핑바베큐", "평택 바베큐", "셀프바베큐장", "송탄", "감성바베큐",  "BBQ"],
   openGraph: {
-    title: "가평 휴먼타운 펜션",
-    description: "고급스러운 펜션에서 특별한 휴식을 경험하세요",
+    title: "오소 캠핑바베큐 (Oso Camping BBQ)",
+    description: "편안한 캠핑 감성 셀프 바베큐장 - 6개의 프리미엄 공간과 다양한 부대시설",
     type: "website",
   },
 };

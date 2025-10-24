@@ -1,15 +1,15 @@
 {
   "site_info": {
-    "site_name": "가평 휴먼타운 펜션 (Gapyeong Humantown Pension)",
-    "base_url": "https://humantown.co.kr",
+    "site_name": "오소캠핑바베큐 (Oso Camping BBQ)",
+    "base_url": "https://osocampingbbq.com",
     "contact": "T.1833-9306",
     "address": {
-      "road": "경기 가평군 가평읍 북한강변로 882",
-      "parcel": "경기 가평군 가평읍 이화리 23-2"
+      "road": "경기 평택시 지산로 282-31",
+      "parcel": "경기 평택시 지산로 282-31"
     },
     "business_info": {
-      "registration": "132-81-12613",
-      "representative": "홍순옥"
+      "registration": "330-81-03775",
+      "representative": "소민화, 전민근"
     }
   },
 
@@ -19,7 +19,7 @@
         "id": "about",
         "label": "ABOUT",
         "submenu": [
-          {"label": "펜션소개", "url": "/about"},
+          {"label": "시설소개", "url": "/about"},
           {"label": "외경보기", "url": "/view"}
         ]
       },
@@ -35,12 +35,12 @@
         "label": "SPECIAL",
         "total_facilities": 6,
         "submenu": [
-          {"label": "수영장", "url": "/special/swimming-pool"},
+          {"label": "물놀이장", "url": "/special/swimming-pool"},
           {"label": "바베큐", "url": "/special/barbecue"},
-          {"label": "족구장/농구장", "url": "/special/sports"},
+          {"label": "잔디광장", "url": "/special/sports"},
           {"label": "카페", "url": "/special/cafe"},
-          {"label": "산책로", "url": "/special/trail"},
-          {"label": "어린이놀이터", "url": "/special/playground"}
+          {"label": "내부식당", "url": "/special/trail"},
+          {"label": "키즈존", "url": "/special/playground"}
         ]
       },
       {
