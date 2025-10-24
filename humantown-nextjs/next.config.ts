@@ -14,8 +14,10 @@ const nextConfig: NextConfig = {
       },
     ],
     formats: ['image/avif', 'image/webp'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384, 640],
+    // Optimized image sizes: removed 828, 2048, 3840 and unused small sizes
+    // Conservative approach: focus on actual usage patterns
+    deviceSizes: [640, 750, 1080, 1200, 1920],
+    imageSizes: [256, 384, 640],
     // Enable AVIF compression for better performance
     minimumCacheTTL: 60,
   },
