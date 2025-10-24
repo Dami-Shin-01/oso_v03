@@ -1,0 +1,258 @@
+{
+  "crawl_summary": "Crawled 25 pages on https://oso-v03.vercel.app, found 27 total links and 0 images. Discovered 8 broken links (7 with 404 errors, 1 with 500 error).",
+
+  "site_health": {
+    "total_links_checked": 27,
+    "working_links": 19,
+    "broken_links": 8,
+    "success_rate": "70.4%",
+    "critical_issues": 8
+  },
+
+  "broken_links": [
+    {
+      "url": "https://oso-v03.vercel.app/special1.html",
+      "status": 404,
+      "expected_route": "/special1",
+      "pattern": "Static HTML file - .html extension not supported in Next.js routing",
+      "severity": "HIGH"
+    },
+    {
+      "url": "https://oso-v03.vercel.app/special2.html",
+      "status": 404,
+      "expected_route": "/special2",
+      "pattern": "Static HTML file - .html extension not supported in Next.js routing",
+      "severity": "HIGH"
+    },
+    {
+      "url": "https://oso-v03.vercel.app/special3.html",
+      "status": 404,
+      "expected_route": "/special3",
+      "pattern": "Static HTML file - .html extension not supported in Next.js routing",
+      "severity": "HIGH"
+    },
+    {
+      "url": "https://oso-v03.vercel.app/special4.html",
+      "status": 404,
+      "expected_route": "/special4",
+      "pattern": "Static HTML file - .html extension not supported in Next.js routing",
+      "severity": "HIGH"
+    },
+    {
+      "url": "https://oso-v03.vercel.app/special5.html",
+      "status": 404,
+      "expected_route": "/special5",
+      "pattern": "Static HTML file - .html extension not supported in Next.js routing",
+      "severity": "HIGH"
+    },
+    {
+      "url": "https://oso-v03.vercel.app/special6.html",
+      "status": 404,
+      "expected_route": "/special6",
+      "pattern": "Static HTML file - .html extension not supported in Next.js routing",
+      "severity": "HIGH"
+    },
+    {
+      "url": "https://oso-v03.vercel.app/privacy",
+      "status": 404,
+      "expected_route": "/privacy",
+      "pattern": "Missing Next.js page component",
+      "severity": "MEDIUM"
+    },
+    {
+      "url": "https://oso-v03.vercel.app/rooms/26270",
+      "status": 500,
+      "expected_route": "/rooms/[id]",
+      "pattern": "Server error - possible database issue or missing data for room ID 26270",
+      "severity": "CRITICAL"
+    }
+  ],
+
+  "error_patterns": [
+    {
+      "pattern": "Static HTML files with .html extension",
+      "count": 6,
+      "affected_urls": [
+        "/special1.html",
+        "/special2.html",
+        "/special3.html",
+        "/special4.html",
+        "/special5.html",
+        "/special6.html"
+      ],
+      "root_cause": "Next.js uses file-based routing without .html extensions. Links pointing to .html files will result in 404 errors.",
+      "impact": "Users clicking on special facility links will encounter 404 errors"
+    },
+    {
+      "pattern": "Missing page routes",
+      "count": 1,
+      "affected_urls": ["/privacy"],
+      "root_cause": "Privacy policy page component does not exist in the Next.js pages directory",
+      "impact": "Users cannot access privacy policy information"
+    },
+    {
+      "pattern": "Server error on specific room ID",
+      "count": 1,
+      "affected_urls": ["/rooms/26270"],
+      "root_cause": "500 Internal Server Error - likely missing data in database for this room ID or error in data fetching logic",
+      "impact": "Users cannot view details for room ID 26270"
+    }
+  ],
+
+  "working_routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "description": "Home page"
+    },
+    {
+      "path": "/about",
+      "status": 200,
+      "description": "About page"
+    },
+    {
+      "path": "/view",
+      "status": 200,
+      "description": "View page"
+    },
+    {
+      "path": "/rooms",
+      "status": 200,
+      "description": "Rooms listing"
+    },
+    {
+      "path": "/special/swimming-pool",
+      "status": 200,
+      "description": "Swimming pool special facility"
+    },
+    {
+      "path": "/special/barbecue",
+      "status": 200,
+      "description": "Barbecue special facility"
+    },
+    {
+      "path": "/special/sports",
+      "status": 200,
+      "description": "Sports special facility"
+    },
+    {
+      "path": "/special/cafe",
+      "status": 200,
+      "description": "Cafe special facility"
+    },
+    {
+      "path": "/special/trail",
+      "status": 200,
+      "description": "Trail special facility"
+    },
+    {
+      "path": "/special/playground",
+      "status": 200,
+      "description": "Playground special facility"
+    },
+    {
+      "path": "/reservation",
+      "status": 200,
+      "description": "Reservation page"
+    },
+    {
+      "path": "/travel",
+      "status": 200,
+      "description": "Travel information"
+    },
+    {
+      "path": "/location",
+      "status": 200,
+      "description": "Location page"
+    },
+    {
+      "path": "/rooms/26262",
+      "status": 200,
+      "description": "Room detail page (working)"
+    },
+    {
+      "path": "/rooms/26265",
+      "status": 200,
+      "description": "Room detail page (working)"
+    },
+    {
+      "path": "/rooms/26279",
+      "status": 200,
+      "description": "Room detail page (working)"
+    }
+  ],
+
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "issue": "Static HTML file routes (special1-6.html)",
+      "solution": "Update all links to remove .html extensions",
+      "implementation": [
+        "Option 1: Create Next.js pages at /pages/special1.tsx through /pages/special6.tsx",
+        "Option 2: If actual HTML files exist, place them in /public directory and update links to /special1.html",
+        "Option 3: Create URL rewrites in next.config.js to redirect .html requests to non-.html routes",
+        "Option 4: Find and replace all instances of special[1-6].html links in your codebase to point to /special/[facility-name] routes instead"
+      ],
+      "example_code": "// In next.config.js\nasync rewrites() {\n  return [\n    { source: '/special1.html', destination: '/special/swimming-pool' },\n    { source: '/special2.html', destination: '/special/barbecue' },\n    // ... etc\n  ]\n}"
+    },
+    {
+      "priority": "MEDIUM",
+      "issue": "Missing /privacy page",
+      "solution": "Create a privacy policy page component",
+      "implementation": [
+        "Create /pages/privacy.tsx or /app/privacy/page.tsx (depending on your Next.js structure)",
+        "Add privacy policy content",
+        "Ensure the page is included in your sitemap"
+      ]
+    },
+    {
+      "priority": "CRITICAL",
+      "issue": "Server error on /rooms/26270",
+      "solution": "Debug and fix the 500 error",
+      "implementation": [
+        "Check if room ID 26270 exists in your database",
+        "Review error logs in Vercel dashboard for this route",
+        "Add proper error handling in the room detail page component",
+        "Implement a try-catch block with fallback UI for missing room data",
+        "Consider adding a 404 page for non-existent room IDs instead of 500 error"
+      ],
+      "debug_steps": [
+        "1. Check Vercel deployment logs for room/26270 errors",
+        "2. Verify database connection and query for room ID 26270",
+        "3. Test the dynamic route handler with missing/invalid IDs",
+        "4. Add proper error boundaries and fallback states"
+      ]
+    },
+    {
+      "priority": "LOW",
+      "issue": "No images found during crawl",
+      "solution": "Verify image loading",
+      "implementation": [
+        "Check if images are lazy-loaded or behind authentication",
+        "Verify image paths are correct",
+        "Ensure images are properly placed in /public directory or served via CDN"
+      ]
+    }
+  ],
+
+  "next_steps": [
+    "1. Fix the 6 static HTML file routes by either creating Next.js pages or implementing URL rewrites",
+    "2. Debug and resolve the 500 error on /rooms/26270",
+    "3. Create the missing /privacy page",
+    "4. Update all internal links to use correct Next.js routing conventions",
+    "5. Re-run this crawl script after fixes to verify all links work",
+    "6. Consider implementing automated link checking in your CI/CD pipeline"
+  ],
+
+  "notes": {
+    "positive_findings": [
+      "Main navigation routes are working correctly (/, /about, /view, /rooms, etc.)",
+      "Dynamic special facility routes work well with slug-based routing (/special/swimming-pool, etc.)",
+      "Most room detail pages work correctly (3 out of 4 tested)",
+      "External links to Kakao Maps and Google Maps work correctly",
+      "No broken image links found",
+      "No links pointing to old humantown.co.kr domain"
+    ],
+    "migration_quality": "The site migration to Vercel/Next.js is mostly successful. The main issues are legacy .html file references that need to be updated to match Next.js routing conventions."
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "lighthouse_scores": {
+    "performance": 60,
+    "accessibility": 96,
+    "best_practices": 100,
+    "seo": 100
+  },
+  "core_web_vitals": {
+    "largest_contentful_paint": {
+      "value": "9.7s",
+      "status": "POOR",
+      "target": "< 2.5s",
+      "breakdown": {
+        "ttfb": "847ms (9%)",
+        "load_delay": "0ms (0%)",
+        "load_time": "0ms (0%)",
+        "render_delay": "8807ms (91%)"
+      },
+      "element": "H1 - HUMANTOWN (main > div > div.container > h1)",
+      "analysis": "Render Delay가 91%를 차지하여 LCP가 매우 느립니다. 초기 렌더링이 8.8초나 지연되고 있습니다."
+    },
+    "cumulative_layout_shift": {
+      "value": "0",
+      "status": "GOOD",
+      "target": "< 0.1",
+      "analysis": "레이아웃 이동이 전혀 없어 완벽한 상태입니다."
+    },
+    "first_contentful_paint": {
+      "value": "3.2s",
+      "status": "POOR",
+      "target": "< 1.8s"
+    },
+    "total_blocking_time": {
+      "value": "170ms",
+      "status": "FAIR",
+      "target": "< 200ms"
+    },
+    "speed_index": {
+      "value": "7.6s",
+      "status": "POOR",
+      "target": "< 3.4s"
+    }
+  },
+  "critical_issues": [
+    {
+      "category": "Performance - Critical",
+      "issue": "매우 느린 Largest Contentful Paint (9.7초)",
+      "impact": "Critical",
+      "details": "LCP가 권장 시간(2.5초)의 거의 4배입니다. Render Delay가 8.8초로 91%를 차지하고 있습니다.",
+      "fix": [
+        "렌더 차단 리소스 제거 (CSS 파일 최적화)",
+        "서버 사이드 렌더링(SSR) 최적화",
+        "Critical CSS 인라인 처리",
+        "JavaScript 번들 크기 축소 및 코드 스플리팅"
+      ]
+    },
+    {
+      "category": "Performance - High",
+      "issue": "렌더 차단 리소스 (730ms 절약 가능)",
+      "impact": "High",
+      "details": "0f0cea1d9f6bf9ab.css 파일이 325ms 동안 렌더링을 차단하고 있습니다.",
+      "fix": [
+        "Critical CSS를 인라인으로 포함",
+        "비동기 CSS 로딩 적용",
+        "CSS 파일 분할 및 지연 로딩"
+      ]
+    },
+    {
+      "category": "Performance - High",
+      "issue": "사용하지 않는 JavaScript (26 KiB)",
+      "impact": "High",
+      "details": "a34a64b15bc0811c.js 파일에서 40%의 코드가 사용되지 않고 있습니다.",
+      "fix": [
+        "Tree shaking 활성화",
+        "Dynamic import를 사용한 코드 스플리팅",
+        "사용하지 않는 라이브러리 제거",
+        "Next.js의 경로별 코드 스플리팅 최적화"
+      ]
+    },
+    {
+      "category": "Performance - High",
+      "issue": "사용하지 않는 CSS (22 KiB - 100%)",
+      "impact": "High",
+      "details": "CSS 파일의 100%가 사용되지 않고 있습니다. 이는 매우 비효율적입니다.",
+      "fix": [
+        "PurgeCSS 또는 Tailwind의 purge 설정으로 미사용 CSS 제거",
+        "CSS Modules 사용",
+        "페이지별로 필요한 CSS만 로드",
+        "CSS-in-JS 라이브러리 고려 (styled-components, emotion)"
+      ]
+    },
+    {
+      "category": "Performance - Medium",
+      "issue": "Offscreen 이미지 (320 KiB 절약 가능)",
+      "impact": "Medium",
+      "details": "Unsplash 이미지가 화면 밖에서 즉시 로드되고 있습니다 (940x940, 320KB).",
+      "fix": [
+        "next/image 컴포넌트 사용 (자동 lazy loading)",
+        "loading='lazy' 속성 추가",
+        "Intersection Observer API 활용",
+        "적절한 이미지 크기로 최적화",
+        "WebP 또는 AVIF 포맷 사용"
+      ]
+    },
+    {
+      "category": "Performance - Medium",
+      "issue": "레거시 JavaScript (13 KiB)",
+      "impact": "Medium",
+      "details": "현대 브라우저에 불필요한 폴리필과 트랜스파일된 코드가 포함되어 있습니다.",
+      "fix": [
+        "Next.js browserslist 설정 최적화",
+        "Modern JS만 제공 (ES2020+)",
+        "@babel/preset-env 타겟 브라우저 업데이트",
+        "불필요한 폴리필 제거"
+      ]
+    },
+    {
+      "category": "Accessibility - Medium",
+      "issue": "색상 대비 부족 (7개 요소)",
+      "impact": "Medium",
+      "details": "링크, 텍스트, 버튼 등에서 배경색과 전경색의 대비가 충분하지 않습니다.",
+      "affected_elements": [
+        "a href='/reservation'",
+        "p 태그 (다수)",
+        "a href='/privacy'",
+        "div.copy",
+        "예약 버튼"
+      ],
+      "fix": [
+        "WCAG AA 기준 (4.5:1 이상) 달성",
+        "텍스트 색상 어둡게 또는 배경 밝게 조정",
+        "대비 검사 도구 사용 (WebAIM Contrast Checker)",
+        "다크 모드와 라이트 모드 모두 테스트"
+      ]
+    }
+  ],
+  "network_performance": {
+    "total_requests": 69,
+    "total_transfer_size": "1584 KB",
+    "main_thread_work": {
+      "other": "1149ms",
+      "script_evaluation": "978ms",
+      "style_layout": "817ms",
+      "rendering": "157ms",
+      "script_parsing": "77ms"
+    },
+    "long_tasks": [
+      "265ms at 10290ms",
+      "117ms at 9688ms",
+      "116ms at 10555ms",
+      "79ms at 1034ms"
+    ]
+  },
+  "dom_statistics": {
+    "total_elements": 310,
+    "status": "GOOD",
+    "note": "DOM 크기는 적정 수준입니다 (< 1500 권장)."
+  },
+  "recommendations": [
+    {
+      "priority": "P0 - Immediate",
+      "action": "렌더 차단 CSS 제거 및 Critical CSS 인라인화",
+      "expected_impact": "LCP 730ms 개선"
+    },
+    {
+      "priority": "P0 - Immediate",
+      "action": "미사용 CSS 100% 제거 (PurgeCSS/Tailwind purge)",
+      "expected_impact": "22KB 절약, 파싱 시간 단축"
+    },
+    {
+      "priority": "P1 - High",
+      "action": "JavaScript 코드 스플리팅 및 Tree shaking",
+      "expected_impact": "26KB 절약, 초기 로딩 속도 개선"
+    },
+    {
+      "priority": "P1 - High",
+      "action": "이미지 lazy loading 구현 (next/image 사용)",
+      "expected_impact": "320KB 초기 로딩 절약"
+    },
+    {
+      "priority": "P1 - High",
+      "action": "색상 대비 비율 개선 (WCAG AA 준수)",
+      "expected_impact": "접근성 점수 96 → 100"
+    },
+    {
+      "priority": "P2 - Medium",
+      "action": "Babel 타겟 브라우저 현대화 (레거시 JS 제거)",
+      "expected_impact": "13KB 절약"
+    },
+    {
+      "priority": "P2 - Medium",
+      "action": "서버 응답 시간 최적화 (TTFB)",
+      "expected_impact": "초기 로딩 개선"
+    },
+    {
+      "priority": "P3 - Low",
+      "action": "이미지 포맷 최적화 (WebP/AVIF 전환)",
+      "expected_impact": "추가 대역폭 절약"
+    }
+  ],
+  "positive_aspects": [
+    "Best Practices 100점 - 보안 및 모범 사례 완벽",
+    "SEO 100점 - 검색 엔진 최적화 완벽",
+    "Accessibility 96점 - 색상 대비만 개선하면 100점",
+    "CLS 0 - 레이아웃 이동 없음",
+    "DOM 크기 310개 - 매우 효율적",
+    "콘솔 에러 없음",
+    "HTTPS 사용",
+    "메타 태그 완벽"
+  ],
+  "summary": "전체적으로 SEO, Best Practices, Accessibility는 우수하나 **Performance가 60점으로 심각한 개선이 필요**합니다. 주요 문제는 **LCP 9.7초**로 매우 느린 초기 렌더링입니다. 91%가 Render Delay이므로 **렌더 차단 리소스 제거**가 최우선 과제입니다. 또한 **100% 미사용 CSS**, **40% 미사용 JavaScript**, **320KB offscreen 이미지**를 최적화하면 성능이 크게 향상될 것입니다. 색상 대비 개선으로 접근성 100점 달성도 가능합니다."
+}

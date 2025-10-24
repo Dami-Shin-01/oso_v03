@@ -1,0 +1,1133 @@
+{
+  "timestamp": "2025-10-23T17:29:46.054Z",
+  "pages": [
+    {
+      "page": "home",
+      "url": "https://oso-v03.vercel.app",
+      "status": "success",
+      "imageStats": {
+        "totalImages": 0,
+        "loadedImages": 0,
+        "visibleImages": 0,
+        "allImagesLoaded": true
+      },
+      "backgroundImageCount": 17,
+      "images": [],
+      "backgroundImages": [
+        {
+          "selector": "DIV",
+          "class": "img",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1602002162244-1b6d63e9a4e3?w=1920&h=1080&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "휴먼타운 펜션의 아름다운 자연 경관",
+          "visible": true,
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "selector": "DIV",
+          "class": "img",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1566073771239-c0ebddbb6cd0?w=1920&h=1080&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "휴먼타운 펜션의 객실 전망",
+          "visible": true,
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "selector": "DIV",
+          "class": "img",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1920&h=1080&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "휴먼타운 펜션의 야경",
+          "visible": true,
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "selector": "DIV",
+          "class": "img",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1576013551627-94db3fec9c86?w=940&h=940&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "SWIMMING POOL - 수영장",
+          "visible": true,
+          "width": 407,
+          "height": 470
+        },
+        {
+          "selector": "DIV",
+          "class": "img",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=940&h=940&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "BARBECUE - 바베큐",
+          "visible": true,
+          "width": 407,
+          "height": 470
+        },
+        {
+          "selector": "DIV",
+          "class": "img",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1594991596095-c583f5e339f9?w=940&h=940&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "FOOT VOLLEYBALL COURT / BASKETBALL COURT - 족구장/농구장",
+          "visible": true,
+          "width": 407,
+          "height": 470
+        },
+        {
+          "selector": "DIV",
+          "class": "img",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=940&h=940&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "CAFE - 카페",
+          "visible": true,
+          "width": 407,
+          "height": 470
+        },
+        {
+          "selector": "DIV",
+          "class": "img",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=940&h=940&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "WALKING TRAIL - 산책로",
+          "visible": true,
+          "width": 407,
+          "height": 470
+        },
+        {
+          "selector": "DIV",
+          "class": "img",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1576239990010-e8dbc8253e15?w=940&h=940&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "CHILDREN'S PLAYGROUND - 어린이놀이터",
+          "visible": true,
+          "width": 407,
+          "height": 470
+        },
+        {
+          "selector": "DIV",
+          "class": "img",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1000&h=1000&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "잣내음동 객실 대표 이미지",
+          "visible": true,
+          "width": 605,
+          "height": 500
+        },
+        {
+          "selector": "LI",
+          "class": "",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1566665797739-16fb0a69e851?w=400&h=300&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "잣내음동 객실 사진 2",
+          "visible": true,
+          "width": 85,
+          "height": 130
+        },
+        {
+          "selector": "LI",
+          "class": "",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&h=300&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "잣내음동 객실 사진 3",
+          "visible": true,
+          "width": 85,
+          "height": 130
+        },
+        {
+          "selector": "LI",
+          "class": "",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=400&h=300&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "잣내음동 객실 사진 4",
+          "visible": true,
+          "width": 85,
+          "height": 130
+        },
+        {
+          "selector": "DIV",
+          "class": "img",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1000&h=1000&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "흙내음동 객실 대표 이미지",
+          "visible": true,
+          "width": 605,
+          "height": 500
+        },
+        {
+          "selector": "LI",
+          "class": "",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1566665797739-16fb0a69e851?w=400&h=300&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "흙내음동 객실 사진 2",
+          "visible": true,
+          "width": 85,
+          "height": 130
+        },
+        {
+          "selector": "LI",
+          "class": "",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&h=300&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "흙내음동 객실 사진 3",
+          "visible": true,
+          "width": 85,
+          "height": 130
+        },
+        {
+          "selector": "LI",
+          "class": "",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=400&h=300&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "흙내음동 객실 사진 4",
+          "visible": true,
+          "width": 85,
+          "height": 130
+        }
+      ],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "errorCount": 0
+    },
+    {
+      "page": "about",
+      "url": "https://oso-v03.vercel.app/about",
+      "status": "success",
+      "imageStats": {
+        "totalImages": 0,
+        "loadedImages": 0,
+        "visibleImages": 0,
+        "allImagesLoaded": true
+      },
+      "backgroundImageCount": 0,
+      "images": [],
+      "backgroundImages": [],
+      "consoleErrors": [
+        {
+          "type": "warning",
+          "text": "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+          "location": {
+            "url": "https://oso-v03.vercel.app/about",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ],
+      "pageErrors": [],
+      "errorCount": 1
+    },
+    {
+      "page": "rooms",
+      "url": "https://oso-v03.vercel.app/rooms",
+      "status": "success",
+      "imageStats": {
+        "totalImages": 0,
+        "loadedImages": 0,
+        "visibleImages": 0,
+        "allImagesLoaded": true
+      },
+      "backgroundImageCount": 16,
+      "images": [],
+      "backgroundImages": [
+        {
+          "selector": "DIV",
+          "class": "img",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1000&h=1000&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "잣내음동 객실 대표 이미지",
+          "visible": true,
+          "width": 384,
+          "height": 500
+        },
+        {
+          "selector": "LI",
+          "class": "",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1566665797739-16fb0a69e851?w=400&h=300&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "잣내음동 객실 사진 2",
+          "visible": true,
+          "width": 54,
+          "height": 130
+        },
+        {
+          "selector": "LI",
+          "class": "",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&h=300&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "잣내음동 객실 사진 3",
+          "visible": true,
+          "width": 54,
+          "height": 130
+        },
+        {
+          "selector": "LI",
+          "class": "",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=400&h=300&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "잣내음동 객실 사진 4",
+          "visible": true,
+          "width": 54,
+          "height": 130
+        },
+        {
+          "selector": "DIV",
+          "class": "img",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1000&h=1000&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "흙내음동 객실 대표 이미지",
+          "visible": true,
+          "width": 384,
+          "height": 500
+        },
+        {
+          "selector": "LI",
+          "class": "",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1566665797739-16fb0a69e851?w=400&h=300&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "흙내음동 객실 사진 2",
+          "visible": true,
+          "width": 54,
+          "height": 130
+        },
+        {
+          "selector": "LI",
+          "class": "",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&h=300&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "흙내음동 객실 사진 3",
+          "visible": true,
+          "width": 54,
+          "height": 130
+        },
+        {
+          "selector": "LI",
+          "class": "",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=400&h=300&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "흙내음동 객실 사진 4",
+          "visible": true,
+          "width": 54,
+          "height": 130
+        },
+        {
+          "selector": "DIV",
+          "class": "img",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1631049035182-249067d7618e?w=1000&h=1000&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "포도동 객실 대표 이미지",
+          "visible": true,
+          "width": 384,
+          "height": 500
+        },
+        {
+          "selector": "LI",
+          "class": "",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1566665797739-16fb0a69e851?w=400&h=300&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "포도동 객실 사진 2",
+          "visible": true,
+          "width": 54,
+          "height": 130
+        },
+        {
+          "selector": "LI",
+          "class": "",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&h=300&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "포도동 객실 사진 3",
+          "visible": true,
+          "width": 54,
+          "height": 130
+        },
+        {
+          "selector": "LI",
+          "class": "",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=400&h=300&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "포도동 객실 사진 4",
+          "visible": true,
+          "width": 54,
+          "height": 130
+        },
+        {
+          "selector": "DIV",
+          "class": "img",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1000&h=1000&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "꽃술방 객실 대표 이미지",
+          "visible": true,
+          "width": 384,
+          "height": 500
+        },
+        {
+          "selector": "LI",
+          "class": "",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1566665797739-16fb0a69e851?w=400&h=300&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "꽃술방 객실 사진 2",
+          "visible": true,
+          "width": 54,
+          "height": 130
+        },
+        {
+          "selector": "LI",
+          "class": "",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&h=300&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "꽃술방 객실 사진 3",
+          "visible": true,
+          "width": 54,
+          "height": 130
+        },
+        {
+          "selector": "LI",
+          "class": "",
+          "backgroundImage": "url(\"https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=400&h=300&fit=crop&auto=format&q=80\")",
+          "ariaLabel": "꽃술방 객실 사진 4",
+          "visible": true,
+          "width": 54,
+          "height": 130
+        }
+      ],
+      "consoleErrors": [
+        {
+          "type": "warning",
+          "text": "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+          "location": {
+            "url": "https://oso-v03.vercel.app/rooms",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ],
+      "pageErrors": [],
+      "errorCount": 1
+    },
+    {
+      "page": "rooms-detail-1",
+      "url": "https://oso-v03.vercel.app/rooms/26262",
+      "status": "success",
+      "imageStats": {
+        "totalImages": 4,
+        "loadedImages": 3,
+        "visibleImages": 4,
+        "allImagesLoaded": false
+      },
+      "backgroundImageCount": 0,
+      "images": [
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1522771739844-6a9f6d5f14af%3Fw%3D1000%26h%3D1000%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "잣내음동",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1522771739844-6a9f6d5f14af%3Fw%3D1000%26h%3D1000%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+          "complete": true,
+          "naturalWidth": 666,
+          "naturalHeight": 666,
+          "visible": true
+        },
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1566665797739-16fb0a69e851%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "잣내음동 2",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1566665797739-16fb0a69e851%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "visible": true
+        },
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1582719508461-905c673771fd%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "잣내음동 3",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1582719508461-905c673771fd%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 320,
+          "naturalHeight": 240,
+          "visible": true
+        },
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1595526114035-0d45ed16cfbf%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "잣내음동 4",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1595526114035-0d45ed16cfbf%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 320,
+          "naturalHeight": 240,
+          "visible": true
+        }
+      ],
+      "backgroundImages": [],
+      "consoleErrors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 ()",
+          "location": {
+            "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1566665797739-16fb0a69e851%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=384&q=75",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        },
+        {
+          "type": "warning",
+          "text": "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+          "location": {
+            "url": "https://oso-v03.vercel.app/rooms/26262",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ],
+      "pageErrors": [],
+      "errorCount": 2
+    },
+    {
+      "page": "rooms-detail-2",
+      "url": "https://oso-v03.vercel.app/rooms/26265",
+      "status": "success",
+      "imageStats": {
+        "totalImages": 4,
+        "loadedImages": 3,
+        "visibleImages": 4,
+        "allImagesLoaded": false
+      },
+      "backgroundImageCount": 0,
+      "images": [
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1522771739844-6a9f6d5f14af%3Fw%3D1000%26h%3D1000%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "흙내음동",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1522771739844-6a9f6d5f14af%3Fw%3D1000%26h%3D1000%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+          "complete": true,
+          "naturalWidth": 666,
+          "naturalHeight": 666,
+          "visible": true
+        },
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1566665797739-16fb0a69e851%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "흙내음동 2",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1566665797739-16fb0a69e851%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "visible": true
+        },
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1582719508461-905c673771fd%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "흙내음동 3",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1582719508461-905c673771fd%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 320,
+          "naturalHeight": 240,
+          "visible": true
+        },
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1595526114035-0d45ed16cfbf%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "흙내음동 4",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1595526114035-0d45ed16cfbf%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 320,
+          "naturalHeight": 240,
+          "visible": true
+        }
+      ],
+      "backgroundImages": [],
+      "consoleErrors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 ()",
+          "location": {
+            "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1566665797739-16fb0a69e851%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=384&q=75",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        },
+        {
+          "type": "warning",
+          "text": "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+          "location": {
+            "url": "https://oso-v03.vercel.app/rooms/26265",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ],
+      "pageErrors": [],
+      "errorCount": 2
+    },
+    {
+      "page": "special-swimming-pool",
+      "url": "https://oso-v03.vercel.app/special/swimming-pool",
+      "status": "success",
+      "imageStats": {
+        "totalImages": 1,
+        "loadedImages": 0,
+        "visibleImages": 1,
+        "allImagesLoaded": false
+      },
+      "backgroundImageCount": 0,
+      "images": [
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1576013551627-94db3fec9c86%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "수영장",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1576013551627-94db3fec9c86%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+          "complete": true,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "visible": true
+        }
+      ],
+      "backgroundImages": [],
+      "consoleErrors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 ()",
+          "location": {
+            "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1576013551627-94db3fec9c86%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        },
+        {
+          "type": "warning",
+          "text": "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+          "location": {
+            "url": "https://oso-v03.vercel.app/special/swimming-pool",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ],
+      "pageErrors": [],
+      "errorCount": 2
+    },
+    {
+      "page": "special-barbecue",
+      "url": "https://oso-v03.vercel.app/special/barbecue",
+      "status": "success",
+      "imageStats": {
+        "totalImages": 1,
+        "loadedImages": 1,
+        "visibleImages": 1,
+        "allImagesLoaded": true
+      },
+      "backgroundImageCount": 0,
+      "images": [
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1555939594-58d7cb561ad1%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "바베큐",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1555939594-58d7cb561ad1%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+          "complete": true,
+          "naturalWidth": 626,
+          "naturalHeight": 626,
+          "visible": true
+        }
+      ],
+      "backgroundImages": [],
+      "consoleErrors": [
+        {
+          "type": "warning",
+          "text": "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+          "location": {
+            "url": "https://oso-v03.vercel.app/special/barbecue",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ],
+      "pageErrors": [],
+      "errorCount": 1
+    },
+    {
+      "page": "special-cafe",
+      "url": "https://oso-v03.vercel.app/special/cafe",
+      "status": "success",
+      "imageStats": {
+        "totalImages": 1,
+        "loadedImages": 1,
+        "visibleImages": 1,
+        "allImagesLoaded": true
+      },
+      "backgroundImageCount": 0,
+      "images": [
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1554118811-1e0d58224f24%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "카페",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1554118811-1e0d58224f24%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+          "complete": true,
+          "naturalWidth": 626,
+          "naturalHeight": 626,
+          "visible": true
+        }
+      ],
+      "backgroundImages": [],
+      "consoleErrors": [
+        {
+          "type": "warning",
+          "text": "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+          "location": {
+            "url": "https://oso-v03.vercel.app/special/cafe",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ],
+      "pageErrors": [],
+      "errorCount": 1
+    },
+    {
+      "page": "special-playground",
+      "url": "https://oso-v03.vercel.app/special/playground",
+      "status": "success",
+      "imageStats": {
+        "totalImages": 1,
+        "loadedImages": 0,
+        "visibleImages": 1,
+        "allImagesLoaded": false
+      },
+      "backgroundImageCount": 0,
+      "images": [
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1576239990010-e8dbc8253e15%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "어린이놀이터",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1576239990010-e8dbc8253e15%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+          "complete": true,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "visible": true
+        }
+      ],
+      "backgroundImages": [],
+      "consoleErrors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 ()",
+          "location": {
+            "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1576239990010-e8dbc8253e15%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        },
+        {
+          "type": "warning",
+          "text": "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+          "location": {
+            "url": "https://oso-v03.vercel.app/special/playground",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ],
+      "pageErrors": [],
+      "errorCount": 2
+    },
+    {
+      "page": "special-sports",
+      "url": "https://oso-v03.vercel.app/special/sports",
+      "status": "success",
+      "imageStats": {
+        "totalImages": 1,
+        "loadedImages": 0,
+        "visibleImages": 1,
+        "allImagesLoaded": false
+      },
+      "backgroundImageCount": 0,
+      "images": [
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1594991596095-c583f5e339f9%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "족구장/농구장",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1594991596095-c583f5e339f9%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+          "complete": true,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "visible": true
+        }
+      ],
+      "backgroundImages": [],
+      "consoleErrors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 ()",
+          "location": {
+            "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1594991596095-c583f5e339f9%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        },
+        {
+          "type": "warning",
+          "text": "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+          "location": {
+            "url": "https://oso-v03.vercel.app/special/sports",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ],
+      "pageErrors": [],
+      "errorCount": 2
+    },
+    {
+      "page": "special-trail",
+      "url": "https://oso-v03.vercel.app/special/trail",
+      "status": "success",
+      "imageStats": {
+        "totalImages": 1,
+        "loadedImages": 1,
+        "visibleImages": 1,
+        "allImagesLoaded": true
+      },
+      "backgroundImageCount": 0,
+      "images": [
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1441974231531-c6227db76b6e%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "산책로",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1441974231531-c6227db76b6e%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+          "complete": true,
+          "naturalWidth": 626,
+          "naturalHeight": 626,
+          "visible": true
+        }
+      ],
+      "backgroundImages": [],
+      "consoleErrors": [
+        {
+          "type": "warning",
+          "text": "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+          "location": {
+            "url": "https://oso-v03.vercel.app/special/trail",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ],
+      "pageErrors": [],
+      "errorCount": 1
+    },
+    {
+      "page": "travel",
+      "url": "https://oso-v03.vercel.app/travel",
+      "status": "success",
+      "imageStats": {
+        "totalImages": 6,
+        "loadedImages": 6,
+        "visibleImages": 6,
+        "allImagesLoaded": true
+      },
+      "backgroundImageCount": 0,
+      "images": [
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1506905925346-21bda4d32df4%3Fw%3D800%26h%3D600%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "남이섬",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1506905925346-21bda4d32df4%3Fw%3D800%26h%3D600%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 640,
+          "naturalHeight": 480,
+          "visible": true
+        },
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1502602898657-3e91760cbb34%3Fw%3D800%26h%3D600%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "쁘띠프랑스",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1502602898657-3e91760cbb34%3Fw%3D800%26h%3D600%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 640,
+          "naturalHeight": 480,
+          "visible": true
+        },
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1470058869958-2a77ade41c02%3Fw%3D800%26h%3D600%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "아침고요수목원",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1470058869958-2a77ade41c02%3Fw%3D800%26h%3D600%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 640,
+          "naturalHeight": 480,
+          "visible": true
+        },
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1542314831-068cd1dbfeeb%3Fw%3D800%26h%3D600%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "자라섬",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1542314831-068cd1dbfeeb%3Fw%3D800%26h%3D600%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 640,
+          "naturalHeight": 480,
+          "visible": true
+        },
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1464822759023-fed622ff2c3b%3Fw%3D800%26h%3D600%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "가평 레일바이크",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1464822759023-fed622ff2c3b%3Fw%3D800%26h%3D600%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 640,
+          "naturalHeight": 480,
+          "visible": true
+        },
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1506905925346-21bda4d32df4%3Fw%3D800%26h%3D600%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "가평 짚와이어",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1506905925346-21bda4d32df4%3Fw%3D800%26h%3D600%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 640,
+          "naturalHeight": 480,
+          "visible": true
+        }
+      ],
+      "backgroundImages": [],
+      "consoleErrors": [
+        {
+          "type": "warning",
+          "text": "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+          "location": {
+            "url": "https://oso-v03.vercel.app/travel",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ],
+      "pageErrors": [],
+      "errorCount": 1
+    },
+    {
+      "page": "view",
+      "url": "https://oso-v03.vercel.app/view",
+      "status": "success",
+      "imageStats": {
+        "totalImages": 9,
+        "loadedImages": 6,
+        "visibleImages": 9,
+        "allImagesLoaded": false
+      },
+      "backgroundImageCount": 9,
+      "images": [
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1602002162244-1b6d63e9a4e3%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "휴먼타운 펜션 외경 1",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1602002162244-1b6d63e9a4e3%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "visible": true
+        },
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1542314831-068cd1dbfeeb%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "휴먼타운 펜션 외경 2",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1542314831-068cd1dbfeeb%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 422,
+          "naturalHeight": 281,
+          "visible": true
+        },
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1566073771239-c0ebddbb6cd0%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "휴먼타운 펜션 외경 3",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1566073771239-c0ebddbb6cd0%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "visible": true
+        },
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1464822759023-fed622ff2c3b%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "휴먼타운 펜션 외경 4",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1464822759023-fed622ff2c3b%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 422,
+          "naturalHeight": 281,
+          "visible": true
+        },
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1506905925346-21bda4d32df4%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "휴먼타운 펜션 외경 5",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1506905925346-21bda4d32df4%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 422,
+          "naturalHeight": 281,
+          "visible": true
+        },
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1472214103451-9374bd1c798e%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "휴먼타운 펜션 외경 6",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1472214103451-9374bd1c798e%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 422,
+          "naturalHeight": 281,
+          "visible": true
+        },
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1506905925346-21bda4d32df4%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "휴먼타운 펜션 외경 7",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1506905925346-21bda4d32df4%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 422,
+          "naturalHeight": 281,
+          "visible": true
+        },
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1441974231531-c6227db76b6e%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "휴먼타운 펜션 외경 8",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1441974231531-c6227db76b6e%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 422,
+          "naturalHeight": 281,
+          "visible": true
+        },
+        {
+          "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1476514525504-03c3c41f41fc%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=3840&q=75",
+          "alt": "휴먼타운 펜션 외경 9",
+          "currentSrc": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1476514525504-03c3c41f41fc%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "visible": true
+        }
+      ],
+      "backgroundImages": [
+        {
+          "selector": "DIV",
+          "class": "",
+          "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))",
+          "ariaLabel": null,
+          "visible": true,
+          "width": 391,
+          "height": 72
+        },
+        {
+          "selector": "DIV",
+          "class": "",
+          "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))",
+          "ariaLabel": null,
+          "visible": true,
+          "width": 391,
+          "height": 72
+        },
+        {
+          "selector": "DIV",
+          "class": "",
+          "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))",
+          "ariaLabel": null,
+          "visible": true,
+          "width": 391,
+          "height": 72
+        },
+        {
+          "selector": "DIV",
+          "class": "",
+          "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))",
+          "ariaLabel": null,
+          "visible": true,
+          "width": 391,
+          "height": 72
+        },
+        {
+          "selector": "DIV",
+          "class": "",
+          "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))",
+          "ariaLabel": null,
+          "visible": true,
+          "width": 391,
+          "height": 72
+        },
+        {
+          "selector": "DIV",
+          "class": "",
+          "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))",
+          "ariaLabel": null,
+          "visible": true,
+          "width": 391,
+          "height": 72
+        },
+        {
+          "selector": "DIV",
+          "class": "",
+          "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))",
+          "ariaLabel": null,
+          "visible": true,
+          "width": 391,
+          "height": 72
+        },
+        {
+          "selector": "DIV",
+          "class": "",
+          "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))",
+          "ariaLabel": null,
+          "visible": true,
+          "width": 391,
+          "height": 72
+        },
+        {
+          "selector": "DIV",
+          "class": "",
+          "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))",
+          "ariaLabel": null,
+          "visible": true,
+          "width": 391,
+          "height": 72
+        }
+      ],
+      "consoleErrors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 ()",
+          "location": {
+            "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1602002162244-1b6d63e9a4e3%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 ()",
+          "location": {
+            "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1566073771239-c0ebddbb6cd0%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 ()",
+          "location": {
+            "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1476514525504-03c3c41f41fc%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        },
+        {
+          "type": "warning",
+          "text": "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+          "location": {
+            "url": "https://oso-v03.vercel.app/view",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ],
+      "pageErrors": [],
+      "errorCount": 4
+    },
+    {
+      "page": "location",
+      "url": "https://oso-v03.vercel.app/location",
+      "status": "success",
+      "imageStats": {
+        "totalImages": 0,
+        "loadedImages": 0,
+        "visibleImages": 0,
+        "allImagesLoaded": true
+      },
+      "backgroundImageCount": 0,
+      "images": [],
+      "backgroundImages": [],
+      "consoleErrors": [
+        {
+          "type": "warning",
+          "text": "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+          "location": {
+            "url": "https://oso-v03.vercel.app/location",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ],
+      "pageErrors": [],
+      "errorCount": 1
+    },
+    {
+      "page": "reservation",
+      "url": "https://oso-v03.vercel.app/reservation",
+      "status": "success",
+      "imageStats": {
+        "totalImages": 0,
+        "loadedImages": 0,
+        "visibleImages": 0,
+        "allImagesLoaded": true
+      },
+      "backgroundImageCount": 0,
+      "images": [],
+      "backgroundImages": [],
+      "consoleErrors": [
+        {
+          "type": "warning",
+          "text": "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+          "location": {
+            "url": "https://oso-v03.vercel.app/reservation",
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ],
+      "pageErrors": [],
+      "errorCount": 1
+    }
+  ],
+  "summary": {
+    "totalPages": 15,
+    "pagesWithErrors": 14,
+    "totalErrors": 22,
+    "errorTypes": {
+      "warning": 14,
+      "error": 8
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "vercel-site-crawler",
+  "version": "1.0.0",
+  "description": "Crawl Vercel site to find 404 errors",
+  "main": "crawl-vercel-site.js",
+  "scripts": {
+    "crawl": "node crawl-vercel-site.js"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0"
+  }
+}

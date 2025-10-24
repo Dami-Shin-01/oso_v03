@@ -1,0 +1,173 @@
+{
+  "crawl_summary": "Crawled 19 pages, found 21 total links and 0 images",
+  "target_url": "https://oso-v03.vercel.app",
+  "total_links": 21,
+  "total_images": 0,
+  "broken_links_count": 1,
+  "broken_links": [
+    {
+      "url": "https://oso-v03.vercel.app/privacy",
+      "status": 404,
+      "relative_path": "/privacy",
+      "is_internal": true,
+      "type": "link",
+      "expected_nextjs_route": "/privacy",
+      "pattern": "Other"
+    }
+  ],
+  "all_links": [
+    {
+      "url": "https://oso-v03.vercel.app",
+      "status": 200,
+      "isInternal": true,
+      "type": "page"
+    },
+    {
+      "url": "https://oso-v03.vercel.app/",
+      "status": 200,
+      "isInternal": true,
+      "type": "link",
+      "error": null
+    },
+    {
+      "url": "https://oso-v03.vercel.app/about",
+      "status": 200,
+      "isInternal": true,
+      "type": "link",
+      "error": null
+    },
+    {
+      "url": "https://oso-v03.vercel.app/view",
+      "status": 200,
+      "isInternal": true,
+      "type": "link",
+      "error": null
+    },
+    {
+      "url": "https://oso-v03.vercel.app/rooms",
+      "status": 200,
+      "isInternal": true,
+      "type": "link",
+      "error": null
+    },
+    {
+      "url": "https://oso-v03.vercel.app/special/swimming-pool",
+      "status": 200,
+      "isInternal": true,
+      "type": "link",
+      "error": null
+    },
+    {
+      "url": "https://oso-v03.vercel.app/special/barbecue",
+      "status": 200,
+      "isInternal": true,
+      "type": "link",
+      "error": null
+    },
+    {
+      "url": "https://oso-v03.vercel.app/special/sports",
+      "status": 200,
+      "isInternal": true,
+      "type": "link",
+      "error": null
+    },
+    {
+      "url": "https://oso-v03.vercel.app/special/cafe",
+      "status": 200,
+      "isInternal": true,
+      "type": "link",
+      "error": null
+    },
+    {
+      "url": "https://oso-v03.vercel.app/special/trail",
+      "status": 200,
+      "isInternal": true,
+      "type": "link",
+      "error": null
+    },
+    {
+      "url": "https://oso-v03.vercel.app/special/playground",
+      "status": 200,
+      "isInternal": true,
+      "type": "link",
+      "error": null
+    },
+    {
+      "url": "https://oso-v03.vercel.app/reservation",
+      "status": 200,
+      "isInternal": true,
+      "type": "link",
+      "error": null
+    },
+    {
+      "url": "https://oso-v03.vercel.app/travel",
+      "status": 200,
+      "isInternal": true,
+      "type": "link",
+      "error": null
+    },
+    {
+      "url": "https://oso-v03.vercel.app/location",
+      "status": 200,
+      "isInternal": true,
+      "type": "link",
+      "error": null
+    },
+    {
+      "url": "https://oso-v03.vercel.app/rooms/26262",
+      "status": 200,
+      "isInternal": true,
+      "type": "link",
+      "error": null
+    },
+    {
+      "url": "https://oso-v03.vercel.app/rooms/26265",
+      "status": 200,
+      "isInternal": true,
+      "type": "link",
+      "error": null
+    },
+    {
+      "url": "https://oso-v03.vercel.app/privacy",
+      "status": 404,
+      "isInternal": true,
+      "type": "link",
+      "error": null
+    },
+    {
+      "url": "https://oso-v03.vercel.app/rooms/26270",
+      "status": 200,
+      "isInternal": true,
+      "type": "link",
+      "error": null
+    },
+    {
+      "url": "https://oso-v03.vercel.app/rooms/26279",
+      "status": 200,
+      "isInternal": true,
+      "type": "link",
+      "error": null
+    },
+    {
+      "url": "https://map.kakao.com/link/search/경기 가평군 가평읍 북한강변로 882",
+      "status": 200,
+      "isInternal": false,
+      "type": "link",
+      "error": null
+    },
+    {
+      "url": "https://www.google.com/maps/search/경기+가평군+가평읍+북한강변로+882",
+      "status": 200,
+      "isInternal": false,
+      "type": "link",
+      "error": null
+    }
+  ],
+  "all_images": [],
+  "external_original_site_links": [],
+  "patterns": [
+    "Path type issues: 1 absolute, 0 relative"
+  ],
+  "recommendations": [],
+  "static_html_files": []
+}
