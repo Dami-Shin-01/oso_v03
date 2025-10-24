@@ -30,11 +30,11 @@ export default function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px', marginTop: '80px' }}>
             <div style={{ padding: '40px 20px', background: 'var(--color-bg-light)', borderRadius: 'var(--radius)' }}>
               <h3 style={{ fontSize: '26px', fontFamily: 'var(--font-serif)', color: 'var(--color-text)', marginBottom: '15px' }}>
-                22개 공간
+                6개 공간
               </h3>
               <p style={{ color: 'var(--color-text-light)' }}>
-                야외테이블, 텐트동<br />
-                프라이빗룸, VIP동
+                프라이빗룸 5개<br />
+                VIP동 1개
               </p>
             </div>
 

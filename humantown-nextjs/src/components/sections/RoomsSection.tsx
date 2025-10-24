@@ -32,7 +32,7 @@ export default function RoomsSection() {
             SPACES
           </h2>
           <p style={{ fontSize: '16px', color: 'var(--color-text-light)' }}>
-            캠핑 감성 바베큐를 즐기기 위한 22개의 공간
+            캠핑 감성 바베큐를 즐기기 위한 6개의 프리미엄 공간
           </p>
         </div>
       </FadeIn>
