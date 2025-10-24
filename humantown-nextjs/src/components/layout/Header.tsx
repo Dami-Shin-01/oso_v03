@@ -97,15 +97,15 @@ export default function Header() {
           <div className={`hd_inner ${isScrolled ? 'scrolled' : ''}`}>
             {/* Logo (Default - Centered) */}
             <h1 className="logo" style={{ opacity: isScrolled ? 0 : 1 }}>
-              <Link href="/" aria-label="휴먼타운 펜션 홈">
-                HUMANTOWN
-                <span>Gapyeong Pension</span>
+              <Link href="/" aria-label="오소캠핑바베큐 홈">
+                OSO CAMPING BBQ
+                <span>Pyeongtaek BBQ station</span>
               </Link>
             </h1>
 
             {/* Logo (Scrolled State - Left Aligned) */}
             <h1 className="logo2" style={{ display: isScrolled ? 'inline-block' : 'none' }}>
-              <Link href="/" aria-label="휴먼타운 펜션 홈">HUMANTOWN</Link>
+              <Link href="/" aria-label="오소캠핑바베큐 홈">OSO CAMPING BBQ</Link>
             </h1>
 
             {/* Desktop Navigation */}

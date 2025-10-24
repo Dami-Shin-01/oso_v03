@@ -25,9 +25,9 @@ export default function Footer() {
 
             {/* Address Information */}
             <div className="address" role="region" aria-label="주소 및 사업자 정보">
-              <p>경기 가평군 가평읍 북한강변로 882 (이화리 23-2)</p>
-              <p>사업자등록번호: 132-81-12613</p>
-              <p>대표: 홍순옥</p>
+              <p>경기 평택시 지산로 282-31 (이화리 23-2)</p>
+              <p>사업자등록번호: ----</p>
+              <p>대표: 소민화, 전민근</p>
             </div>
           </div>
 
@@ -38,7 +38,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="copy" aria-label="저작권 정보">
-            Copyright © Humantown Pension. All rights reserved.
+            Copyright © Design On a Dot. All rights reserved.
           </div>
         </div>
       </footer>

@@ -1,0 +1,1747 @@
+{
+  "timestamp": "2025-10-24T01:41:22.607Z",
+  "totalPages": 15,
+  "pagesChecked": 15,
+  "totalErrors": 16,
+  "errorDetails": [
+    {
+      "page": "rooms-detail-1",
+      "path": "/rooms/26262",
+      "errors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "failedImages": [
+        {
+          "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1565182409695-7deabead3c3c%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=384&q=75",
+          "status": 404,
+          "timestamp": "2025-10-24T01:41:52.714Z"
+        }
+      ]
+    },
+    {
+      "page": "rooms-detail-2",
+      "path": "/rooms/26265",
+      "errors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "failedImages": [
+        {
+          "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1565182409695-7deabead3c3c%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=384&q=75",
+          "status": 404,
+          "timestamp": "2025-10-24T01:41:59.949Z"
+        }
+      ]
+    },
+    {
+      "page": "swimming-pool",
+      "path": "/special/swimming-pool",
+      "errors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "failedImages": [
+        {
+          "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1576610572293-c2ca58d7f6c1%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+          "status": 404,
+          "timestamp": "2025-10-24T01:42:06.844Z"
+        }
+      ]
+    },
+    {
+      "page": "playground",
+      "path": "/special/playground",
+      "errors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "failedImages": [
+        {
+          "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1517457373614-b7152dbb3e13%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+          "status": 404,
+          "timestamp": "2025-10-24T01:42:20.354Z"
+        }
+      ]
+    },
+    {
+      "page": "sports",
+      "path": "/special/sports",
+      "errors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "failedImages": [
+        {
+          "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1540747913719-59a97586803a%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+          "status": 404,
+          "timestamp": "2025-10-24T01:42:27.047Z"
+        }
+      ]
+    },
+    {
+      "page": "view",
+      "path": "/view",
+      "errors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "failedImages": [
+        {
+          "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1469022563160-aa4fbe4db888%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+          "status": 404,
+          "timestamp": "2025-10-24T01:43:00.638Z"
+        },
+        {
+          "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1486235697920-fa4ea228e75f%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+          "status": 404,
+          "timestamp": "2025-10-24T01:43:00.938Z"
+        },
+        {
+          "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1520763185298-1b434c919afe%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+          "status": 404,
+          "timestamp": "2025-10-24T01:43:01.150Z"
+        }
+      ]
+    }
+  ],
+  "pageResults": [
+    {
+      "page": "home",
+      "path": "/",
+      "status": "success",
+      "errorCount": 0,
+      "warningCount": 0,
+      "errors": [],
+      "warnings": [],
+      "failedImageRequests": [],
+      "imageStats": {
+        "totalImages": 0,
+        "loadedImages": 0,
+        "failedImages": 0,
+        "backgroundImageCount": 28,
+        "images": [],
+        "backgroundImages": [
+          {
+            "url": "none",
+            "element": "BUTTON"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1920&h=1080&fit=crop&auto=format&q=80\")",
+            "element": "DIV"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1469022563160-aa4fbe4db888?w=1920&h=1080&fit=crop&auto=format&q=80\")",
+            "element": "DIV"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1920&h=1080&fit=crop&auto=format&q=80\")",
+            "element": "DIV"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1576610572293-c2ca58d7f6c1?w=940&h=940&fit=crop&auto=format&q=80\")",
+            "element": "DIV"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=940&h=940&fit=crop&auto=format&q=80\")",
+            "element": "DIV"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1540747913719-59a97586803a?w=940&h=940&fit=crop&auto=format&q=80\")",
+            "element": "DIV"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=940&h=940&fit=crop&auto=format&q=80\")",
+            "element": "DIV"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=940&h=940&fit=crop&auto=format&q=80\")",
+            "element": "DIV"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1517457373614-b7152dbb3e13?w=940&h=940&fit=crop&auto=format&q=80\")",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "SECTION"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1000&h=1000&fit=crop&auto=format&q=80\")",
+            "element": "DIV"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1565182409695-7deabead3c3c?w=400&h=300&fit=crop&auto=format&q=80\")",
+            "element": "LI"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&h=300&fit=crop&auto=format&q=80\")",
+            "element": "LI"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=400&h=300&fit=crop&auto=format&q=80\")",
+            "element": "LI"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1000&h=1000&fit=crop&auto=format&q=80\")",
+            "element": "DIV"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1565182409695-7deabead3c3c?w=400&h=300&fit=crop&auto=format&q=80\")",
+            "element": "LI"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&h=300&fit=crop&auto=format&q=80\")",
+            "element": "LI"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=400&h=300&fit=crop&auto=format&q=80\")",
+            "element": "LI"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          }
+        ]
+      },
+      "timestamp": "2025-10-24T01:41:34.015Z"
+    },
+    {
+      "page": "about",
+      "path": "/about",
+      "status": "success",
+      "errorCount": 0,
+      "warningCount": 1,
+      "errors": [],
+      "warnings": [
+        "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      ],
+      "failedImageRequests": [],
+      "imageStats": {
+        "totalImages": 0,
+        "loadedImages": 0,
+        "failedImages": 0,
+        "backgroundImageCount": 11,
+        "images": [],
+        "backgroundImages": [
+          {
+            "url": "none",
+            "element": "BUTTON"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SECTION"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "SECTION"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          }
+        ]
+      },
+      "timestamp": "2025-10-24T01:41:42.385Z"
+    },
+    {
+      "page": "rooms",
+      "path": "/rooms",
+      "status": "success",
+      "errorCount": 0,
+      "warningCount": 1,
+      "errors": [],
+      "warnings": [
+        "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      ],
+      "failedImageRequests": [],
+      "imageStats": {
+        "totalImages": 0,
+        "loadedImages": 0,
+        "failedImages": 0,
+        "backgroundImageCount": 23,
+        "images": [],
+        "backgroundImages": [
+          {
+            "url": "none",
+            "element": "BUTTON"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SECTION"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1000&h=1000&fit=crop&auto=format&q=80\")",
+            "element": "DIV"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1565182409695-7deabead3c3c?w=400&h=300&fit=crop&auto=format&q=80\")",
+            "element": "LI"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&h=300&fit=crop&auto=format&q=80\")",
+            "element": "LI"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=400&h=300&fit=crop&auto=format&q=80\")",
+            "element": "LI"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1000&h=1000&fit=crop&auto=format&q=80\")",
+            "element": "DIV"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1565182409695-7deabead3c3c?w=400&h=300&fit=crop&auto=format&q=80\")",
+            "element": "LI"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&h=300&fit=crop&auto=format&q=80\")",
+            "element": "LI"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=400&h=300&fit=crop&auto=format&q=80\")",
+            "element": "LI"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1631049035182-249067d7618e?w=1000&h=1000&fit=crop&auto=format&q=80\")",
+            "element": "DIV"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1565182409695-7deabead3c3c?w=400&h=300&fit=crop&auto=format&q=80\")",
+            "element": "LI"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&h=300&fit=crop&auto=format&q=80\")",
+            "element": "LI"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=400&h=300&fit=crop&auto=format&q=80\")",
+            "element": "LI"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1000&h=1000&fit=crop&auto=format&q=80\")",
+            "element": "DIV"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1565182409695-7deabead3c3c?w=400&h=300&fit=crop&auto=format&q=80\")",
+            "element": "LI"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&h=300&fit=crop&auto=format&q=80\")",
+            "element": "LI"
+          },
+          {
+            "url": "url(\"https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=400&h=300&fit=crop&auto=format&q=80\")",
+            "element": "LI"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          }
+        ]
+      },
+      "timestamp": "2025-10-24T01:41:50.736Z"
+    },
+    {
+      "page": "rooms-detail-1",
+      "path": "/rooms/26262",
+      "status": "success",
+      "errorCount": 2,
+      "warningCount": 1,
+      "errors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "warnings": [
+        "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      ],
+      "failedImageRequests": [
+        {
+          "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1565182409695-7deabead3c3c%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=384&q=75",
+          "status": 404,
+          "timestamp": "2025-10-24T01:41:52.714Z"
+        }
+      ],
+      "imageStats": {
+        "totalImages": 4,
+        "loadedImages": 4,
+        "failedImages": 0,
+        "backgroundImageCount": 12,
+        "images": [
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1522771739844-6a9f6d5f14af%3Fw%3D1000%26h%3D1000%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "잣내음동",
+            "complete": true,
+            "naturalHeight": 666,
+            "naturalWidth": 666
+          },
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1565182409695-7deabead3c3c%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "잣내음동 2",
+            "complete": true,
+            "naturalHeight": 0,
+            "naturalWidth": 0
+          },
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1582719508461-905c673771fd%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "잣내음동 3",
+            "complete": true,
+            "naturalHeight": 240,
+            "naturalWidth": 320
+          },
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1595526114035-0d45ed16cfbf%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "잣내음동 4",
+            "complete": true,
+            "naturalHeight": 240,
+            "naturalWidth": 320
+          }
+        ],
+        "backgroundImages": [
+          {
+            "url": "none",
+            "element": "BUTTON"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SECTION"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "SECTION"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          }
+        ]
+      },
+      "timestamp": "2025-10-24T01:41:58.992Z"
+    },
+    {
+      "page": "rooms-detail-2",
+      "path": "/rooms/26265",
+      "status": "success",
+      "errorCount": 2,
+      "warningCount": 1,
+      "errors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "warnings": [
+        "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      ],
+      "failedImageRequests": [
+        {
+          "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1565182409695-7deabead3c3c%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=384&q=75",
+          "status": 404,
+          "timestamp": "2025-10-24T01:41:59.949Z"
+        }
+      ],
+      "imageStats": {
+        "totalImages": 4,
+        "loadedImages": 4,
+        "failedImages": 0,
+        "backgroundImageCount": 12,
+        "images": [
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1522771739844-6a9f6d5f14af%3Fw%3D1000%26h%3D1000%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "흙내음동",
+            "complete": true,
+            "naturalHeight": 666,
+            "naturalWidth": 666
+          },
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1565182409695-7deabead3c3c%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "흙내음동 2",
+            "complete": true,
+            "naturalHeight": 0,
+            "naturalWidth": 0
+          },
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1582719508461-905c673771fd%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "흙내음동 3",
+            "complete": true,
+            "naturalHeight": 240,
+            "naturalWidth": 320
+          },
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1595526114035-0d45ed16cfbf%3Fw%3D400%26h%3D300%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "흙내음동 4",
+            "complete": true,
+            "naturalHeight": 240,
+            "naturalWidth": 320
+          }
+        ],
+        "backgroundImages": [
+          {
+            "url": "none",
+            "element": "BUTTON"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SECTION"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "SECTION"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          }
+        ]
+      },
+      "timestamp": "2025-10-24T01:42:05.744Z"
+    },
+    {
+      "page": "swimming-pool",
+      "path": "/special/swimming-pool",
+      "status": "success",
+      "errorCount": 2,
+      "warningCount": 1,
+      "errors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "warnings": [
+        "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      ],
+      "failedImageRequests": [
+        {
+          "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1576610572293-c2ca58d7f6c1%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+          "status": 404,
+          "timestamp": "2025-10-24T01:42:06.844Z"
+        }
+      ],
+      "imageStats": {
+        "totalImages": 1,
+        "loadedImages": 1,
+        "failedImages": 0,
+        "backgroundImageCount": 14,
+        "images": [
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1576610572293-c2ca58d7f6c1%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "수영장",
+            "complete": true,
+            "naturalHeight": 0,
+            "naturalWidth": 0
+          }
+        ],
+        "backgroundImages": [
+          {
+            "url": "none",
+            "element": "BUTTON"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SECTION"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          }
+        ]
+      },
+      "timestamp": "2025-10-24T01:42:12.385Z"
+    },
+    {
+      "page": "cafe",
+      "path": "/special/cafe",
+      "status": "success",
+      "errorCount": 0,
+      "warningCount": 1,
+      "errors": [],
+      "warnings": [
+        "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      ],
+      "failedImageRequests": [],
+      "imageStats": {
+        "totalImages": 1,
+        "loadedImages": 1,
+        "failedImages": 0,
+        "backgroundImageCount": 14,
+        "images": [
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1554118811-1e0d58224f24%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "카페",
+            "complete": true,
+            "naturalHeight": 626,
+            "naturalWidth": 626
+          }
+        ],
+        "backgroundImages": [
+          {
+            "url": "none",
+            "element": "BUTTON"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SECTION"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          }
+        ]
+      },
+      "timestamp": "2025-10-24T01:42:19.143Z"
+    },
+    {
+      "page": "playground",
+      "path": "/special/playground",
+      "status": "success",
+      "errorCount": 2,
+      "warningCount": 1,
+      "errors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "warnings": [
+        "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      ],
+      "failedImageRequests": [
+        {
+          "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1517457373614-b7152dbb3e13%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+          "status": 404,
+          "timestamp": "2025-10-24T01:42:20.354Z"
+        }
+      ],
+      "imageStats": {
+        "totalImages": 1,
+        "loadedImages": 1,
+        "failedImages": 0,
+        "backgroundImageCount": 14,
+        "images": [
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1517457373614-b7152dbb3e13%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "어린이놀이터",
+            "complete": true,
+            "naturalHeight": 0,
+            "naturalWidth": 0
+          }
+        ],
+        "backgroundImages": [
+          {
+            "url": "none",
+            "element": "BUTTON"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SECTION"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          }
+        ]
+      },
+      "timestamp": "2025-10-24T01:42:25.882Z"
+    },
+    {
+      "page": "sports",
+      "path": "/special/sports",
+      "status": "success",
+      "errorCount": 2,
+      "warningCount": 1,
+      "errors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "warnings": [
+        "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      ],
+      "failedImageRequests": [
+        {
+          "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1540747913719-59a97586803a%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+          "status": 404,
+          "timestamp": "2025-10-24T01:42:27.047Z"
+        }
+      ],
+      "imageStats": {
+        "totalImages": 1,
+        "loadedImages": 1,
+        "failedImages": 0,
+        "backgroundImageCount": 14,
+        "images": [
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1540747913719-59a97586803a%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "족구장/농구장",
+            "complete": true,
+            "naturalHeight": 0,
+            "naturalWidth": 0
+          }
+        ],
+        "backgroundImages": [
+          {
+            "url": "none",
+            "element": "BUTTON"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SECTION"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          }
+        ]
+      },
+      "timestamp": "2025-10-24T01:42:32.595Z"
+    },
+    {
+      "page": "barbecue",
+      "path": "/special/barbecue",
+      "status": "success",
+      "errorCount": 0,
+      "warningCount": 1,
+      "errors": [],
+      "warnings": [
+        "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      ],
+      "failedImageRequests": [],
+      "imageStats": {
+        "totalImages": 1,
+        "loadedImages": 1,
+        "failedImages": 0,
+        "backgroundImageCount": 14,
+        "images": [
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1555939594-58d7cb561ad1%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "바베큐",
+            "complete": true,
+            "naturalHeight": 626,
+            "naturalWidth": 626
+          }
+        ],
+        "backgroundImages": [
+          {
+            "url": "none",
+            "element": "BUTTON"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SECTION"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          }
+        ]
+      },
+      "timestamp": "2025-10-24T01:42:39.236Z"
+    },
+    {
+      "page": "trail",
+      "path": "/special/trail",
+      "status": "success",
+      "errorCount": 0,
+      "warningCount": 1,
+      "errors": [],
+      "warnings": [
+        "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      ],
+      "failedImageRequests": [],
+      "imageStats": {
+        "totalImages": 1,
+        "loadedImages": 1,
+        "failedImages": 0,
+        "backgroundImageCount": 14,
+        "images": [
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1441974231531-c6227db76b6e%3Fw%3D940%26h%3D940%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "산책로",
+            "complete": true,
+            "naturalHeight": 626,
+            "naturalWidth": 626
+          }
+        ],
+        "backgroundImages": [
+          {
+            "url": "none",
+            "element": "BUTTON"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SECTION"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          }
+        ]
+      },
+      "timestamp": "2025-10-24T01:42:45.780Z"
+    },
+    {
+      "page": "travel",
+      "path": "/travel",
+      "status": "success",
+      "errorCount": 0,
+      "warningCount": 1,
+      "errors": [],
+      "warnings": [
+        "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      ],
+      "failedImageRequests": [],
+      "imageStats": {
+        "totalImages": 6,
+        "loadedImages": 6,
+        "failedImages": 0,
+        "backgroundImageCount": 43,
+        "images": [
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1506905925346-21bda4d32df4%3Fw%3D800%26h%3D600%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "남이섬",
+            "complete": true,
+            "naturalHeight": 480,
+            "naturalWidth": 640
+          },
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1502602898657-3e91760cbb34%3Fw%3D800%26h%3D600%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "쁘띠프랑스",
+            "complete": true,
+            "naturalHeight": 480,
+            "naturalWidth": 640
+          },
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1470058869958-2a77ade41c02%3Fw%3D800%26h%3D600%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "아침고요수목원",
+            "complete": true,
+            "naturalHeight": 480,
+            "naturalWidth": 640
+          },
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1542314831-068cd1dbfeeb%3Fw%3D800%26h%3D600%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "자라섬",
+            "complete": true,
+            "naturalHeight": 480,
+            "naturalWidth": 640
+          },
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1464822759023-fed622ff2c3b%3Fw%3D800%26h%3D600%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "가평 레일바이크",
+            "complete": true,
+            "naturalHeight": 480,
+            "naturalWidth": 640
+          },
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1506905925346-21bda4d32df4%3Fw%3D800%26h%3D600%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "가평 짚와이어",
+            "complete": true,
+            "naturalHeight": 480,
+            "naturalWidth": 640
+          }
+        ],
+        "backgroundImages": [
+          {
+            "url": "none",
+            "element": "BUTTON"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SECTION"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          }
+        ]
+      },
+      "timestamp": "2025-10-24T01:42:52.417Z"
+    },
+    {
+      "page": "location",
+      "path": "/location",
+      "status": "success",
+      "errorCount": 0,
+      "warningCount": 1,
+      "errors": [],
+      "warnings": [
+        "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      ],
+      "failedImageRequests": [],
+      "imageStats": {
+        "totalImages": 0,
+        "loadedImages": 0,
+        "failedImages": 0,
+        "backgroundImageCount": 16,
+        "images": [],
+        "backgroundImages": [
+          {
+            "url": "none",
+            "element": "BUTTON"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SECTION"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "BUTTON"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "P"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          }
+        ]
+      },
+      "timestamp": "2025-10-24T01:42:59.164Z"
+    },
+    {
+      "page": "view",
+      "path": "/view",
+      "status": "success",
+      "errorCount": 6,
+      "warningCount": 1,
+      "errors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "warnings": [
+        "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      ],
+      "failedImageRequests": [
+        {
+          "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1469022563160-aa4fbe4db888%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+          "status": 404,
+          "timestamp": "2025-10-24T01:43:00.638Z"
+        },
+        {
+          "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1486235697920-fa4ea228e75f%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+          "status": 404,
+          "timestamp": "2025-10-24T01:43:00.938Z"
+        },
+        {
+          "url": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1520763185298-1b434c919afe%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=640&q=75",
+          "status": 404,
+          "timestamp": "2025-10-24T01:43:01.150Z"
+        }
+      ],
+      "imageStats": {
+        "totalImages": 9,
+        "loadedImages": 9,
+        "failedImages": 0,
+        "backgroundImageCount": 16,
+        "images": [
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1502672260266-1c1ef2d93688%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "휴먼타운 펜션 외경 1",
+            "complete": true,
+            "naturalHeight": 281,
+            "naturalWidth": 422
+          },
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1542314831-068cd1dbfeeb%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "휴먼타운 펜션 외경 2",
+            "complete": true,
+            "naturalHeight": 281,
+            "naturalWidth": 422
+          },
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1469022563160-aa4fbe4db888%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "휴먼타운 펜션 외경 3",
+            "complete": true,
+            "naturalHeight": 0,
+            "naturalWidth": 0
+          },
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1464822759023-fed622ff2c3b%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "휴먼타운 펜션 외경 4",
+            "complete": true,
+            "naturalHeight": 281,
+            "naturalWidth": 422
+          },
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1506905925346-21bda4d32df4%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "휴먼타운 펜션 외경 5",
+            "complete": true,
+            "naturalHeight": 281,
+            "naturalWidth": 422
+          },
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1472214103451-9374bd1c798e%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "휴먼타운 펜션 외경 6",
+            "complete": true,
+            "naturalHeight": 281,
+            "naturalWidth": 422
+          },
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1520763185298-1b434c919afe%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "휴먼타운 펜션 외경 7",
+            "complete": true,
+            "naturalHeight": 0,
+            "naturalWidth": 0
+          },
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1441974231531-c6227db76b6e%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "휴먼타운 펜션 외경 8",
+            "complete": true,
+            "naturalHeight": 281,
+            "naturalWidth": 422
+          },
+          {
+            "src": "https://oso-v03.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1486235697920-fa4ea228e75f%3Fw%3D1200%26h%3D800%26fit%3Dcrop%26auto%3Dformat%26q%3D80&w=1920&q=75",
+            "alt": "휴먼타운 펜션 외경 9",
+            "complete": true,
+            "naturalHeight": 0,
+            "naturalWidth": 0
+          }
+        ],
+        "backgroundImages": [
+          {
+            "url": "none",
+            "element": "BUTTON"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SECTION"
+          },
+          {
+            "url": "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))",
+            "element": "DIV"
+          },
+          {
+            "url": "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))",
+            "element": "DIV"
+          },
+          {
+            "url": "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))",
+            "element": "DIV"
+          },
+          {
+            "url": "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))",
+            "element": "DIV"
+          },
+          {
+            "url": "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))",
+            "element": "DIV"
+          },
+          {
+            "url": "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))",
+            "element": "DIV"
+          },
+          {
+            "url": "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))",
+            "element": "DIV"
+          },
+          {
+            "url": "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))",
+            "element": "DIV"
+          },
+          {
+            "url": "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          }
+        ]
+      },
+      "timestamp": "2025-10-24T01:43:06.677Z"
+    },
+    {
+      "page": "reservation",
+      "path": "/reservation",
+      "status": "success",
+      "errorCount": 0,
+      "warningCount": 1,
+      "errors": [],
+      "warnings": [
+        "The resource https://oso-v03.vercel.app/_next/static/chunks/74015bf8936fe95b.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      ],
+      "failedImageRequests": [],
+      "imageStats": {
+        "totalImages": 0,
+        "loadedImages": 0,
+        "failedImages": 0,
+        "backgroundImageCount": 15,
+        "images": [],
+        "backgroundImages": [
+          {
+            "url": "none",
+            "element": "BUTTON"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SPAN"
+          },
+          {
+            "url": "none",
+            "element": "SECTION"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "DIV"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          },
+          {
+            "url": "none",
+            "element": "A"
+          }
+        ]
+      },
+      "timestamp": "2025-10-24T01:43:13.376Z"
+    }
+  ]
+}
