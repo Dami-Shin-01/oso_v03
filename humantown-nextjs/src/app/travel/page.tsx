@@ -116,7 +116,7 @@ export default function TravelPage() {
             maxWidth: '700px',
             margin: '0 auto'
           }}>
-            휴먼타운 펜션에서 가까운 거리에 위치한 가평의 다양한 관광 명소를 소개합니다.<br />
+            OSO 캠핑바베큐에서 가까운 평택 및 경기 남부의 다양한 관광 명소를 소개합니다.<br />
             자연과 문화가 어우러진 특별한 여행을 경험해보세요.
           </p>
         </section>

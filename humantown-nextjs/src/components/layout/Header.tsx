@@ -32,8 +32,8 @@ const navigation: NavItem[] = [
       { label: '바베큐', url: '/special/barbecue' },
       { label: '잔디광장', url: '/special/sports' },
       { label: '카페', url: '/special/cafe' },
-      { label: '산책로', url: '/special/trail' },
-      { label: '어린이놀이터', url: '/special/playground' },
+      { label: '식당', url: '/special/trail' },
+      { label: '키즈존', url: '/special/playground' },
     ],
   },
   {

@@ -1,6 +1,6 @@
 /**
  * Centralized Type Exports
- * Humantown Pension Next.js Project
+ * OSO Camping BBQ Next.js Project
  */
 
 // Room Types

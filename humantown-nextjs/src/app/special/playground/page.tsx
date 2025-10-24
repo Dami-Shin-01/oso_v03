@@ -9,10 +9,10 @@ export default function PlaygroundPage() {
         <div className="container">
           <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
             <h1 style={{ fontSize: '48px', fontFamily: 'var(--font-heading)', color: 'var(--color-primary)', marginBottom: '20px' }}>
-              어린이 놀이터
+              키즈존
             </h1>
             <p style={{ fontSize: '18px', fontFamily: 'var(--font-serif)', color: 'var(--color-text-light)' }}>
-              Children's Playground
+              KIDS ZONE
             </p>
           </div>
         </div>

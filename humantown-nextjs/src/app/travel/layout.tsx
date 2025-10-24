@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '주변 여행지 | 가평 휴먼타운 펜션',
-  description: '가평 휴먼타운 펜션 주변의 인기 관광지를 소개합니다. 남이섬, 쁘띠프랑스, 아침고요수목원, 자라섬, 레일바이크, 짚와이어 등 다양한 여행지가 있습니다.',
-  keywords: ['가평 여행지', '남이섬', '쁘띠프랑스', '아침고요수목원', '자라섬', '가평 레일바이크', '가평 관광'],
+  title: '주변 여행지 | 오소 캠핑바베큐 (OSO Camping BBQ)',
+  description: 'OSO 캠핑바베큐 주변의 인기 관광지를 소개합니다. 평택 및 경기 남부의 다양한 관광 명소를 즐겨보세요.',
+  keywords: ['평택 여행지', '평택 관광', '경기 남부 여행', '평택 바베큐', '주말 나들이'],
   openGraph: {
-    title: '주변 여행지 | 가평 휴먼타운 펜션',
-    description: '가평의 인기 관광지 - 남이섬, 쁘띠프랑스, 아침고요수목원 등',
+    title: '주변 여행지 | 오소 캠핑바베큐 (OSO Camping BBQ)',
+    description: '평택 및 경기 남부의 인기 관광지를 소개합니다',
     type: 'website',
   },
 };
