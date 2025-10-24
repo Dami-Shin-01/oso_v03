@@ -27,7 +27,7 @@ export default function AboutPage() {
               fontFamily: 'var(--font-serif)',
               color: 'var(--color-text-light)'
             }}>
-              휴먼타운 펜션 소개
+              OSO 캠핑바베큐 소개
             </p>
           </div>
         </section>
@@ -44,7 +44,7 @@ export default function AboutPage() {
               textAlign: 'center',
               marginBottom: '40px'
             }}>
-              자연 속의 특별한 휴식
+              부담없이 즐기는 캠핑 감성 바베큐
             </h2>
 
             <div style={{
@@ -55,18 +55,17 @@ export default function AboutPage() {
               color: 'var(--color-text)'
             }}>
               <p style={{ marginBottom: '20px' }}>
-                가평 휴먼타운 펜션은 경기도 가평군 북한강변에 위치한 고급 펜션입니다.
-                아름다운 자연 경관과 함께 편안한 휴식을 제공하는 22개의 객실과
-                다양한 부대시설을 갖추고 있습니다.
+                OSO 캠핑바베큐는 경기도 평택시에 위치한 캠핑 감성의 셀프 바베큐장입니다.
+                야외테이블, 텐트동, 프라이빗룸, VIP동 등 22개의 다양한 공간과
+                풍부한 부대시설을 갖추고 있습니다.
               </p>
               <p style={{ marginBottom: '20px' }}>
-                각 객실은 20평부터 64평까지 다양한 크기로 구성되어 있으며,
-                기준 2인부터 최대 8인까지 수용 가능합니다.
-                가족 단위 여행객부터 단체 모임까지 모두 만족하실 수 있는 공간을 제공합니다.
+                외부 음식 반입이 가능하며, 숯, 그릴, 고기 등 모든 물품을 대여하거나 구매할 수 있습니다.
+                소규모 모임부터 단체 행사까지 모두 만족하실 수 있는 공간을 제공합니다.
               </p>
               <p>
-                수영장, 바베큐, 운동장, 카페, 산책로, 어린이놀이터 등
-                6개의 부대시설을 통해 특별한 추억을 만들어보세요.
+                물놀이장, 키즈존, 내부 카페, 내부 식당, 잔디광장, 넓은 주차공간 등
+                다양한 부대시설을 통해 특별한 추억을 만들어보세요.
               </p>
             </div>
           </section>
@@ -82,7 +81,7 @@ export default function AboutPage() {
               textAlign: 'center',
               marginBottom: '50px'
             }}>
-              펜션 특징
+              OSO 특징
             </h2>
 
             <div style={{
@@ -92,23 +91,23 @@ export default function AboutPage() {
             }}>
               {[
                 {
-                  title: '22개 객실',
-                  description: '20평 ~ 64평\n기준 2인 ~ 최대 8인',
-                  icon: '🏠'
+                  title: '22개 공간',
+                  description: '야외테이블, 텐트동\n프라이빗룸, VIP동',
+                  icon: '🏕️'
                 },
                 {
-                  title: '6개 부대시설',
-                  description: '수영장, BBQ, 운동장\n카페, 산책로, 놀이터',
+                  title: '풍부한 부대시설',
+                  description: '물놀이장, 키즈존, 카페\n식당, 잔디광장, 주차장',
                   icon: '⭐'
                 },
                 {
-                  title: '북한강변 위치',
-                  description: '아름다운 자연 경관\n힐링 가능한 환경',
-                  icon: '🌿'
+                  title: '자유로운 이용',
+                  description: '외부음식 반입 가능\n모든 물품 대여/구매 가능',
+                  icon: '🍖'
                 },
                 {
-                  title: '편리한 접근성',
-                  description: '서울에서 1시간\n대중교통 이용 가능',
+                  title: '평택 중심부',
+                  description: '접근성 우수\n넓은 주차 공간',
                   icon: '🚗'
                 }
               ].map((feature, index) => (
@@ -170,13 +169,13 @@ export default function AboutPage() {
               오시는 길
             </h2>
             <p style={{ fontSize: '18px', marginBottom: '10px' }}>
-              📍 경기 가평군 가평읍 북한강변로 882 (이화리 23-2)
+              📍 경기도 평택시 지산로 282-31
             </p>
             <p style={{ fontSize: '18px', marginBottom: '10px' }}>
-              📞 T. 1833-9306
+              📞 T. 0507-1380-0203
             </p>
             <p style={{ fontSize: '14px', opacity: 0.8, marginTop: '20px' }}>
-              사업자등록번호: 132-81-12613 | 대표: 홍순옥
+              OSO CAMPING BBQ
             </p>
           </section>
         </FadeIn>

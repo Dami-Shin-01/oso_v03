@@ -1,277 +1,438 @@
 {
   "total_rooms": 22,
-  "url_pattern": "/room.html?room_id={room_id}",
-  "naming_theme": "자연/식물 테마 (Nature/Plant theme)",
+  "url_pattern": "/space.html?space_id={space_id}",
+  "naming_theme": "캠핑 공간 테마 (Camping Space theme)",
 
   "rooms": [
     {
       "id": "26262",
-      "name": "잣내음동",
-      "name_english": "Pine Scent Building",
-      "size_pyeong": 36.00,
-      "size_sqm": 118.8,
+      "name": "야외테이블 1",
+      "name_english": "Outdoor Table 1",
+      "size_pyeong": 10.00,
+      "size_sqm": 33.0,
       "capacity": {
-        "standard": 6,
-        "maximum": 8
+        "standard": 4,
+        "maximum": 6
       },
-      "type": "분리형/침대룸 온돌룸 거실 주방 화장실",
-      "type_english": "Separate/Bed room + Ondol room + Living room + Kitchen + Bathroom",
+      "type": "야외테이블 / 테이블 벤치 좌석 바베큐 그릴",
+      "type_english": "Outdoor Table / Table Bench Seats BBQ Grill",
       "pricing": {
-        "peak": {
-          "weekday": 360000,
-          "friday": 380000,
-          "weekend": 390000
+        "3hour": {
+          "per_person": 5000
         },
-        "off_season": {
-          "weekday": 250000,
-          "friday": 270000,
-          "weekend": 280000
+        "7hour": {
+          "per_person": 10000
         },
-        "standard": {
-          "weekday": 260000,
-          "friday": 280000,
-          "weekend": 290000
+        "12hour": {
+          "per_person": 15000
         }
       },
-      "amenities_count": 26
+      "amenities_count": 8
     },
     {
       "id": "26263",
-      "name": "강내음동1층-A"
-    },
-    {
-      "id": "28456",
-      "name": "강내음동1층-B"
-    },
-    {
-      "id": "26264",
-      "name": "강내음동2층"
-    },
-    {
-      "id": "26265",
-      "name": "흙내음동",
-      "name_english": "Soil-Scent Building",
-      "size_pyeong": 40.00,
-      "size_sqm": 132.0,
+      "name": "야외테이블 2",
+      "name_english": "Outdoor Table 2",
+      "size_pyeong": 10.00,
+      "size_sqm": 33.0,
       "capacity": {
         "standard": 4,
-        "maximum": 4
+        "maximum": 6
       },
-      "type": "분리형/침대룸 거실 주방 화장실",
-      "type_english": "Separate/Bed room + Living room + Kitchen + Bathroom",
+      "type": "야외테이블 / 테이블 벤치 좌석 바베큐 그릴",
+      "type_english": "Outdoor Table / Table Bench Seats BBQ Grill",
       "pricing": {
-        "peak": {
-          "weekday": 370000,
-          "friday": 410000,
-          "weekend": 430000
+        "3hour": {
+          "per_person": 5000
         },
-        "off_season": {
-          "weekday": 260000,
-          "friday": 300000,
-          "weekend": 320000
+        "7hour": {
+          "per_person": 10000
         },
-        "standard": {
-          "weekday": 270000,
-          "friday": 310000,
-          "weekend": 330000
+        "12hour": {
+          "per_person": 15000
         }
       }
     },
     {
-      "id": "26266",
-      "name": "풀내음동",
-      "name_english": "Grass Scent Building"
-    },
-    {
-      "id": "26267",
-      "name": "산내음동",
-      "name_english": "Mountain Scent Building"
-    },
-    {
-      "id": "26268",
-      "name": "연꽃동",
-      "name_english": "Lotus Building"
-    },
-    {
-      "id": "26269",
-      "name": "파초동",
-      "name_english": "Banana Leaf Building"
-    },
-    {
-      "id": "26270",
-      "name": "포도동",
-      "name_english": "Grape Building",
-      "size_pyeong": 64.00,
-      "size_sqm": 211.2,
+      "id": "28456",
+      "name": "야외테이블 3",
+      "name_english": "Outdoor Table 3",
+      "size_pyeong": 10.00,
+      "size_sqm": 33.0,
       "capacity": {
-        "standard": 6,
-        "maximum": 8
+        "standard": 4,
+        "maximum": 6
       },
-      "type": "복층형/분리형/침대룸2 온돌룸2 거실 주방 화장실2",
-      "type_english": "Duplex/Separate/2 Bed rooms + 2 Ondol rooms + Living room + Kitchen + 2 Bathrooms",
-      "special_feature": "Duplex/multi-level structure",
+      "type": "야외테이블 / 테이블 벤치 좌석 바베큐 그릴",
+      "type_english": "Outdoor Table / Table Bench Seats BBQ Grill",
       "pricing": {
-        "peak": {
-          "weekday": 480000,
-          "friday": 490000,
-          "weekend": 500000
+        "3hour": {
+          "per_person": 5000
         },
-        "standard": {
-          "weekday": 350000,
-          "friday": 380000,
-          "weekend": 400000
+        "7hour": {
+          "per_person": 10000
         },
-        "off_season": {
-          "weekday": 280000,
-          "friday": 310000,
-          "weekend": 330000
+        "12hour": {
+          "per_person": 15000
+        }
+      }
+    },
+    {
+      "id": "26264",
+      "name": "야외테이블 4",
+      "name_english": "Outdoor Table 4",
+      "size_pyeong": 10.00,
+      "size_sqm": 33.0,
+      "capacity": {
+        "standard": 4,
+        "maximum": 6
+      },
+      "type": "야외테이블 / 테이블 벤치 좌석 바베큐 그릴",
+      "type_english": "Outdoor Table / Table Bench Seats BBQ Grill",
+      "pricing": {
+        "3hour": {
+          "per_person": 5000
+        },
+        "7hour": {
+          "per_person": 10000
+        },
+        "12hour": {
+          "per_person": 15000
+        }
+      }
+    },
+    {
+      "id": "26265",
+      "name": "텐트동 1",
+      "name_english": "Tent Building 1",
+      "size_pyeong": 20.00,
+      "size_sqm": 66.0,
+      "capacity": {
+        "standard": 4,
+        "maximum": 6
+      },
+      "type": "텐트형 / 침대 테이블 난로 바베큐 그릴",
+      "type_english": "Tent Style / Bed Table Heater BBQ Grill",
+      "pricing": {
+        "3hour": {
+          "per_person": 10000
+        },
+        "7hour": {
+          "per_person": 20000
+        },
+        "12hour": {
+          "per_person": 30000
         }
       },
       "amenities_count": 12
     },
     {
-      "id": "26271",
-      "name": "국화동1층",
-      "name_english": "Chrysanthemum Building 1F"
-    },
-    {
-      "id": "26272",
-      "name": "국화동2층",
-      "name_english": "Chrysanthemum Building 2F"
-    },
-    {
-      "id": "26273",
-      "name": "대나무동1층",
-      "name_english": "Bamboo Building 1F"
-    },
-    {
-      "id": "26274",
-      "name": "대나무동2층",
-      "name_english": "Bamboo Building 2F"
-    },
-    {
-      "id": "26275",
-      "name": "소나무동1층",
-      "name_english": "Pine Building 1F"
-    },
-    {
-      "id": "26276",
-      "name": "소나무동2층",
-      "name_english": "Pine Building 2F"
-    },
-    {
-      "id": "26277",
-      "name": "매화동2층",
-      "name_english": "Plum Blossom Building 2F"
-    },
-    {
-      "id": "26278",
-      "name": "난초동2층",
-      "name_english": "Orchid Building 2F"
-    },
-    {
-      "id": "26279",
-      "name": "꽃술방",
-      "name_english": "Flower Stamen Room",
+      "id": "26266",
+      "name": "텐트동 2",
+      "name_english": "Tent Building 2",
       "size_pyeong": 20.00,
       "size_sqm": 66.0,
       "capacity": {
-        "standard": 2,
-        "maximum": 2
+        "standard": 4,
+        "maximum": 6
       },
-      "type": "분리형/침대룸 거실 주방 화장실",
-      "type_english": "Separate/Bed room + Living room + Kitchen + Bathroom",
+      "type": "텐트형 / 침대 테이블 난로 바베큐 그릴",
+      "type_english": "Tent Style / Bed Table Heater BBQ Grill",
       "pricing": {
-        "peak": {
-          "weekday": 240000,
-          "friday": 260000,
-          "weekend": 270000
+        "3hour": {
+          "per_person": 10000
         },
-        "off_season": {
-          "weekday": 130000,
-          "friday": 150000,
-          "weekend": 160000
+        "7hour": {
+          "per_person": 20000
         },
-        "standard": {
-          "weekday": 140000,
-          "friday": 160000,
-          "weekend": 170000
+        "12hour": {
+          "per_person": 30000
         }
       }
     },
     {
-      "id": "26280",
-      "name": "줄기방",
-      "name_english": "Stem Room"
+      "id": "26267",
+      "name": "텐트동 3",
+      "name_english": "Tent Building 3",
+      "size_pyeong": 20.00,
+      "size_sqm": 66.0,
+      "capacity": {
+        "standard": 4,
+        "maximum": 6
+      },
+      "type": "텐트형 / 침대 테이블 난로 바베큐 그릴",
+      "type_english": "Tent Style / Bed Table Heater BBQ Grill",
+      "pricing": {
+        "3hour": {
+          "per_person": 10000
+        },
+        "7hour": {
+          "per_person": 20000
+        },
+        "12hour": {
+          "per_person": 30000
+        }
+      }
     },
     {
-      "id": "26281",
-      "name": "꽃잎방",
-      "name_english": "Petal Room"
+      "id": "26268",
+      "name": "텐트동 4",
+      "name_english": "Tent Building 4",
+      "size_pyeong": 20.00,
+      "size_sqm": 66.0,
+      "capacity": {
+        "standard": 4,
+        "maximum": 6
+      },
+      "type": "텐트형 / 침대 테이블 난로 바베큐 그릴",
+      "type_english": "Tent Style / Bed Table Heater BBQ Grill",
+      "pricing": {
+        "3hour": {
+          "per_person": 10000
+        },
+        "7hour": {
+          "per_person": 20000
+        },
+        "12hour": {
+          "per_person": 30000
+        }
+      }
     },
     {
-      "id": "26282",
-      "name": "향기방",
-      "name_english": "Fragrance Room"
+      "id": "26269",
+      "name": "프라이빗룸 1",
+      "name_english": "Private Room 1",
+      "size_pyeong": 30.00,
+      "size_sqm": 99.0,
+      "capacity": {
+        "standard": 8,
+        "maximum": 12
+      },
+      "type": "프라이빗룸 / 실내 테이블 의자 냉난방 바베큐 그릴",
+      "type_english": "Private Room / Indoor Table Chairs HVAC BBQ Grill",
+      "pricing": {
+        "daytime": {
+          "package": 150000
+        },
+        "allnight": {
+          "package": 200000
+        }
+      },
+      "special_feature": "Private space with heating/cooling",
+      "amenities_count": 15
+    },
+    {
+      "id": "26270",
+      "name": "프라이빗룸 2",
+      "name_english": "Private Room 2",
+      "size_pyeong": 30.00,
+      "size_sqm": 99.0,
+      "capacity": {
+        "standard": 8,
+        "maximum": 12
+      },
+      "type": "프라이빗룸 / 실내 테이블 의자 냉난방 바베큐 그릴",
+      "type_english": "Private Room / Indoor Table Chairs HVAC BBQ Grill",
+      "pricing": {
+        "daytime": {
+          "package": 150000
+        },
+        "allnight": {
+          "package": 200000
+        }
+      },
+      "special_feature": "Private space with heating/cooling",
+      "amenities_count": 15
+    },
+    {
+      "id": "26271",
+      "name": "프라이빗룸 3",
+      "name_english": "Private Room 3",
+      "size_pyeong": 30.00,
+      "size_sqm": 99.0,
+      "capacity": {
+        "standard": 8,
+        "maximum": 12
+      },
+      "type": "프라이빗룸 / 실내 테이블 의자 냉난방 바베큐 그릴",
+      "type_english": "Private Room / Indoor Table Chairs HVAC BBQ Grill",
+      "pricing": {
+        "daytime": {
+          "package": 150000
+        },
+        "allnight": {
+          "package": 200000
+        }
+      },
+      "special_feature": "Private space with heating/cooling"
+    },
+    {
+      "id": "26272",
+      "name": "VIP동 1",
+      "name_english": "VIP Building 1",
+      "size_pyeong": 50.00,
+      "size_sqm": 165.0,
+      "capacity": {
+        "standard": 10,
+        "maximum": 15
+      },
+      "type": "VIP룸 / 프리미엄 실내 테이블 의자 냉난방 프라이빗 바베큐",
+      "type_english": "VIP Room / Premium Indoor Table Chairs HVAC Private BBQ",
+      "pricing": {
+        "weekday": 350000,
+        "weekend_holiday": 500000
+      },
+      "special_feature": "Premium VIP space with private cooking area",
+      "amenities_count": 20
+    },
+    {
+      "id": "26273",
+      "name": "VIP동 2",
+      "name_english": "VIP Building 2",
+      "size_pyeong": 50.00,
+      "size_sqm": 165.0,
+      "capacity": {
+        "standard": 10,
+        "maximum": 15
+      },
+      "type": "VIP룸 / 프리미엄 실내 테이블 의자 냉난방 프라이빗 바베큐",
+      "type_english": "VIP Room / Premium Indoor Table Chairs HVAC Private BBQ",
+      "pricing": {
+        "weekday": 350000,
+        "weekend_holiday": 500000
+      },
+      "special_feature": "Premium VIP space with private cooking area",
+      "amenities_count": 20
+    },
+    {
+      "id": "26274",
+      "name": "VIP동 3",
+      "name_english": "VIP Building 3",
+      "size_pyeong": 50.00,
+      "size_sqm": 165.0,
+      "capacity": {
+        "standard": 10,
+        "maximum": 15
+      },
+      "type": "VIP룸 / 프리미엄 실내 테이블 의자 냉난방 프라이빗 바베큐",
+      "type_english": "VIP Room / Premium Indoor Table Chairs HVAC Private BBQ",
+      "pricing": {
+        "weekday": 350000,
+        "weekend_holiday": 500000
+      },
+      "special_feature": "Premium VIP space with private cooking area"
+    },
+    {
+      "id": "26275",
+      "name": "야외테이블 5",
+      "name_english": "Outdoor Table 5",
+      "size_pyeong": 10.00,
+      "size_sqm": 33.0,
+      "capacity": {
+        "standard": 4,
+        "maximum": 6
+      },
+      "type": "야외테이블 / 테이블 벤치 좌석 바베큐 그릴",
+      "type_english": "Outdoor Table / Table Bench Seats BBQ Grill",
+      "pricing": {
+        "3hour": {
+          "per_person": 5000
+        },
+        "7hour": {
+          "per_person": 10000
+        },
+        "12hour": {
+          "per_person": 15000
+        }
+      }
+    },
+    {
+      "id": "26276",
+      "name": "야외테이블 6",
+      "name_english": "Outdoor Table 6",
+      "size_pyeong": 10.00,
+      "size_sqm": 33.0,
+      "capacity": {
+        "standard": 4,
+        "maximum": 6
+      },
+      "type": "야외테이블 / 테이블 벤치 좌석 바베큐 그릴",
+      "type_english": "Outdoor Table / Table Bench Seats BBQ Grill",
+      "pricing": {
+        "3hour": {
+          "per_person": 5000
+        },
+        "7hour": {
+          "per_person": 10000
+        },
+        "12hour": {
+          "per_person": 15000
+        }
+      }
+    },
+    {
+      "id": "26277",
+      "name": "텐트동 5",
+      "name_english": "Tent Building 5",
+      "size_pyeong": 20.00,
+      "size_sqm": 66.0,
+      "capacity": {
+        "standard": 4,
+        "maximum": 6
+      },
+      "type": "텐트형 / 침대 테이블 난로 바베큐 그릴",
+      "type_english": "Tent Style / Bed Table Heater BBQ Grill",
+      "pricing": {
+        "3hour": {
+          "per_person": 10000
+        },
+        "7hour": {
+          "per_person": 20000
+        },
+        "12hour": {
+          "per_person": 30000
+        }
+      }
+    },
+    {
+      "id": "26278",
+      "name": "프라이빗룸 4",
+      "name_english": "Private Room 4",
+      "size_pyeong": 30.00,
+      "size_sqm": 99.0,
+      "capacity": {
+        "standard": 8,
+        "maximum": 12
+      },
+      "type": "프라이빗룸 / 실내 테이블 의자 냉난방 바베큐 그릴",
+      "type_english": "Private Room / Indoor Table Chairs HVAC BBQ Grill",
+      "pricing": {
+        "daytime": {
+          "package": 150000
+        },
+        "allnight": {
+          "package": 200000
+        }
+      },
+      "special_feature": "Private space with heating/cooling"
+    },
+    {
+      "id": "26279",
+      "name": "VIP동 4",
+      "name_english": "VIP Building 4",
+      "size_pyeong": 50.00,
+      "size_sqm": 165.0,
+      "capacity": {
+        "standard": 10,
+        "maximum": 15
+      },
+      "type": "VIP룸 / 프리미엄 실내 테이블 의자 냉난방 프라이빗 바베큐",
+      "type_english": "VIP Room / Premium Indoor Table Chairs HVAC Private BBQ",
+      "pricing": {
+        "weekday": 350000,
+        "weekend_holiday": 500000
+      },
+      "special_feature": "Premium VIP space with private cooking area"
     }
-  ],
-
-  "common_amenities": [
-    "취사시설/도구 (Cooking facilities/utensils)",
-    "TV",
-    "개별바비큐 (Individual BBQ)",
-    "금연 (Non-smoking)",
-    "드라이기 (Hair dryer)",
-    "에어컨 (Air conditioner)",
-    "밥솥 (Rice cooker)",
-    "수건 (Towels)",
-    "화장대 (Vanity)",
-    "냉장고 (Refrigerator)",
-    "와이파이 (Wi-Fi)",
-    "인덕션 (Induction cooktop)",
-    "전자레인지 (Microwave)",
-    "어메니티 (Toiletries - shampoo, body wash, toothpaste, soap)",
-    "침실 (Bed room)",
-    "화장실 용품 (Bathroom items)"
-  ],
-
-  "room_types": {
-    "분리형": "Separate structure",
-    "복층형": "Duplex/multi-level",
-    "침대룸": "Bed room",
-    "온돌룸": "Ondol room (Korean heated floor)",
-    "거실": "Living room",
-    "주방": "Kitchen",
-    "화장실": "Bathroom"
-  },
-
-  "pricing_info": {
-    "seasons": {
-      "성수기": "Peak season",
-      "비수기": "Off-season",
-      "정상가": "Standard rate"
-    },
-    "day_types": {
-      "주중": "Weekday (Mon-Thu)",
-      "금요일": "Friday",
-      "주말": "Weekend (Sat-Sun)"
-    },
-    "currency": "KRW (Korean Won)",
-    "extra_person_fee": {
-      "amount": 30000,
-      "note": "현장결제 (On-site payment)"
-    },
-    "price_range": {
-      "min": 130000,
-      "max": 500000,
-      "note": "Varies by room size, season, and day of week"
-    }
-  },
-
-  "notes": {
-    "id_pattern": "Non-sequential numeric IDs (26262-28456 range)",
-    "measurement_note": "1평 (pyeong) ≈ 3.3 m²",
-    "capacity_note": "최대 인원 초과시 입실 불가 (Entry denied if maximum capacity exceeded)",
-    "cancellation_policy": "10일 이전 전액환불 (Full refund if cancelled 10+ days before)"
-  }
+  ]
 }

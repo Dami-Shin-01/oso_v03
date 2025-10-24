@@ -25,7 +25,7 @@ export default function RoomDetailPage() {
       }}>
         <div style={{ textAlign: 'center' }}>
           <h1 style={{ fontSize: '32px', color: 'var(--color-text)', marginBottom: '20px' }}>
-            객실을 찾을 수 없습니다
+            공간을 찾을 수 없습니다
           </h1>
           <Link
             href="/rooms"
@@ -38,7 +38,7 @@ export default function RoomDetailPage() {
               textDecoration: 'none'
             }}
           >
-            객실 목록으로
+            공간 목록으로
           </Link>
         </div>
       </div>
@@ -74,7 +74,7 @@ export default function RoomDetailPage() {
                   gap: '5px'
                 }}
               >
-                ← 객실 목록
+                ← 공간 목록
               </Link>
             </div>
             <h1 style={{
@@ -183,7 +183,7 @@ export default function RoomDetailPage() {
                   color: 'var(--color-text)',
                   marginBottom: '15px'
                 }}>
-                  객실 크기
+                  공간 크기
                 </h3>
                 <p style={{ fontSize: '24px', color: 'var(--color-gold)', fontWeight: 'bold' }}>
                   {room.size_pyeong}평
@@ -232,7 +232,7 @@ export default function RoomDetailPage() {
                     color: 'var(--color-text)',
                     marginBottom: '15px'
                   }}>
-                    객실 구조
+                    공간 유형
                   </h3>
                   <p style={{ fontSize: '14px', color: 'var(--color-text)', lineHeight: '1.6' }}>
                     {room.type}
@@ -251,7 +251,7 @@ export default function RoomDetailPage() {
                 color: 'var(--color-text)',
                 marginBottom: '30px'
               }}>
-                객실 요금
+                공간 요금
               </h2>
               <div style={{
                 background: 'var(--color-bg-light)',
@@ -264,40 +264,86 @@ export default function RoomDetailPage() {
                   gap: '30px'
                 }}>
                   {/* Peak Season */}
-                  <div>
-                    <h4 style={{ fontSize: '18px', fontWeight: 'bold', color: 'var(--color-gold)', marginBottom: '15px' }}>
-                      성수기
-                    </h4>
-                    <div style={{ fontSize: '14px', lineHeight: '1.8', color: 'var(--color-text)' }}>
-                      <p>평일: {room.pricing.peak.weekday.toLocaleString()}원</p>
-                      <p>금요일: {room.pricing.peak.friday.toLocaleString()}원</p>
-                      <p>주말: {room.pricing.peak.weekend.toLocaleString()}원</p>
+                  {room.pricing.peak && (
+                    <div>
+                      <h4 style={{ fontSize: '18px', fontWeight: 'bold', color: 'var(--color-gold)', marginBottom: '15px' }}>
+                        성수기
+                      </h4>
+                      <div style={{ fontSize: '14px', lineHeight: '1.8', color: 'var(--color-text)' }}>
+                        {room.pricing.peak.weekday && <p>평일: {room.pricing.peak.weekday.toLocaleString()}원</p>}
+                        {room.pricing.peak.friday && <p>금요일: {room.pricing.peak.friday.toLocaleString()}원</p>}
+                        {room.pricing.peak.weekend && <p>주말: {room.pricing.peak.weekend.toLocaleString()}원</p>}
+                      </div>
                     </div>
-                  </div>
+                  )}
 
                   {/* Standard Season */}
-                  <div>
-                    <h4 style={{ fontSize: '18px', fontWeight: 'bold', color: 'var(--color-text)', marginBottom: '15px' }}>
-                      준성수기
-                    </h4>
-                    <div style={{ fontSize: '14px', lineHeight: '1.8', color: 'var(--color-text)' }}>
-                      <p>평일: {room.pricing.standard.weekday.toLocaleString()}원</p>
-                      <p>금요일: {room.pricing.standard.friday.toLocaleString()}원</p>
-                      <p>주말: {room.pricing.standard.weekend.toLocaleString()}원</p>
+                  {room.pricing.standard && (
+                    <div>
+                      <h4 style={{ fontSize: '18px', fontWeight: 'bold', color: 'var(--color-text)', marginBottom: '15px' }}>
+                        준성수기
+                      </h4>
+                      <div style={{ fontSize: '14px', lineHeight: '1.8', color: 'var(--color-text)' }}>
+                        {room.pricing.standard.weekday && <p>평일: {room.pricing.standard.weekday.toLocaleString()}원</p>}
+                        {room.pricing.standard.friday && <p>금요일: {room.pricing.standard.friday.toLocaleString()}원</p>}
+                        {room.pricing.standard.weekend && <p>주말: {room.pricing.standard.weekend.toLocaleString()}원</p>}
+                      </div>
                     </div>
-                  </div>
+                  )}
 
                   {/* Off Season */}
-                  <div>
-                    <h4 style={{ fontSize: '18px', fontWeight: 'bold', color: 'var(--color-text-light)', marginBottom: '15px' }}>
-                      비수기
-                    </h4>
-                    <div style={{ fontSize: '14px', lineHeight: '1.8', color: 'var(--color-text)' }}>
-                      <p>평일: {room.pricing.off_season.weekday.toLocaleString()}원</p>
-                      <p>금요일: {room.pricing.off_season.friday.toLocaleString()}원</p>
-                      <p>주말: {room.pricing.off_season.weekend.toLocaleString()}원</p>
+                  {room.pricing.off_season && (
+                    <div>
+                      <h4 style={{ fontSize: '18px', fontWeight: 'bold', color: 'var(--color-text-light)', marginBottom: '15px' }}>
+                        비수기
+                      </h4>
+                      <div style={{ fontSize: '14px', lineHeight: '1.8', color: 'var(--color-text)' }}>
+                        {room.pricing.off_season.weekday && <p>평일: {room.pricing.off_season.weekday.toLocaleString()}원</p>}
+                        {room.pricing.off_season.friday && <p>금요일: {room.pricing.off_season.friday.toLocaleString()}원</p>}
+                        {room.pricing.off_season.weekend && <p>주말: {room.pricing.off_season.weekend.toLocaleString()}원</p>}
+                      </div>
                     </div>
-                  </div>
+                  )}
+
+                  {/* OSO Camping BBQ Pricing */}
+                  {room.pricing['3hour'] && (
+                    <div>
+                      <h4 style={{ fontSize: '18px', fontWeight: 'bold', color: 'var(--color-gold)', marginBottom: '15px' }}>
+                        시간별 요금 (1인당)
+                      </h4>
+                      <div style={{ fontSize: '14px', lineHeight: '1.8', color: 'var(--color-text)' }}>
+                        {room.pricing['3hour']?.per_person && <p>3시간: {room.pricing['3hour'].per_person.toLocaleString()}원</p>}
+                        {room.pricing['7hour']?.per_person && <p>7시간: {room.pricing['7hour'].per_person.toLocaleString()}원</p>}
+                        {room.pricing['12hour']?.per_person && <p>12시간: {room.pricing['12hour'].per_person.toLocaleString()}원</p>}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Package Pricing */}
+                  {room.pricing.daytime && (
+                    <div>
+                      <h4 style={{ fontSize: '18px', fontWeight: 'bold', color: 'var(--color-text)', marginBottom: '15px' }}>
+                        패키지 요금
+                      </h4>
+                      <div style={{ fontSize: '14px', lineHeight: '1.8', color: 'var(--color-text)' }}>
+                        {room.pricing.daytime?.package && <p>주간 풀타임: {room.pricing.daytime.package.toLocaleString()}원</p>}
+                        {room.pricing.allnight?.package && <p>올나잇: {room.pricing.allnight.package.toLocaleString()}원</p>}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* VIP Pricing */}
+                  {room.pricing.weekday && (
+                    <div>
+                      <h4 style={{ fontSize: '18px', fontWeight: 'bold', color: 'var(--color-gold)', marginBottom: '15px' }}>
+                        VIP 공간 요금
+                      </h4>
+                      <div style={{ fontSize: '14px', lineHeight: '1.8', color: 'var(--color-text)' }}>
+                        <p>평일: {room.pricing.weekday.toLocaleString()}원</p>
+                        {room.pricing.weekend_holiday && <p>주말/공휴일: {room.pricing.weekend_holiday.toLocaleString()}원</p>}
+                      </div>
+                    </div>
+                  )}
                 </div>
                 <p style={{
                   marginTop: '20px',

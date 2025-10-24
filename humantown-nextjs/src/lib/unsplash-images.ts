@@ -16,25 +16,25 @@ export const heroImages = {
   slide3: getUnsplashUrl('1542314831-068cd1dbfeeb', 1920, 1080), // 호수와 산
 };
 
-// 부대시설 이미지
+// 부대시설 이미지 (OSO Camping BBQ)
 export const facilityImages: Record<string, string> = {
-  'swimming-pool': getUnsplashUrl('1576610572293-c2ca58d7f6c1', 940, 940), // 수영장
+  'water-play': getUnsplashUrl('1576610572293-c2ca58d7f6c1', 940, 940), // 물놀이장
   'barbecue': getUnsplashUrl('1555939594-58d7cb561ad1', 940, 940), // 바베큐
-  'foot-volleyball-court-/-basketball-court': getUnsplashUrl('1540747913719-59a97586803a', 940, 940), // 스포츠
+  'sports': getUnsplashUrl('1540747913719-59a97586803a', 940, 940), // 스포츠/잔디광장
   'cafe': getUnsplashUrl('1554118811-1e0d58224f24', 940, 940), // 카페
-  'walking-trail': getUnsplashUrl('1441974231531-c6227db76b6e', 940, 940), // 산책로
-  "children's-playground": getUnsplashUrl('1517457373614-b7152dbb3e13', 940, 940), // 놀이터
+  'restaurant': getUnsplashUrl('1567521464027-f127ff144326', 940, 940), // 식당
+  "kids-zone": getUnsplashUrl('1517457373614-b7152dbb3e13', 940, 940), // 키즈존
 };
 
-// 객실 이미지 (샘플)
+// 캠핑 공간 이미지 (OSO Camping BBQ)
 export const roomImages = {
-  default: getUnsplashUrl('1631049307264-da0ec9d70304', 1000, 1000), // 기본 객실
-  main1: getUnsplashUrl('1618221195710-dd6b41faaea6', 1000, 1000), // 객실 메인
-  main2: getUnsplashUrl('1631049035182-249067d7618e', 1000, 1000), // 객실 메인 2
-  main3: getUnsplashUrl('1522771739844-6a9f6d5f14af', 1000, 1000), // 객실 메인 3
-  thumb1: getUnsplashUrl('1565182409695-7deabead3c3c', 400, 300), // 침실 썸네일
-  thumb2: getUnsplashUrl('1582719508461-905c673771fd', 400, 300), // 썸네일 2
-  thumb3: getUnsplashUrl('1595526114035-0d45ed16cfbf', 400, 300), // 썸네일 3
+  default: getUnsplashUrl('1478827387602-2a3957a2f3f0', 1000, 1000), // 캠핑 기본
+  main1: getUnsplashUrl('1504280390367-361c6d9f38f4', 1000, 1000), // 캠핑 메인 1
+  main2: getUnsplashUrl('1478131143081-80f7f84ca84d', 1000, 1000), // 캠핑 메인 2
+  main3: getUnsplashUrl('1478827387602-2a3957a2f3f0', 1000, 1000), // 캠핑 메인 3
+  thumb1: getUnsplashUrl('1504280390367-361c6d9f38f4', 400, 300), // 캠핑 썸네일 1
+  thumb2: getUnsplashUrl('1478131143081-80f7f84ca84d', 400, 300), // 캠핑 썸네일 2
+  thumb3: getUnsplashUrl('1487730116645-74489c95b41b', 400, 300), // 캠핑 썸네일 3
 };
 
 // 공통 아이콘/이미지
@@ -47,15 +47,15 @@ export const commonImages = {
   reserveButton: '/icons/reserve-floating.svg',
 };
 
-// 외경 사진 (View 페이지)
+// 캠핑장 외경 사진 (View 페이지)
 export const exteriorImages = [
-  getUnsplashUrl('1502672260266-1c1ef2d93688', 1200, 800), // 펜션 전경
-  getUnsplashUrl('1542314831-068cd1dbfeeb', 1200, 800), // 호수와 산 풍경
-  getUnsplashUrl('1469022563160-aa4fbe4db888', 1200, 800), // 자연 속 건물
-  getUnsplashUrl('1464822759023-fed622ff2c3b', 1200, 800), // 산 풍경
-  getUnsplashUrl('1506905925346-21bda4d32df4', 1200, 800), // 산과 호수
-  getUnsplashUrl('1472214103451-9374bd1c798e', 1200, 800), // 자연 속 건물
-  getUnsplashUrl('1520763185298-1b434c919afe', 1200, 800), // 평화로운 풍경
+  getUnsplashUrl('1478827387602-2a3957a2f3f0', 1200, 800), // 캠핑장 전경
+  getUnsplashUrl('1504280390367-361c6d9f38f4', 1200, 800), // 텐트캠핑
+  getUnsplashUrl('1478131143081-80f7f84ca84d', 1200, 800), // 캠핑파이어
+  getUnsplashUrl('1464822759023-fed622ff2c3b', 1200, 800), // 자연 풍경
+  getUnsplashUrl('1487730116645-74489c95b41b', 1200, 800), // 캠핑라이프
+  getUnsplashUrl('1472214103451-9374bd1c798e', 1200, 800), // 자연 속 캠핑
+  getUnsplashUrl('1520763185298-1b434c919afe', 1200, 800), // 평화로운 자연
   getUnsplashUrl('1441974231531-c6227db76b6e', 1200, 800), // 산책로
   getUnsplashUrl('1486235697920-fa4ea228e75f', 1200, 800), // 자연 환경
 ];

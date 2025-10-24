@@ -23,20 +23,20 @@ interface HeroSlide {
 const heroSlides: HeroSlide[] = [
   {
     image: heroImages.slide1,
-    altText: '휴먼타운 펜션의 아름다운 자연 경관',
+    altText: 'OSO 캠핑바베큐의 자연 경관',
     overlay: {
-      title: 'Welcome',
-      subtitle: 'Humantown Pension',
-      description: 'Relaxation in Nature',
+      title: 'Welcome to OSO',
+      subtitle: 'OSO CAMPING BBQ',
+      description: 'Enjoy Camping Vibe BBQ',
     },
   },
   {
     image: heroImages.slide2,
-    altText: '휴먼타운 펜션의 객실 전망',
+    altText: 'OSO 캠핑바베큐의 캠핑 공간',
   },
   {
     image: heroImages.slide3,
-    altText: '휴먼타운 펜션의 야경',
+    altText: 'OSO 캠핑바베큐의 야경',
   },
 ];
 

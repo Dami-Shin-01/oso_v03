@@ -32,7 +32,7 @@ export default function RoomsPage() {
               color: 'var(--color-primary)',
               marginBottom: '20px'
             }}>
-              ROOMS
+              SPACES
             </h1>
             <p style={{
               fontSize: '18px',
@@ -40,13 +40,13 @@ export default function RoomsPage() {
               color: 'var(--color-text-light)',
               marginBottom: '10px'
             }}>
-              객실 안내
+              공간 안내
             </p>
             <p style={{
               fontSize: '14px',
               color: 'var(--color-text-light)'
             }}>
-              총 {totalRooms}개 객실
+              총 {totalRooms}개 공간
             </p>
           </div>
         </section>
@@ -62,7 +62,7 @@ export default function RoomsPage() {
               color: 'var(--color-text)',
               marginBottom: '20px'
             }}>
-              편안한 휴식을 위한 다양한 객실
+              캠핑 감성 바베큐를 위한 다양한 공간
             </h2>
             <p style={{
               fontSize: '16px',
@@ -71,8 +71,8 @@ export default function RoomsPage() {
               maxWidth: '700px',
               margin: '0 auto'
             }}>
-              20평부터 64평까지 다양한 크기의 객실을 준비했습니다.<br />
-              가족 단위 여행객부터 단체 모임까지 모두 만족하실 수 있습니다.
+              야외테이블, 텐트동, 프라이빗룸, VIP동 등 다양한 공간을 준비했습니다.<br />
+              소규모 모임부터 단체 행사까지 모두 만족하실 수 있습니다.
             </p>
           </section>
         </RevealOnScroll>
@@ -96,7 +96,7 @@ export default function RoomsPage() {
                 padding: '60px 20px',
                 color: 'var(--color-text-light)'
               }}>
-                <p>객실 정보를 불러오는 중입니다...</p>
+                <p>공간 정보를 불러오는 중입니다...</p>
               </div>
             )}
           </section>
@@ -117,7 +117,7 @@ export default function RoomsPage() {
                 color: 'var(--color-text)',
                 marginBottom: '20px'
               }}>
-                객실 이용 안내
+                공간 이용 안내
               </h3>
               <div style={{
                 fontSize: '15px',
@@ -127,16 +127,16 @@ export default function RoomsPage() {
                 margin: '0 auto'
               }}>
                 <p style={{ marginBottom: '10px' }}>
-                  • 입실: 15:00 / 퇴실: 11:00
+                  • 외부 음식 반입 가능
                 </p>
                 <p style={{ marginBottom: '10px' }}>
-                  • 모든 객실은 금연입니다
+                  • 숯, 그릴, 고기 등 모든 물품 대여/구매 가능
                 </p>
                 <p style={{ marginBottom: '10px' }}>
-                  • 반려동물 동반은 사전 문의 바랍니다
+                  • 시간별/패키지별 다양한 요금제 제공
                 </p>
                 <p>
-                  • 객실별 요금 및 상세 정보는 각 객실 페이지를 참고해주세요
+                  • 공간별 요금 및 상세 정보는 각 공간 페이지를 참고해주세요
                 </p>
               </div>
             </div>

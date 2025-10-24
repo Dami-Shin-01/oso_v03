@@ -29,10 +29,10 @@ export default function RoomsSection() {
               marginBottom: '15px',
             }}
           >
-            ROOMS
+            SPACES
           </h2>
           <p style={{ fontSize: '16px', color: 'var(--color-text-light)' }}>
-            자연 속에서 편안한 휴식을 위한 22개의 객실
+            캠핑 감성 바베큐를 즐기기 위한 22개의 공간
           </p>
         </div>
       </FadeIn>
@@ -109,7 +109,7 @@ export default function RoomsSection() {
             e.currentTarget.style.background = 'var(--color-dark)';
           }}
         >
-          전체 객실 보기 ({roomsData.total_rooms}개)
+          전체 공간 보기 ({roomsData.total_rooms}개)
         </Link>
         </div>
       </FadeIn>
