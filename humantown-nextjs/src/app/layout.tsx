@@ -44,6 +44,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
+      <head>
+        {/* Preconnect to external domains for faster resource loading */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://images.unsplash.com" />
+
+        {/* Preload critical hero image */}
+        <link
+          rel="preload"
+          as="image"
+          href="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1920&h=1080&fit=crop&auto=format&q=80"
+          fetchPriority="high"
+        />
+      </head>
       <body
         className={`${cinzel.variable} ${lora.variable} ${notoSansKR.variable} antialiased`}
       >

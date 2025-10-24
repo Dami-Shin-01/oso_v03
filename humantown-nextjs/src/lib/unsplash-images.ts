@@ -31,7 +31,7 @@ export const roomImages = {
   default: getUnsplashUrl('1478827387602-2a3957a2f3f0', 1000, 1000), // 캠핑 기본
   main1: getUnsplashUrl('1504280390367-361c6d9f38f4', 1000, 1000), // 캠핑 메인 1
   main2: getUnsplashUrl('1478131143081-80f7f84ca84d', 1000, 1000), // 캠핑 메인 2
-  main3: getUnsplashUrl('1478827387602-2a3957a2f3f0', 1000, 1000), // 캠핑 메인 3
+  main3: getUnsplashUrl('1487730116645-74489c95b41b', 1000, 1000), // 캠핑 메인 3 (중복 제거)
   thumb1: getUnsplashUrl('1504280390367-361c6d9f38f4', 400, 300), // 캠핑 썸네일 1
   thumb2: getUnsplashUrl('1478131143081-80f7f84ca84d', 400, 300), // 캠핑 썸네일 2
   thumb3: getUnsplashUrl('1487730116645-74489c95b41b', 400, 300), // 캠핑 썸네일 3
