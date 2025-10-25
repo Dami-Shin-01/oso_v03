@@ -313,6 +313,7 @@ a:hover {
 
 .header .hd_lnb .hd_lnb02 {
   float: right;
+  margin-right: 50px; /* Space for hamburger menu */
 }
 
 /* Dropdown Background */
@@ -345,6 +346,7 @@ a:hover {
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+  z-index: 10; /* Same level as navigation */
 }
 
 .header .btn_menu img {
