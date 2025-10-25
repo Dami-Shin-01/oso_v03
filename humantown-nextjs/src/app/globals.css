@@ -240,14 +240,11 @@ a:hover {
 }
 
 .header .hd_lnb ul .depth1 {
-  display: flex;
-  align-items: center;
-}
-
-.header .hd_lnb ul .depth1 {
   font-size: 16px;
   position: relative;
   text-align: center;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .header .hd_lnb ul .depth1 .depth1_a {
@@ -321,7 +318,7 @@ a:hover {
   left: 0;
   top: -800px;
   right: 0;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.75); /* Increased transparency from 0.95 to 0.75 */
   border-bottom: 1px solid #e5e5e5;
   z-index: 5; /* Below dropdown menu */
   overflow: hidden;

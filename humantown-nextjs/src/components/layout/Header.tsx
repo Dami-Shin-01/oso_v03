@@ -104,7 +104,6 @@ export default function Header() {
             <nav
               className="hd_lnb hidden lg:block"
               aria-label="메인 메뉴"
-              onMouseLeave={() => setActiveDropdown(null)}
             >
               <ul className="hd_lnb01">
                 {navigation.slice(0, 3).map((item) => (
@@ -154,7 +153,7 @@ export default function Header() {
 
               <div
                 className={`hd_lnb_bg ${activeDropdown ? 'on' : ''}`}
-                onMouseEnter={() => {/* Keep current dropdown open */}}
+                onMouseLeave={() => setActiveDropdown(null)}
               />
             </nav>
 
