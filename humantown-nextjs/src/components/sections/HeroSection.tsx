@@ -23,7 +23,7 @@ interface HeroSlide {
 const heroSlides: HeroSlide[] = [
   {
     image: heroImages.slide1,
-    altText: 'OSO 캠핑바베큐의 자연 경관',
+    altText: '오소캠핑바베큐의 자연 경관',
     overlay: {
       title: 'Welcome to OSO',
       subtitle: 'OSO CAMPING BBQ',
@@ -32,11 +32,11 @@ const heroSlides: HeroSlide[] = [
   },
   {
     image: heroImages.slide2,
-    altText: 'OSO 캠핑바베큐의 캠핑 공간',
+    altText: '오소캠핑바베큐의 캠핑 공간',
   },
   {
     image: heroImages.slide3,
-    altText: 'OSO 캠핑바베큐의 야경',
+    altText: '오소캠핑바베큐의 야경',
   },
 ];
 

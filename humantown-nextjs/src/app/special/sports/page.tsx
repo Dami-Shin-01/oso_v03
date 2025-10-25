@@ -28,11 +28,12 @@ export default function SportsPage() {
 
           <section style={{ marginBottom: '60px', textAlign: 'center' }}>
             <h2 style={{ fontSize: '32px', fontFamily: 'var(--font-serif)', color: 'var(--color-text)', marginBottom: '30px' }}>
-              활기찬 운동 시간
+              활기찬 외부 활동
             </h2>
             <p style={{ fontSize: '16px', lineHeight: '1.8', color: 'var(--color-text)', marginBottom: '20px' }}>
-              넓은 운동장에서 족구와 농구를 즐겨보세요.
-              가족, 친구들과 함께 즐거운 시간을 보낼 수 있는 공간입니다.
+              넓은 잔디광장에서 레크레이션을 즐겨보세요.
+              가족, 친구, 연인들과 함께 즐거운 시간을 보낼 수 있는 공간입니다.
+              반려동물도 함께 뛰어놀 수 있어 더욱 특별한 추억을 만드실 수 있습니다.
             </p>
           </section>
 
@@ -48,7 +49,7 @@ export default function SportsPage() {
               </div>
               <div style={{ background: '#fff', padding: '30px', border: '1px solid var(--color-border)', borderRadius: 'var(--radius)', textAlign: 'center' }}>
                 <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: 'var(--color-text)', marginBottom: '15px' }}>이용 요금</h3>
-                <p style={{ fontSize: '16px', color: 'var(--color-gold)', fontWeight: 'bold' }}>투숙객 무료</p>
+                <p style={{ fontSize: '16px', color: 'var(--color-gold)', fontWeight: 'bold' }}>이용객 무료</p>
               </div>
             </div>
           </section>

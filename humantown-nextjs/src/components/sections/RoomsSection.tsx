@@ -12,8 +12,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 export default function RoomsSection() {
-  // Get first 8 rooms for homepage display
-  const featuredRooms = roomsData.rooms.slice(0, 8).filter(
+  // Get first 4 rooms for homepage display
+  const featuredRooms = roomsData.rooms.slice(0, 4).filter(
     room => room.capacity && room.size_pyeong
   );
 

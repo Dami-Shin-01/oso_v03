@@ -27,7 +27,7 @@ export default function AboutPage() {
               fontFamily: 'var(--font-serif)',
               color: 'var(--color-text-light)'
             }}>
-              OSO 캠핑바베큐 소개
+              오소캠핑바베큐 소개
             </p>
           </div>
         </section>
@@ -55,7 +55,7 @@ export default function AboutPage() {
               color: 'var(--color-text)'
             }}>
               <p style={{ marginBottom: '20px' }}>
-                OSO 캠핑바베큐는 경기도 평택시에 위치한 캠핑 감성의 셀프 바베큐장입니다.
+                오소캠핑바베큐는 경기도 평택시에 위치한 캠핑 감성의 셀프 바베큐장입니다.
                 프라이빗룸 5개와 VIP동 1개, 총 6개의 프리미엄 공간과 텐트동, 야외테이블 공간,
                 풍부한 부대시설을 갖추고 있습니다.
               </p>
@@ -64,7 +64,7 @@ export default function AboutPage() {
                 소규모 모임부터 단체 행사까지 모두 만족하실 수 있는 공간을 제공합니다.
               </p>
               <p>
-                물놀이장, 키즈존, 내부 카페, 내부 식당, 잔디광장, 넓은 주차공간 등
+                물놀이장, 키즈존, 내부 카페, 식당, 잔디광장, 넓은 주차공간 등
                 다양한 부대시설을 통해 특별한 추억을 만들어보세요.
               </p>
             </div>
@@ -81,7 +81,7 @@ export default function AboutPage() {
               textAlign: 'center',
               marginBottom: '50px'
             }}>
-              OSO 특징
+              오소캠핑바베큐 특징
             </h2>
 
             <div style={{
@@ -97,7 +97,7 @@ export default function AboutPage() {
                 },
                 {
                   title: '풍부한 부대시설',
-                  description: '물놀이장, 키즈존, 카페\n식당, 잔디광장, 주차장',
+                  description: '물놀이장, 키즈존, 내부 카페\n식당, 잔디광장, 주차장',
                   icon: '⭐'
                 },
                 {

@@ -78,7 +78,7 @@ export default function SwimmingPoolPage() {
               lineHeight: '1.8',
               color: 'var(--color-text)'
             }}>
-              북한강변의 아름다운 자연을 감상하며 가족, 친구들과 함께
+              부락산 자락의 아름다운 자연을 감상하며 가족, 친구, 연인들과 함께
               특별한 추억을 만들어보세요.
             </p>
           </section>
@@ -106,11 +106,9 @@ export default function SwimmingPoolPage() {
                   운영 기간
                 </h3>
                 <p style={{ fontSize: '16px', color: 'var(--color-gold)', fontWeight: 'bold' }}>
-                  7월 ~ 8월
+                  내부 공지 참조
                 </p>
-                <p style={{ fontSize: '14px', color: 'var(--color-text-light)', marginTop: '5px' }}>
-                  (여름철 한정)
-                </p>
+                
               </div>
 
               <div style={{
@@ -129,7 +127,7 @@ export default function SwimmingPoolPage() {
                   이용 시간
                 </h3>
                 <p style={{ fontSize: '16px', color: 'var(--color-text)' }}>
-                  10:00 ~ 19:00
+                  오소캠핑바베큐 운영 시간과 동일
                 </p>
               </div>
 
@@ -149,7 +147,7 @@ export default function SwimmingPoolPage() {
                   이용 요금
                 </h3>
                 <p style={{ fontSize: '16px', color: 'var(--color-gold)', fontWeight: 'bold' }}>
-                  투숙객 무료
+                  이용객 무료
                 </p>
               </div>
             </div>

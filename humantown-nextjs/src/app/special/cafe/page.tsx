@@ -31,11 +31,11 @@ export default function CafePage() {
               여유로운 휴식 공간
             </h2>
             <p style={{ fontSize: '16px', lineHeight: '1.8', color: 'var(--color-text)', marginBottom: '20px' }}>
-              펜션 내 카페에서 여유로운 시간을 보내세요.
-              향긋한 커피와 함께 북한강변의 아름다운 풍경을 감상할 수 있습니다.
+              오소캠핑바베큐 내부 카페에서 여유로운 시간을 보내세요.
+              향긋한 커피와 함께 잔디광장과 물놀이장의 아름다운 풍경을 감상할 수 있습니다.
             </p>
             <p style={{ fontSize: '16px', lineHeight: '1.8', color: 'var(--color-text)' }}>
-              따뜻한 음료와 간단한 디저트를 준비했습니다.
+              따뜻하게 한 잔, 시원하게 한 잔. 음료와 가벼운 디저트를 준비했습니다.
             </p>
           </section>
 
@@ -43,8 +43,8 @@ export default function CafePage() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px' }}>
               <div style={{ background: '#fff', padding: '30px', border: '1px solid var(--color-border)', borderRadius: 'var(--radius)', textAlign: 'center' }}>
                 <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: 'var(--color-text)', marginBottom: '15px' }}>운영 시간</h3>
-                <p style={{ fontSize: '16px', color: 'var(--color-text)' }}>08:00 ~ 21:00</p>
-                <p style={{ fontSize: '14px', color: 'var(--color-text-light)', marginTop: '5px' }}>(계절에 따라 변동)</p>
+                <p style={{ fontSize: '16px', color: 'var(--color-text)' }}>15:00 ~ 22:00</p>
+                <p style={{ fontSize: '14px', color: 'var(--color-text-light)', marginTop: '5px' }}>(요일에 따라 변동)</p>
               </div>
               <div style={{ background: '#fff', padding: '30px', border: '1px solid var(--color-border)', borderRadius: 'var(--radius)', textAlign: 'center' }}>
                 <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: 'var(--color-text)', marginBottom: '15px' }}>메뉴</h3>
@@ -64,7 +64,7 @@ export default function CafePage() {
               </h3>
               <div style={{ fontSize: '15px', lineHeight: '1.8', color: 'var(--color-text)', maxWidth: '600px', margin: '0 auto' }}>
                 <p style={{ marginBottom: '10px' }}>• 테이크아웃 가능합니다</p>
-                <p style={{ marginBottom: '10px' }}>• 계절에 따라 운영 시간이 변동될 수 있습니다</p>
+                <p style={{ marginBottom: '10px' }}>• 요일에 따라 운영 시간이 변동될 수 있습니다</p>
                 <p style={{ marginBottom: '10px' }}>• 간단한 간식도 판매합니다</p>
                 <p>• 자세한 메뉴와 가격은 현장에서 확인해주세요</p>
               </div>

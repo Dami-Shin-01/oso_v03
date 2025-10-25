@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="inner">
           <div className="footer">
             {/* Phone Number */}
-            <div className="tel" aria-label="전화번호">T.1833-9306</div>
+            <div className="tel" aria-label="전화번호">T. 0507-1380-0203</div>
 
             {/* Address Information */}
             <div className="address" role="region" aria-label="주소 및 사업자 정보">

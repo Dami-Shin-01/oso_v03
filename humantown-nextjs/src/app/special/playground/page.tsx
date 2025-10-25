@@ -31,11 +31,11 @@ export default function PlaygroundPage() {
               아이들의 즐거운 놀이 공간
             </h2>
             <p style={{ fontSize: '16px', lineHeight: '1.8', color: 'var(--color-text)', marginBottom: '20px' }}>
-              안전하고 깨끗한 놀이터에서 아이들이 마음껏 뛰어놀 수 있습니다.
-              다양한 놀이기구가 준비되어 있어 아이들의 즐거운 시간을 보장합니다.
+              안전하고 깨끗한 내부 공간에서 아이들이 마음껏 뛰어놀 수 있습니다.
+              정글짐과 다양한 장난감이 준비되어 있어 아이들의 즐거운 시간을 보장합니다.
             </p>
             <p style={{ fontSize: '16px', lineHeight: '1.8', color: 'var(--color-text)' }}>
-              부모님께서는 벤치에서 편안하게 휴식하시며
+              부모님께서는 카페에서 편안하게 휴식하시며
               아이들의 모습을 지켜보실 수 있습니다.
             </p>
           </section>
@@ -44,7 +44,7 @@ export default function PlaygroundPage() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px' }}>
               <div style={{ background: '#fff', padding: '30px', border: '1px solid var(--color-border)', borderRadius: 'var(--radius)', textAlign: 'center' }}>
                 <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: 'var(--color-text)', marginBottom: '15px' }}>이용 시간</h3>
-                <p style={{ fontSize: '16px', color: 'var(--color-text)' }}>07:00 ~ 21:00</p>
+                <p style={{ fontSize: '16px', color: 'var(--color-text)' }}>15:00 ~ 22:00 (카페와 동일) </p>
               </div>
               <div style={{ background: '#fff', padding: '30px', border: '1px solid var(--color-border)', borderRadius: 'var(--radius)', textAlign: 'center' }}>
                 <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: 'var(--color-text)', marginBottom: '15px' }}>시설</h3>
@@ -52,7 +52,7 @@ export default function PlaygroundPage() {
               </div>
               <div style={{ background: '#fff', padding: '30px', border: '1px solid var(--color-border)', borderRadius: 'var(--radius)', textAlign: 'center' }}>
                 <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: 'var(--color-text)', marginBottom: '15px' }}>이용 요금</h3>
-                <p style={{ fontSize: '16px', color: 'var(--color-gold)', fontWeight: 'bold' }}>투숙객 무료</p>
+                <p style={{ fontSize: '16px', color: 'var(--color-gold)', fontWeight: 'bold' }}>이용객 무료</p>
               </div>
             </div>
           </section>
@@ -66,8 +66,8 @@ export default function PlaygroundPage() {
                 <p style={{ marginBottom: '10px' }}>• 반드시 보호자 동반 하에 이용해주세요</p>
                 <p style={{ marginBottom: '10px' }}>• 안전사고 예방에 주의해주세요</p>
                 <p style={{ marginBottom: '10px' }}>• 다른 어린이와 양보하며 사용해주세요</p>
-                <p style={{ marginBottom: '10px' }}>• 놀이기구를 소중히 다뤄주세요</p>
-                <p>• 소음 발생에 유의해주세요 (21:00 이후 이용 금지)</p>
+                <p style={{ marginBottom: '10px' }}>• 장난감을 소중히 다뤄주세요</p>
+                
               </div>
             </div>
           </section>

@@ -71,7 +71,7 @@ export default function RoomsPage() {
               maxWidth: '700px',
               margin: '0 auto'
             }}>
-              프라이빗룸 5개와 VIP동 1개, 총 6개의 프리미엄 공간을 준비했습니다.<br />
+              프라이빗룸 5개와 VIP동 1개, 총 6개의 프리미엄 공간과 텐트동 9개, 야외테이블을 준비했습니다.<br />
               소규모 모임부터 단체 행사까지 모두 만족하실 수 있습니다.
             </p>
           </section>

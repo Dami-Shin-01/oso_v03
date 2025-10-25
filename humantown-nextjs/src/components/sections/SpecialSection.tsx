@@ -28,7 +28,7 @@ export default function SpecialSection() {
             SPECIAL
           </h2>
           <p style={{ fontSize: '16px', color: 'var(--color-text-light)' }}>
-            OSO 캠핑바베큐만의 특별한 부대시설
+            오소캠핑바베큐만의 특별한 부대시설
           </p>
         </div>
       </FadeIn>

@@ -57,7 +57,7 @@ export default function ReservationPage() {
                 전화 예약이 가장 빠르고 정확합니다
               </p>
               <a
-                href="tel:1833-9306"
+                href="T. 0507-1380-0203"
                 style={{
                   display: 'inline-block',
                   fontSize: '32px',
@@ -73,7 +73,7 @@ export default function ReservationPage() {
                 fontSize: '14px',
                 opacity: 0.8
               }}>
-                운영 시간: 09:00 ~ 21:00
+                운영 시간: 평일 15:00 ~ 22:00 주말, 공휴일 10:00 ~ 22:00
               </p>
             </div>
           </section>
@@ -218,22 +218,20 @@ export default function ReservationPage() {
                   ✓ 모든 객실은 금연입니다
                 </p>
                 <p style={{ marginBottom: '15px' }}>
-                  ✓ 반려동물 동반은 사전 문의 필수입니다
+                  ✓ 반려동물 동반은 매너 벨트 필수입니다
                 </p>
                 <p style={{ marginBottom: '15px' }}>
                   ✓ 기준 인원 초과 시 추가 요금이 발생합니다
                 </p>
                 <p style={{ marginBottom: '15px' }}>
-                  ✓ 외부 음식물 반입은 가능하나 정리는 투숙객이 해주셔야 합니다
+                  ✓ 외부 음식 반입은 가능하나 정리는 고객님이 해주셔야 합니다
                 </p>
-                <p style={{ marginBottom: '15px' }}>
-                  ✓ 바비큐 이용 시간은 23시까지입니다
-                </p>
+               
                 <p style={{ marginBottom: '15px' }}>
                   ✓ 시설물 파손 시 변상 책임이 있습니다
                 </p>
                 <p>
-                  ✓ 타 투숙객에게 피해를 주는 행위는 삼가주시기 바랍니다
+                  ✓ 타 이용객에게 피해를 주는 행위는 삼가주시기 바랍니다
                 </p>
               </div>
             </div>
@@ -262,8 +260,8 @@ export default function ReservationPage() {
                 marginBottom: '30px',
                 lineHeight: '1.8'
               }}>
-                객실별 상세 요금은 각 객실 페이지에서 확인하실 수 있습니다.<br />
-                성수기, 준성수기, 비수기에 따라 요금이 상이합니다.
+                시설별 상세 요금은 각 시설 페이지에서 확인하실 수 있습니다.<br />
+                평일, 공휴일/주말에 따라 요금이 상이합니다.
               </p>
               <Link
                 href="/rooms"
@@ -307,10 +305,10 @@ export default function ReservationPage() {
                 오시는 길
               </h3>
               <p style={{ fontSize: '16px', marginBottom: '10px' }}>
-                📍 경기 가평군 가평읍 북한강변로 882 (이화리 23-2)
+                📍 경기 평택시 지산로 282-31
               </p>
               <p style={{ fontSize: '16px', marginBottom: '25px' }}>
-                📞 T. 1833-9306
+                📞 T. 0507-1380-0203
               </p>
               <Link
                 href="/location"

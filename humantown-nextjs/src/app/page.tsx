@@ -21,7 +21,7 @@ export default function Home() {
             OSO
           </h1>
           <h2 style={{ fontSize: '33px', fontFamily: 'var(--font-serif)', color: 'var(--color-text)', marginBottom: '40px' }}>
-            OSO 캠핑바베큐
+            오소캠핑바베큐
           </h2>
           <p style={{ fontSize: '18px', color: 'var(--color-text-light)', marginBottom: '60px' }}>
             경기도 평택시 지산로 282-31
@@ -43,7 +43,7 @@ export default function Home() {
                 풍부한 부대시설
               </h3>
               <p style={{ color: 'var(--color-text-light)' }}>
-                물놀이장, 키즈존, 카페<br />
+                물놀이장, 키즈존, 내부카페<br />
                 식당, 잔디광장, 주차장
               </p>
             </div>
@@ -54,7 +54,7 @@ export default function Home() {
               </h3>
               <p style={{ color: 'var(--color-text-light)' }}>
                 부담없이 즐기는<br />
-                셀프 바베큐 체험
+                캠핑 감성 셀프 바베큐 체험
               </p>
             </div>
           </div>

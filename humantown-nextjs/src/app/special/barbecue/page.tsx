@@ -70,7 +70,7 @@ export default function BarbequeePage() {
               color: 'var(--color-text)',
               marginBottom: '20px'
             }}>
-              북한강변의 맑은 공기와 함께 신선한 바베큐 파티를 즐겨보세요.
+              부락산 자락의 맑은 공기와 함께 신선한 바베큐 파티를 즐겨보세요.
               각 객실마다 전용 바베큐 시설이 준비되어 있어 편리하게 이용하실 수 있습니다.
             </p>
             <p style={{
@@ -105,7 +105,7 @@ export default function BarbequeePage() {
                   이용 가능 시간
                 </h3>
                 <p style={{ fontSize: '16px', color: 'var(--color-text)' }}>
-                  입실 후 ~ 23:00
+                  시설별 상이 (체크인 후 프론트 문의)
                 </p>
               </div>
 
@@ -125,7 +125,7 @@ export default function BarbequeePage() {
                   제공 사항
                 </h3>
                 <p style={{ fontSize: '16px', color: 'var(--color-text)' }}>
-                  그릴, 숯, 집게, 테이블
+                  테이블 및 의자, 전용 그릴 ( 숯 및 식재료 별도 준비 혹은 구매 가능)
                 </p>
               </div>
 
@@ -145,7 +145,7 @@ export default function BarbequeePage() {
                   이용 요금
                 </h3>
                 <p style={{ fontSize: '16px', color: 'var(--color-gold)', fontWeight: 'bold' }}>
-                  투숙객 무료
+                  별도의 시설 이용료 없음
                 </p>
               </div>
             </div>
@@ -175,20 +175,18 @@ export default function BarbequeePage() {
                 margin: '0 auto'
               }}>
                 <p style={{ marginBottom: '10px' }}>
-                  • 식재료는 투숙객이 직접 준비해주세요
+                  • 식재료는 반입 혹은 내부 구매 가능합니다.
                 </p>
                 <p style={{ marginBottom: '10px' }}>
                   • 사용 후 주변 정리를 부탁드립니다
                 </p>
                 <p style={{ marginBottom: '10px' }}>
-                  • 소음 발생에 유의해주세요 (23:00 이후 금지)
+                  • 소음 발생에 유의해주세요 
                 </p>
                 <p style={{ marginBottom: '10px' }}>
                   • 화재 예방을 위해 안전 수칙을 준수해주세요
                 </p>
-                <p>
-                  • 날씨에 따라 이용이 제한될 수 있습니다
-                </p>
+                
               </div>
             </div>
           </section>

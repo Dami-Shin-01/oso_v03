@@ -228,16 +228,10 @@ export default function LocationPage() {
                     서울 출발 (약 1시간)
                   </p>
                   <p style={{ marginBottom: '20px' }}>
-                    경춘고속도로 → 가평IC → 북한강변로 방면<br />
-                    → 북한강변로 882 도착
+                    경부고속도로 → 송탄IC → 지산동 방면<br />
+                    → 지산로 282-31 도착
                   </p>
-                  <p style={{ marginBottom: '15px', fontWeight: 'bold', color: 'var(--color-gold)' }}>
-                    춘천 출발 (약 40분)
-                  </p>
-                  <p>
-                    경춘고속도로 → 설악IC → 가평 방면<br />
-                    → 북한강변로 → 북한강변로 882 도착
-                  </p>
+                  
                 </div>
               </div>
 
@@ -265,31 +259,8 @@ export default function LocationPage() {
                   lineHeight: '1.8',
                   color: 'var(--color-text)'
                 }}>
-                  <p style={{ marginBottom: '15px', fontWeight: 'bold', color: 'var(--color-gold)' }}>
-                    ITX-청춘 이용
-                  </p>
-                  <p style={{ marginBottom: '20px' }}>
-                    용산역/청량리역 출발 → 가평역 하차<br />
-                    → 택시 이용 (약 10분)
-                  </p>
-                  <p style={{ marginBottom: '15px', fontWeight: 'bold', color: 'var(--color-gold)' }}>
-                    버스 이용
-                  </p>
-                  <p style={{ marginBottom: '15px' }}>
-                    동서울터미널 → 가평터미널 하차<br />
-                    → 택시 이용 (약 10분)
-                  </p>
-                  <p style={{
-                    fontSize: '13px',
-                    color: 'var(--color-text-light)',
-                    marginTop: '20px',
-                    padding: '15px',
-                    background: 'var(--color-bg-light)',
-                    borderRadius: '8px'
-                  }}>
-                    ※ 가평역/가평터미널에서 픽업 서비스가 필요하신 경우<br />
-                    사전 문의 바랍니다.
-                  </p>
+               
+                 
                 </div>
               </div>
             </div>

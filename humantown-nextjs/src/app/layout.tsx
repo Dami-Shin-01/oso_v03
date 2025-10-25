@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   keywords: ["오소 캠핑바베큐", "평택 바베큐", "셀프바베큐장", "송탄", "감성바베큐",  "BBQ"],
   openGraph: {
     title: "오소 캠핑바베큐 (Oso Camping BBQ)",
-    description: "편안한 캠핑 감성 셀프 바베큐장 - 6개의 프리미엄 공간과 다양한 부대시설",
+    description: "편안한 캠핑 감성 셀프 바베큐장 - 6개의 프리미엄 공간과 9개의 텐트동, 야외테이블과 다양한 부대시설",
     type: "website",
   },
 };
