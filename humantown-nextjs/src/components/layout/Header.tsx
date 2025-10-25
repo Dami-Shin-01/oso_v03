@@ -109,14 +109,17 @@ export default function Header() {
             </h1>
 
             {/* Desktop Navigation */}
-            <nav className="hd_lnb hidden lg:block" aria-label="메인 메뉴">
+            <nav
+              className="hd_lnb hidden lg:block"
+              aria-label="메인 메뉴"
+              onMouseLeave={() => setActiveDropdown(null)}
+            >
               <ul className="hd_lnb01">
                 {navigation.slice(0, 3).map((item) => (
                   <li
                     key={item.id}
                     className="depth1"
                     onMouseEnter={() => setActiveDropdown(item.id)}
-                    onMouseLeave={() => setActiveDropdown(null)}
                   >
                     <span className="depth1_a" role="button" aria-haspopup={!!item.submenu} aria-expanded={activeDropdown === item.id}>{item.label}</span>
                     {item.submenu && (
@@ -140,7 +143,6 @@ export default function Header() {
                     key={item.id}
                     className="depth1"
                     onMouseEnter={() => setActiveDropdown(item.id)}
-                    onMouseLeave={() => setActiveDropdown(null)}
                   >
                     <span className="depth1_a" role="button" aria-haspopup={!!item.submenu} aria-expanded={activeDropdown === item.id}>{item.label}</span>
                     {item.submenu && (
@@ -158,7 +160,10 @@ export default function Header() {
                 ))}
               </ul>
 
-              <div className={`hd_lnb_bg ${activeDropdown ? 'on' : ''}`} />
+              <div
+                className={`hd_lnb_bg ${activeDropdown ? 'on' : ''}`}
+                onMouseEnter={() => {/* Keep current dropdown open */}}
+              />
             </nav>
 
             {/* Reservation Button (Desktop) */}
