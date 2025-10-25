@@ -152,31 +152,192 @@ export default function AboutPage() {
           </section>
         </RevealOnScroll>
 
-        {/* Contact Information */}
+        {/* Contact Information & Location */}
         <FadeIn delay={0.5}>
-          <section style={{
-            background: 'var(--color-dark)',
-            color: '#fff',
-            padding: '60px 40px',
-            borderRadius: 'var(--radius)',
-            textAlign: 'center'
-          }}>
-            <h2 style={{
-              fontSize: '32px',
-              fontFamily: 'var(--font-serif)',
-              marginBottom: '30px'
+          <section style={{ marginBottom: '80px' }}>
+            <div style={{
+              background: 'var(--color-dark)',
+              color: '#fff',
+              padding: '50px 40px',
+              borderRadius: 'var(--radius)',
+              textAlign: 'center'
             }}>
-              오시는 길
+              <h2 style={{
+                fontSize: '32px',
+                fontFamily: 'var(--font-serif)',
+                marginBottom: '30px'
+              }}>
+                오시는 길
+              </h2>
+              <p style={{ fontSize: '18px', marginBottom: '15px' }}>
+                📍 경기 평택시 지산로 282-31
+              </p>
+              <p style={{ fontSize: '18px', marginBottom: '30px' }}>
+                📞 T.0507-1380-0203
+              </p>
+              <div style={{
+                display: 'flex',
+                gap: '15px',
+                justifyContent: 'center',
+                flexWrap: 'wrap'
+              }}>
+                <a
+                  href="tel:1833-9306"
+                  style={{
+                    padding: '12px 30px',
+                    background: 'var(--color-gold)',
+                    color: '#fff',
+                    borderRadius: 'var(--radius)',
+                    textDecoration: 'none',
+                    fontSize: '15px',
+                    fontWeight: 'bold',
+                    transition: 'background 0.3s'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = 'var(--color-gold-dark)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = 'var(--color-gold)';
+                  }}
+                  aria-label="오소캠핑바베큐에 전화 걸기: 0507-1380-0203"
+                >
+                  전화 걸기
+                </a>
+                <button
+                  onClick={() => {
+                    navigator.clipboard.writeText('경기 평택시 지산로 282-31');
+                    alert('주소가 복사되었습니다.');
+                  }}
+                  style={{
+                    padding: '12px 30px',
+                    background: 'rgba(255,255,255,0.2)',
+                    color: '#fff',
+                    border: '1px solid rgba(255,255,255,0.3)',
+                    borderRadius: 'var(--radius)',
+                    cursor: 'pointer',
+                    fontSize: '15px',
+                    fontWeight: 'bold',
+                    transition: 'background 0.3s'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = 'rgba(255,255,255,0.3)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = 'rgba(255,255,255,0.2)';
+                  }}
+                  aria-label="주소 클립보드에 복사: 경기 평택시 지산로 282-31"
+                >
+                  주소 복사
+                </button>
+              </div>
+            </div>
+          </section>
+        </FadeIn>
+
+        {/* Map */}
+        <RevealOnScroll delay={0.6} direction="up">
+          <section style={{ marginBottom: '80px' }}>
+            <h2 style={{
+              fontSize: '28px',
+              fontFamily: 'var(--font-serif)',
+              color: 'var(--color-text)',
+              marginBottom: '30px',
+              textAlign: 'center'
+            }}>
+              지도
             </h2>
-            <p style={{ fontSize: '18px', marginBottom: '10px' }}>
-              📍 경기도 평택시 지산로 282-31
-            </p>
-            <p style={{ fontSize: '18px', marginBottom: '10px' }}>
-              📞 T. 0507-1380-0203
-            </p>
-            <p style={{ fontSize: '14px', opacity: 0.8, marginTop: '20px' }}>
-              OSO CAMPING BBQ
-            </p>
+            <div style={{
+              width: '100%',
+              height: '450px',
+              background: 'var(--color-bg-light)',
+              borderRadius: 'var(--radius)',
+              overflow: 'hidden',
+              border: '1px solid var(--color-border)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}>
+              <div style={{ textAlign: 'center', padding: '40px' }}>
+                <p style={{
+                  fontSize: '16px',
+                  color: 'var(--color-text-light)',
+                  marginBottom: '20px'
+                }}>
+                  지도는 여기에 표시됩니다
+                </p>
+                <p style={{ fontSize: '14px', color: 'var(--color-text-light)' }}>
+                  실제 구현 시 Kakao Map 또는 Google Maps API를 사용하세요
+                </p>
+                <div style={{ marginTop: '20px' }}>
+                  <a
+                    href="https://map.kakao.com/link/search/경기 평택시 지산로 282-31"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: 'inline-block',
+                      padding: '10px 25px',
+                      background: 'var(--color-gold)',
+                      color: '#fff',
+                      borderRadius: 'var(--radius)',
+                      textDecoration: 'none',
+                      fontSize: '14px',
+                      marginRight: '10px'
+                    }}
+                    aria-label="카카오맵에서 오소캠핑바베큐 위치 보기 (새 창)"
+                  >
+                    카카오맵 보기
+                  </a>
+                  <a
+                    href="https://www.google.com/maps/search/경기+평택시+지산로+282-31"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: 'inline-block',
+                      padding: '10px 25px',
+                      background: 'var(--color-primary)',
+                      color: '#fff',
+                      borderRadius: 'var(--radius)',
+                      textDecoration: 'none',
+                      fontSize: '14px'
+                    }}
+                    aria-label="구글맵에서 오소캠핑바베큐 위치 보기 (새 창)"
+                  >
+                    구글맵 보기
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </RevealOnScroll>
+
+        {/* Parking Info */}
+        <FadeIn delay={0.7}>
+          <section>
+            <div style={{
+              background: 'var(--color-bg-light)',
+              padding: '40px',
+              borderRadius: 'var(--radius)',
+              textAlign: 'center'
+            }}>
+              <h3 style={{
+                fontSize: '24px',
+                fontFamily: 'var(--font-serif)',
+                color: 'var(--color-text)',
+                marginBottom: '20px'
+              }}>
+                주차 안내
+              </h3>
+              <p style={{
+                fontSize: '15px',
+                lineHeight: '1.8',
+                color: 'var(--color-text-light)',
+                maxWidth: '600px',
+                margin: '0 auto'
+              }}>
+                • 넓은 주차장으로 대형 차량도 주차 가능합니다<br />
+                • 주차 요금은 무료입니다
+              </p>
+            </div>
           </section>
         </FadeIn>
       </div>

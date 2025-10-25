@@ -41,11 +41,6 @@ const navigation: NavItem[] = [
     label: 'RESERVE',
     submenu: [{ label: '예약안내', url: '/reservation' }],
   },
-  {
-    id: 'location',
-    label: 'LOCATION',
-    submenu: [{ label: '오시는길', url: '/location' }],
-  },
 ];
 
 export default function Header() {

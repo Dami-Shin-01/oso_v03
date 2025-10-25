@@ -311,7 +311,7 @@ export default function ReservationPage() {
                 📞 T. 0507-1380-0203
               </p>
               <Link
-                href="/location"
+                href="/about"
                 style={{
                   display: 'inline-block',
                   padding: '12px 35px',
