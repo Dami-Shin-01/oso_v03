@@ -271,14 +271,16 @@ a:hover {
   top: -800%;
   width: 100%;
   transform: translateX(-50%);
-  z-index: -1;
+  z-index: 10; /* Changed from -1 to 10 to appear above background */
   text-align: center;
   overflow: hidden;
   transition: all 0.5s;
+  pointer-events: none; /* Disable pointer events when hidden */
 }
 
 .header .hd_lnb ul .depth1 .depth_box.on {
   top: calc(100% + 12px);
+  pointer-events: auto; /* Enable pointer events when visible */
 }
 
 .header .hd_lnb ul .depth1 .depth_box li {
@@ -295,10 +297,13 @@ a:hover {
 .header .hd_lnb ul .depth1 .depth_box li a {
   display: block;
   font-size: inherit;
-  color: inherit;
+  color: #444; /* Explicit dark color for better contrast on white background */
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .header .hd_lnb ul .depth1 .depth_box li a:hover {
+  color: var(--color-gold-dark);
   text-decoration: underline;
 }
 
@@ -316,17 +321,19 @@ a:hover {
   left: 0;
   top: -800px;
   right: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid #e5e5e5;
-  z-index: -1;
+  z-index: 5; /* Changed from -1 to 5 (below dropdown menu at z-index: 10) */
   overflow: hidden;
   box-sizing: border-box;
   height: 680px;
   transition: all 0.5s;
+  pointer-events: none; /* Disable pointer events when hidden */
 }
 
 .header .hd_lnb_bg.on {
   top: 121px;
+  pointer-events: auto; /* Enable pointer events when visible */
 }
 
 /* ===== RESERVATION BUTTON ===== */
