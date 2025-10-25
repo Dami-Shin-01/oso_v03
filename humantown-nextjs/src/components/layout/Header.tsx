@@ -96,7 +96,6 @@ export default function Header() {
             <h1 className="logo">
               <Link href="/" aria-label="오소캠핑바베큐 홈">
                 OSO CAMPING BBQ
-                <span>Pyeongtaek BBQ station</span>
               </Link>
             </h1>
 
