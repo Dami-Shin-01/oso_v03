@@ -217,10 +217,10 @@ export default function BarbequeePage() {
                 marginTop: '30px'
               }}>
                 <Link href="/special/swimming-pool" style={{ padding: '12px 30px', background: 'rgba(255,255,255,0.1)', color: '#fff', borderRadius: 'var(--radius)', textDecoration: 'none', border: '1px solid rgba(255,255,255,0.3)' }}>
-                  수영장
+                  물놀이장
                 </Link>
                 <Link href="/special/sports" style={{ padding: '12px 30px', background: 'rgba(255,255,255,0.1)', color: '#fff', borderRadius: 'var(--radius)', textDecoration: 'none', border: '1px solid rgba(255,255,255,0.3)' }}>
-                  족구장/농구장
+                  잔디광장
                 </Link>
                 <Link href="/special/cafe" style={{ padding: '12px 30px', background: 'rgba(255,255,255,0.1)', color: '#fff', borderRadius: 'var(--radius)', textDecoration: 'none', border: '1px solid rgba(255,255,255,0.3)' }}>
                   카페

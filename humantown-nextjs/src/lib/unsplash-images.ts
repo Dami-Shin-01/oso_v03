@@ -56,7 +56,7 @@ export const exteriorImages = [
   getUnsplashUrl('1487730116645-74489c95b41b', 1200, 800), // 캠핑라이프
   getUnsplashUrl('1472214103451-9374bd1c798e', 1200, 800), // 자연 속 캠핑
   getUnsplashUrl('1520763185298-1b434c919afe', 1200, 800), // 평화로운 자연
-  getUnsplashUrl('1441974231531-c6227db76b6e', 1200, 800), // 산책로
+  getUnsplashUrl('1441974231531-c6227db76b6e', 1200, 800), // 식당
   getUnsplashUrl('1486235697920-fa4ea228e75f', 1200, 800), // 자연 환경
 ];
 

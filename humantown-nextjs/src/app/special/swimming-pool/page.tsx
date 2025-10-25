@@ -19,14 +19,14 @@ export default function SwimmingPoolPage() {
               color: 'var(--color-primary)',
               marginBottom: '20px'
             }}>
-              수영장
+              물놀이장
             </h1>
             <p style={{
               fontSize: '18px',
               fontFamily: 'var(--font-serif)',
               color: 'var(--color-text-light)'
             }}>
-              Swimming Pool
+              Water Play Area
             </p>
           </div>
         </div>
@@ -45,7 +45,7 @@ export default function SwimmingPoolPage() {
             }}>
               <Image
                 src={facilityImages['swimming-pool']}
-                alt="수영장"
+                alt="물놀이장"
                 fill
                 sizes="100vw"
                 style={{ objectFit: 'cover' }}
@@ -70,7 +70,7 @@ export default function SwimmingPoolPage() {
               color: 'var(--color-text)',
               marginBottom: '20px'
             }}>
-              여름철 운영되는 야외 수영장에서 시원한 물놀이를 즐겨보세요.
+              여름철 운영되는 야외 물놀이장에서 시원한 물놀이를 즐겨보세요.
               어른과 아이 모두가 안전하게 즐길 수 있도록 깊이가 다양하게 구성되어 있습니다.
             </p>
             <p style={{
@@ -246,7 +246,7 @@ export default function SwimmingPoolPage() {
                     transition: 'all 0.3s'
                   }}
                 >
-                  족구장/농구장
+                  잔디광장
                 </Link>
                 <Link
                   href="/special/cafe"

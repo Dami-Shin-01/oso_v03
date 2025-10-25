@@ -9,10 +9,10 @@ export default function SportsPage() {
         <div className="container">
           <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
             <h1 style={{ fontSize: '48px', fontFamily: 'var(--font-heading)', color: 'var(--color-primary)', marginBottom: '20px' }}>
-              족구장 / 농구장
+              잔디광장
             </h1>
             <p style={{ fontSize: '18px', fontFamily: 'var(--font-serif)', color: 'var(--color-text-light)' }}>
-              Sports Field
+              Lawn Field
             </p>
           </div>
         </div>
@@ -22,7 +22,7 @@ export default function SportsPage() {
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <section style={{ marginBottom: '60px' }}>
             <div style={{ position: 'relative', width: '100%', height: '500px', borderRadius: 'var(--radius)', overflow: 'hidden' }}>
-              <Image src={facilityImages['foot-volleyball-court-/-basketball-court']} alt="족구장/농구장" fill sizes="100vw" style={{ objectFit: 'cover' }} priority />
+              <Image src={facilityImages['sports']} alt="잔디광장" fill sizes="100vw" style={{ objectFit: 'cover' }} priority />
             </div>
           </section>
 
@@ -44,7 +44,7 @@ export default function SportsPage() {
               </div>
               <div style={{ background: '#fff', padding: '30px', border: '1px solid var(--color-border)', borderRadius: 'var(--radius)', textAlign: 'center' }}>
                 <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: 'var(--color-text)', marginBottom: '15px' }}>시설</h3>
-                <p style={{ fontSize: '16px', color: 'var(--color-text)' }}>족구장, 농구대</p>
+                <p style={{ fontSize: '16px', color: 'var(--color-text)' }}>잔디광장</p>
               </div>
               <div style={{ background: '#fff', padding: '30px', border: '1px solid var(--color-border)', borderRadius: 'var(--radius)', textAlign: 'center' }}>
                 <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: 'var(--color-text)', marginBottom: '15px' }}>이용 요금</h3>
@@ -71,9 +71,9 @@ export default function SportsPage() {
             <div style={{ background: 'var(--color-dark)', color: '#fff', padding: '50px 40px', borderRadius: 'var(--radius)', textAlign: 'center' }}>
               <h3 style={{ fontSize: '28px', fontFamily: 'var(--font-serif)', marginBottom: '20px' }}>다른 부대시설 둘러보기</h3>
               <div style={{ display: 'flex', gap: '15px', justifyContent: 'center', flexWrap: 'wrap', marginTop: '30px' }}>
-                <Link href="/special/swimming-pool" style={{ padding: '12px 30px', background: 'rgba(255,255,255,0.1)', color: '#fff', borderRadius: 'var(--radius)', textDecoration: 'none', border: '1px solid rgba(255,255,255,0.3)' }}>수영장</Link>
+                <Link href="/special/swimming-pool" style={{ padding: '12px 30px', background: 'rgba(255,255,255,0.1)', color: '#fff', borderRadius: 'var(--radius)', textDecoration: 'none', border: '1px solid rgba(255,255,255,0.3)' }}>물놀이장</Link>
                 <Link href="/special/barbecue" style={{ padding: '12px 30px', background: 'rgba(255,255,255,0.1)', color: '#fff', borderRadius: 'var(--radius)', textDecoration: 'none', border: '1px solid rgba(255,255,255,0.3)' }}>바베큐</Link>
-                <Link href="/special/trail" style={{ padding: '12px 30px', background: 'rgba(255,255,255,0.1)', color: '#fff', borderRadius: 'var(--radius)', textDecoration: 'none', border: '1px solid rgba(255,255,255,0.3)' }}>산책로</Link>
+                <Link href="/special/trail" style={{ padding: '12px 30px', background: 'rgba(255,255,255,0.1)', color: '#fff', borderRadius: 'var(--radius)', textDecoration: 'none', border: '1px solid rgba(255,255,255,0.3)' }}>식당</Link>
               </div>
             </div>
           </section>
