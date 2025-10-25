@@ -382,7 +382,9 @@ a:hover {
 
 .header.on .hd_lnb .hd_lnb01,
 .header.on .hd_lnb .hd_lnb02 {
-  float: inherit;
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
 }
 
 .header.on .hd_lnb_bg.on {
@@ -442,9 +444,14 @@ a:hover {
 }
 
 .aside .depth_list {
-  display: none;
-  transition: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
   background: #fafafa;
+}
+
+.aside .depth_list.on {
+  max-height: 500px;
 }
 
 .aside .depth_list li {

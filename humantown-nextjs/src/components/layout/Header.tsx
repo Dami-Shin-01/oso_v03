@@ -52,6 +52,7 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [openMobileSubmenu, setOpenMobileSubmenu] = useState<string | null>(null);
   const pathname = usePathname();
 
   // Scroll detection
@@ -67,6 +68,7 @@ export default function Header() {
   // Close mobile menu on route change
   useEffect(() => {
     setIsMobileMenuOpen(false);
+    setOpenMobileSubmenu(null);
   }, [pathname]);
 
   const toggleMobileMenu = () => {
@@ -75,7 +77,12 @@ export default function Header() {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
+      setOpenMobileSubmenu(null);
     }
+  };
+
+  const toggleMobileSubmenu = (menuId: string) => {
+    setOpenMobileSubmenu(openMobileSubmenu === menuId ? null : menuId);
   };
 
   // Keyboard support for mobile menu
@@ -203,9 +210,18 @@ export default function Header() {
             <ul role="navigation" aria-label="메인 메뉴">
               {navigation.map((item) => (
                 <li key={item.id}>
-                  <span className="depth1" role="button" aria-haspopup={!!item.submenu}>{item.label}</span>
+                  <span
+                    className="depth1"
+                    role="button"
+                    aria-haspopup={!!item.submenu}
+                    aria-expanded={openMobileSubmenu === item.id}
+                    onClick={() => item.submenu && toggleMobileSubmenu(item.id)}
+                    style={{ cursor: item.submenu ? 'pointer' : 'default' }}
+                  >
+                    {item.label}
+                  </span>
                   {item.submenu && (
-                    <ul className="depth_list" role="menu">
+                    <ul className={`depth_list ${openMobileSubmenu === item.id ? 'on' : ''}`} role="menu">
                       {item.submenu.map((subitem, idx) => (
                         <li key={idx} role="none">
                           <Link href={subitem.url} role="menuitem">{subitem.label}</Link>
