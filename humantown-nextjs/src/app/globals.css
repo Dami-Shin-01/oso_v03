@@ -320,10 +320,10 @@ a:hover {
   position: absolute;
   left: 0;
   top: -800px;
-  right: 180px; /* Add right margin to avoid covering CTA button */
+  right: 0;
   background: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid #e5e5e5;
-  z-index: 5; /* Below CTA button and dropdown menu */
+  z-index: 5; /* Below dropdown menu */
   overflow: hidden;
   box-sizing: border-box;
   height: 680px;
@@ -334,28 +334,6 @@ a:hover {
 .header .hd_lnb_bg.on {
   top: 121px;
   pointer-events: auto; /* Enable pointer events when visible */
-}
-
-/* ===== RESERVATION BUTTON ===== */
-.header .btn_hd_res {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 95; /* Higher than dropdown background but lower than dropdown menu */
-}
-
-.header .btn_hd_res a {
-  display: inline-block;
-  font-size: 14px;
-  line-height: 2.57;
-  padding: 0 1.86em;
-  color: #fff;
-  background: #a08560;
-}
-
-.header .btn_hd_res:hover {
-  text-decoration: underline;
 }
 
 /* ===== MOBILE MENU BUTTON ===== */
@@ -481,19 +459,6 @@ a:hover {
   color: #444444; /* Improved contrast: #666 → #444 (WCAG AA) */
 }
 
-.aside .btn_aside_res {
-  padding: 20px;
-}
-
-.aside .btn_aside_res a {
-  padding: 12px;
-  font-size: 15px;
-  color: #fff;
-  background: #a08560;
-  text-align: center;
-  display: block;
-}
-
 .aside_bg {
   position: fixed;
   left: 0;
@@ -523,17 +488,12 @@ a:hover {
     font-size: 25px;
   }
 
-  .header .hd_lnb ul .depth1,
-  .header .btn_hd_res a {
+  .header .hd_lnb ul .depth1 {
     font-size: 15px;
   }
 
   .header.on .hd_lnb {
     padding-left: 215px;
-  }
-
-  .header .hd_lnb_bg {
-    right: 160px; /* Adjust right margin for smaller screens */
   }
 
   .header .hd_lnb_bg.on {
@@ -552,8 +512,7 @@ a:hover {
     font-size: 20px;
   }
 
-  .header .hd_lnb ul .depth1,
-  .header .btn_hd_res a {
+  .header .hd_lnb ul .depth1 {
     font-size: 14px;
   }
 
@@ -567,10 +526,6 @@ a:hover {
 
   .header .hd_lnb ul .depth1 .depth_box li {
     font-size: 13px;
-  }
-
-  .header .hd_lnb_bg {
-    right: 140px; /* Adjust right margin for smaller screens */
   }
 
   .header .hd_lnb_bg.on {
@@ -593,16 +548,8 @@ a:hover {
     padding: 0 1em;
   }
 
-  .header .btn_hd_res a {
-    padding: 0 1.2em;
-  }
-
   .header.on .hd_lnb {
     padding-left: 140px;
-  }
-
-  .header .hd_lnb_bg {
-    right: 120px; /* Adjust right margin for smaller screens */
   }
 }
 
@@ -634,17 +581,12 @@ a:hover {
   }
 
   .header .hd_lnb,
-  .header.on .hd_lnb,
-  .header.on .btn_hd_res {
+  .header.on .hd_lnb {
     display: none;
   }
 
   .header .btn_menu {
     display: inline-block;
-  }
-
-  .header .hd_lnb_bg {
-    right: 0; /* Reset to full width on mobile (menu is hidden anyway) */
   }
 }
 

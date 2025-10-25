@@ -161,11 +161,6 @@ export default function Header() {
               />
             </nav>
 
-            {/* Reservation Button (Desktop) */}
-            <div className="btn_hd_res hidden lg:block">
-              <Link href="/reservation" aria-label="실시간 예약하기">실시간예약</Link>
-            </div>
-
             {/* Mobile Menu Button */}
             <button
               className="btn_menu lg:hidden"
@@ -221,10 +216,6 @@ export default function Header() {
                 </li>
               ))}
             </ul>
-
-            <div className="btn_aside_res">
-              <Link href="/reservation" aria-label="실시간 예약하기">실시간예약</Link>
-            </div>
           </div>
         </div>
       </aside>
