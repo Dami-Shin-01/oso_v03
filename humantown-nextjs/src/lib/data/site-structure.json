@@ -51,13 +51,6 @@
         ]
       },
       {
-        "id": "travel",
-        "label": "TRAVEL",
-        "submenu": [
-          {"label": "주변여행지", "url": "/travel"}
-        ]
-      },
-      {
         "id": "location",
         "label": "LOCATION",
         "submenu": [
@@ -116,11 +109,6 @@
         "Real-time booking button (Naver Maps integration)"
       ]
     },
-    "travel": {
-      "url": "/travel.html",
-      "total_attractions": 6,
-      "layout": "Image-text card list with distance info"
-    },
     "location": {
       "url": "/traffic.html",
       "features": [
@@ -173,7 +161,6 @@
       "Home → Check location → Contact via phone/chat → Reserve"
     ],
     "secondary": [
-      "Travel info → Explore attractions → Book room",
       "About → View landscape → Browse rooms → Reserve"
     ]
   }

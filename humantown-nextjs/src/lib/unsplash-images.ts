@@ -60,7 +60,10 @@ export const exteriorImages = [
   getUnsplashUrl('1486235697920-fa4ea228e75f', 1200, 800), // 자연 환경
 ];
 
-// 주변 여행지 이미지 (Travel 페이지)
+// 주변 여행지 이미지 (Travel 페이지) - ARCHIVED 2025-10-25
+// Travel 페이지가 아카이브되어 더 이상 사용되지 않습니다.
+// 복원이 필요한 경우: humantown-nextjs/archived/travel/ 참조
+/*
 export const travelImages = {
   'nami-island': getUnsplashUrl('1506905925346-21bda4d32df4', 800, 600), // 남이섬
   'petite-france': getUnsplashUrl('1502602898657-3e91760cbb34', 800, 600), // 쁘띠프랑스
@@ -69,6 +72,7 @@ export const travelImages = {
   'rail-bike': getUnsplashUrl('1464822759023-fed622ff2c3b', 800, 600), // 레일바이크
   'zip-line': getUnsplashUrl('1506905925346-21bda4d32df4', 800, 600), // 짚와이어
 };
+*/
 
 // 객실별 이미지 매핑 (22개 객실)
 export const roomImagesByType: Record<string, { main: string; thumbnails: string[] }> = {
