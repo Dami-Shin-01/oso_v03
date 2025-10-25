@@ -20,7 +20,7 @@ export const heroImages = {
 export const facilityImages: Record<string, string> = {
   'water-play': getUnsplashUrl('1576610572293-c2ca58d7f6c1', 940, 940), // 물놀이장
   'barbecue': getUnsplashUrl('1555939594-58d7cb561ad1', 940, 940), // 바베큐
-  'sports': getUnsplashUrl('1540747913719-59a97586803a', 940, 940), // 스포츠/잔디광장
+  'sports': getUnsplashUrl('5SmkFguk5Hw', 940, 940), // 스포츠/잔디광장 - 낮 동안의 푸른 잔디밭
   'cafe': getUnsplashUrl('1554118811-1e0d58224f24', 940, 940), // 카페
   'restaurant': getUnsplashUrl('1567521464027-f127ff144326', 940, 940), // 식당
   "kids-zone": getUnsplashUrl('1517457373614-b7152dbb3e13', 940, 940), // 키즈존
