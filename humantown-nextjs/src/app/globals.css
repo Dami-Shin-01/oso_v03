@@ -271,7 +271,7 @@ a:hover {
   top: -800%;
   width: 100%;
   transform: translateX(-50%);
-  z-index: 10; /* Changed from -1 to 10 to appear above background */
+  z-index: 100; /* Highest z-index to appear above all elements when open */
   text-align: center;
   overflow: hidden;
   transition: all 0.5s;
@@ -320,10 +320,10 @@ a:hover {
   position: absolute;
   left: 0;
   top: -800px;
-  right: 0;
+  right: 180px; /* Add right margin to avoid covering CTA button */
   background: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid #e5e5e5;
-  z-index: 5; /* Changed from -1 to 5 (below dropdown menu at z-index: 10) */
+  z-index: 5; /* Below CTA button and dropdown menu */
   overflow: hidden;
   box-sizing: border-box;
   height: 680px;
@@ -342,6 +342,7 @@ a:hover {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 95; /* Higher than dropdown background but lower than dropdown menu */
 }
 
 .header .btn_hd_res a {
@@ -531,6 +532,10 @@ a:hover {
     padding-left: 215px;
   }
 
+  .header .hd_lnb_bg {
+    right: 160px; /* Adjust right margin for smaller screens */
+  }
+
   .header .hd_lnb_bg.on {
     top: 104px;
   }
@@ -564,6 +569,10 @@ a:hover {
     font-size: 13px;
   }
 
+  .header .hd_lnb_bg {
+    right: 140px; /* Adjust right margin for smaller screens */
+  }
+
   .header .hd_lnb_bg.on {
     top: 98px;
   }
@@ -590,6 +599,10 @@ a:hover {
 
   .header.on .hd_lnb {
     padding-left: 140px;
+  }
+
+  .header .hd_lnb_bg {
+    right: 120px; /* Adjust right margin for smaller screens */
   }
 }
 
@@ -628,6 +641,10 @@ a:hover {
 
   .header .btn_menu {
     display: inline-block;
+  }
+
+  .header .hd_lnb_bg {
+    right: 0; /* Reset to full width on mobile (menu is hidden anyway) */
   }
 }
 
