@@ -143,7 +143,6 @@ a:hover {
  * - Fixed position header with transparent dark background
  * - Centered logo that transitions to left on scroll
  * - Two-column navigation menu with dropdown
- * - Reservation CTA button
  * - Mobile hamburger menu and sidebar
  * - Fully responsive design
  */
@@ -190,7 +189,7 @@ a:hover {
   left: 50%;
   transform: translateX(-50%);
   z-index: 90;
-  transition: opacity 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .header .logo a,
@@ -215,7 +214,7 @@ a:hover {
 
 .header .logo2 {
   font-size: 21px;
-  display: none;
+  display: none; /* Not used - logo transitions instead */
   position: static;
   z-index: 90;
   transition: opacity 0.3s;
@@ -364,6 +363,26 @@ a:hover {
   min-height: 76px;
 }
 
+.header.on .logo {
+  position: static;
+  transform: none;
+  font-size: 21px;
+  text-align: left;
+  order: 1;
+}
+
+.header.on .logo span {
+  display: none; /* Hide subtitle on scroll */
+}
+
+.header.on .hd_lnb {
+  order: 2;
+}
+
+.header.on .btn_menu {
+  order: 3;
+}
+
 .header.on .hd_lnb ul .depth1 .depth1_a {
   padding: 15px 1.25em;
   color: rgba(255, 255, 255, 0.8);
@@ -472,9 +491,12 @@ a:hover {
     width: calc(100% - 90px);
   }
 
-  .header .logo,
-  .header .logo2 a {
+  .header .logo {
     font-size: 25px;
+  }
+
+  .header.on .logo {
+    font-size: 20px;
   }
 
   .header .hd_lnb ul .depth1 {
@@ -500,9 +522,12 @@ a:hover {
 
 /* 1200px and below */
 @media only screen and (max-width: 1200px) {
-  .header .logo,
-  .header .logo2 a {
+  .header .logo {
     font-size: 20px;
+  }
+
+  .header.on .logo {
+    font-size: 18px;
   }
 
   .header .hd_lnb ul .depth1 {
@@ -551,17 +576,10 @@ a:hover {
   }
 
   .header .logo,
-  .header .logo2 a {
+  .header.on .logo {
     font-size: 22px;
-  }
-
-  .header .logo {
     position: static;
     transform: none;
-  }
-
-  .header.on .logo2 {
-    display: none !important;
   }
 
   .header .logo span,
