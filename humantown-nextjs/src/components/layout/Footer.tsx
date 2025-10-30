@@ -66,8 +66,8 @@ export default function Footer() {
 
       <div className={showFloatingButton ? 'ft_btn_reserve on' : 'ft_btn_reserve'} aria-label="빠른 예약 버튼">
         <Link
-          href="/reservation"
-          aria-label="빠른 예약하기"
+          href="/rooms"
+          aria-label="빠른 예약하기 - 객실 선택"
           style={{
             display: 'flex',
             alignItems: 'center',

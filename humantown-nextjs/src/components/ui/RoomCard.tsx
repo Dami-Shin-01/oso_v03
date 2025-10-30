@@ -47,12 +47,31 @@ export default function RoomCard({ room, variant = 'default' }: RoomCardProps) {
               </>
             )}
           </p>
-          <Link
-            href={roomUrl}
-            className={`btn_more ${variant === 'compact' ? 'small' : 'compact'}`}
-          >
-            {variant === 'compact' ? '자세히보기' : '객실보기'}
-          </Link>
+          <div style={{ display: 'flex', gap: '10px', marginTop: '15px' }}>
+            <Link
+              href={roomUrl}
+              className={`btn_more ${variant === 'compact' ? 'small' : 'compact'}`}
+            >
+              {variant === 'compact' ? '자세히보기' : '객실보기'}
+            </Link>
+            <Link
+              href={`${roomUrl}/book`}
+              className={`btn_more ${variant === 'compact' ? 'small' : 'compact'}`}
+              style={{
+                background: 'var(--color-gold)',
+                color: '#fff',
+                border: 'none',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = 'var(--color-gold-dark)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = 'var(--color-gold)';
+              }}
+            >
+              예약하기
+            </Link>
+          </div>
         </div>
 
         {/* Right: Thumbnail Images (only in default variant) */}
