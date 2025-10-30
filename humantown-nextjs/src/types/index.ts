@@ -17,6 +17,24 @@ export type {
   FacilitiesData,
 } from './facility';
 
+// Supabase/Reservation Types
+export type {
+  Database,
+  Reservation,
+  NewReservation,
+  ReservationUpdate,
+  RoomAvailability,
+  NewRoomAvailability,
+  ReservationFormData,
+  DateRange,
+  AvailabilityData,
+  ReservationStatus,
+  ApiResponse,
+  CreateReservationResponse,
+  GetAvailabilityResponse,
+  GetReservationResponse,
+} from './supabase';
+
 // Common Types
 export interface NavigationItem {
   id: string;

@@ -412,7 +412,7 @@ export default function RoomDetailPage() {
               지금 바로 예약하시고 특별한 휴식을 경험하세요
             </p>
             <Link
-              href="/reservation"
+              href={`/rooms/${roomId}/book`}
               style={{
                 display: 'inline-block',
                 padding: '15px 50px',
