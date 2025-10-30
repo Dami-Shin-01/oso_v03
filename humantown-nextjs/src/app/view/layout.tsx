@@ -1,15 +1,14 @@
-import type { Metadata } from 'next';
+﻿import { buildMetadata } from '@/lib/metadata';
 
-export const metadata: Metadata = {
-  title: '시설 외경 | 오소 캠핑 바베큐',
-  description: '부락산 한 자락에 자리한 오소캠핑바베큐의 외경을 감상하세요. 사계절 각기 다른 매력을 선사하는 오소의 모습을 담았습니다.',
-  keywords: ['오소캠핑바베큐 외경', '평택 바베큐장 갤러리', '부락산 풍경', '셀프바베큐장 감성 사진'],
+export const metadata = buildMetadata({
+  title: '시설 전경 | 오소 캠핑바베큐',
+  description: '부락산 자락에 자리한 오소캠핑바베큐의 사계절 전경과 감성 가득한 모습을 감상하세요.',
+  keywords: ['오소캠핑바베큐 전경', '평택 바베큐장 갤러리', '부락산 캠핑장', '감성 캠핑 사진'],
   openGraph: {
-    title: '시설 외경 | 오소 캠핑 바베큐',
-    description: '부락산 한 자락 속 아름다운 자연과 함께하는 오소캠핑바베큐',
-    type: 'website',
+    title: '시설 전경 | 오소 캠핑바베큐',
+    description: '사계절 각기 다른 매력을 담은 오소캠핑바베큐 전경 갤러리입니다.',
   },
-};
+});
 
 export default function ViewLayout({
   children,

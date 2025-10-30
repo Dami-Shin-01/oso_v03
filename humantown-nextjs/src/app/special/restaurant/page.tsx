@@ -1,8 +1,8 @@
-import Image from 'next/image';
+﻿import Image from 'next/image';
 import Link from 'next/link';
 import { facilityImages } from '@/lib/unsplash-images';
 
-export default function TrailPage() {
+export default function RestaurantPage() {
   return (
     <div style={{ minHeight: '100vh', paddingTop: '120px', paddingBottom: '100px' }}>
       <section style={{ background: 'var(--color-bg-light)', padding: '60px 0', marginBottom: '60px' }}>
@@ -22,7 +22,7 @@ export default function TrailPage() {
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <section style={{ marginBottom: '60px' }}>
             <div style={{ position: 'relative', width: '100%', height: '500px', borderRadius: 'var(--radius)', overflow: 'hidden' }}>
-              <Image src={facilityImages['cafe']} alt="식당" fill sizes="100vw" style={{ objectFit: 'cover' }} priority />
+              <Image src={facilityImages['restaurant']} alt="식당" fill sizes="100vw" style={{ objectFit: 'cover' }} priority />
             </div>
           </section>
 
@@ -88,3 +88,4 @@ export default function TrailPage() {
     </div>
   );
 }
+

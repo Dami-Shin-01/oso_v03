@@ -1,7 +1,9 @@
-'use client';
+﻿'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
+
+import { navigationItems, siteInfo } from '@/lib/config/site';
 
 export default function Footer() {
   const [showFloatingButton, setShowFloatingButton] = useState(false);
@@ -20,34 +22,52 @@ export default function Footer() {
       <footer className="footer_wrap" role="contentinfo">
         <div className="inner">
           <div className="footer">
-            {/* Phone Number */}
-            <div className="tel" aria-label="전화번호">T. 0507-1380-0203</div>
+            <div className="tel" aria-label="대표 전화번호">
+              {siteInfo.contact}
+            </div>
 
-            {/* Address Information */}
             <div className="address" role="region" aria-label="주소 및 사업자 정보">
-              <p>경기 평택시 지산로 282-31 </p>
-              <p>사업자등록번호: 330-81-03775</p>
-              <p>대표: 소민화, 전민근</p>
+              <p>{siteInfo.address.road}</p>
+              <p>사업자등록번호 {siteInfo.business_info.registration}</p>
+              <p>대표 {siteInfo.business_info.representative}</p>
             </div>
           </div>
 
-          {/* Privacy Policy Link */}
+          <nav className="footer_nav" aria-label="하단 메뉴">
+            <ul>
+              {navigationItems.map((item) => (
+                <li key={item.id}>
+                  <span className="footer_nav_title">{item.label}</span>
+                  {item.submenu && (
+                    <ul>
+                      {item.submenu.map((subitem) => (
+                        <li key={subitem.url}>
+                          <Link href={subitem.url}>{subitem.label}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </nav>
+
           <div className="privacy">
-            <Link href="/privacy" aria-label="개인정보처리방침 보기">개인정보처리방침</Link>
+            <Link href="/privacy" aria-label="개인정보처리방침 보기">
+              개인정보처리방침
+            </Link>
           </div>
 
-          {/* Copyright */}
           <div className="copy" aria-label="저작권 정보">
             Copyright © Design On a Dot. All rights reserved.
           </div>
         </div>
       </footer>
 
-      {/* Floating Reservation Button */}
-      <div className={`ft_btn_reserve ${showFloatingButton ? 'on' : ''}`} aria-label="실시간 예약 버튼">
+      <div className={showFloatingButton ? 'ft_btn_reserve on' : 'ft_btn_reserve'} aria-label="빠른 예약 버튼">
         <Link
           href="/reservation"
-          aria-label="실시간 예약하기"
+          aria-label="빠른 예약하기"
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -73,7 +93,7 @@ export default function Footer() {
             e.currentTarget.style.transform = 'scale(1)';
           }}
         >
-          실시간<br />예약
+          빠른<br />예약
         </Link>
       </div>
     </>

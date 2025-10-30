@@ -1,7 +1,6 @@
 {
   "total_facilities": 6,
   "url_pattern": "/special{number}.html",
-
   "facilities": [
     {
       "id": 1,
@@ -41,7 +40,7 @@
       "id": 5,
       "name": "식당",
       "name_english": "RESTAURANT",
-      "url": "/special/trail",
+      "url": "/special/restaurant",
       "description": "다양한 메뉴를 제공하는 내부 식당",
       "type": "실내시설 (Indoor facility)"
     },
@@ -54,7 +53,6 @@
       "type": "야외시설 (Outdoor facility)"
     }
   ],
-
   "presentation_format": {
     "layout": "Carousel slider with prev/next navigation",
     "navigation": "Arrow buttons (left/right)",
@@ -64,7 +62,6 @@
       "link": "VIEW MORE clickable link"
     }
   },
-
   "target_audience": {
     "families": "물놀이장, 키즈존",
     "couples": "카페, 식당",

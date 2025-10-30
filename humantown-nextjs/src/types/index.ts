@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Centralized Type Exports
  * OSO Camping BBQ Next.js Project
  */
@@ -40,4 +40,5 @@ export interface SiteInfo {
     registration: string;
     representative: string;
   };
+  description?: string;
 }

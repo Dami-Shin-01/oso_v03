@@ -1495,3 +1495,53 @@ a:hover {
   display: table;
   clear: both;
 }
+
+/* Footer navigation generated from config */
+.footer_nav {
+  margin: 40px 0;
+}
+
+.footer_nav > ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_nav > ul > li {
+  min-width: 140px;
+}
+
+.footer_nav_title {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.footer_nav ul ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.footer_nav ul ul li a {
+  font-size: 14px;
+  color: var(--color-text-light);
+  transition: color 0.3s ease;
+}
+
+.footer_nav ul ul li a:hover {
+  color: var(--color-primary);
+}
+
+@media only screen and (max-width: 768px) {
+  .footer_nav > ul {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

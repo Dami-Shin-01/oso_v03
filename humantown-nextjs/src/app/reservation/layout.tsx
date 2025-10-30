@@ -1,15 +1,14 @@
-import type { Metadata } from 'next';
+﻿import { buildMetadata } from '@/lib/metadata';
 
-export const metadata: Metadata = {
-  title: '예약 안내 | 오소캠핑바베큐',
-  description: '오소캠핑바베큐 예약 안내입니다. 입실/퇴실 시간, 결제 방법, 취소 정책, 이용 수칙 등 예약 전 꼭 확인해주세요.',
-  keywords: ['오소캠핑바베큐 예약', '평택 셀프바베큐장 예약', '오소 예약 안내', '송탄 바베큐장 예약'],
+export const metadata = buildMetadata({
+  title: '예약 안내 | 오소 캠핑바베큐',
+  description: '오소캠핑바베큐 예약 방법과 운영 시간, 결제 안내, 이용 수칙, 취소 규정을 확인하세요.',
+  keywords: ['오소캠핑바베큐 예약', '평택 바베큐장 예약', '셀프바베큐 예약 안내', '송탄 단체 예약'],
   openGraph: {
-    title: '예약 안내 | 오소캠핑바베큐',
-    description: '예약 전 필수 확인사항 - 입실/퇴실, 결제, 취소 정책',
-    type: 'website',
+    title: '예약 안내 | 오소 캠핑바베큐',
+    description: '전화 예약과 방문 예약 정보를 포함한 오소캠핑바베큐 예약 안내입니다.',
   },
-};
+});
 
 export default function ReservationLayout({
   children,

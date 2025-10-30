@@ -2,7 +2,7 @@
   "site_info": {
     "site_name": "오소캠핑바베큐 (Oso Camping BBQ)",
     "base_url": "https://osocampingbbq.com",
-    "contact": "T.1833-9306",
+    "contact": "T.0507-1380-0203 ",
     "address": {
       "road": "경기 평택시 지산로 282-31",
       "parcel": "경기 평택시 지산로 282-31"
@@ -12,15 +12,20 @@
       "representative": "소민화, 전민근"
     }
   },
-
   "navigation_structure": {
     "main_menu": [
       {
         "id": "about",
         "label": "ABOUT",
         "submenu": [
-          {"label": "시설소개", "url": "/about"},
-          {"label": "외경보기", "url": "/view"}
+          {
+            "label": "시설소개",
+            "url": "/about"
+          },
+          {
+            "label": "외경보기",
+            "url": "/view"
+          }
         ]
       },
       {
@@ -35,24 +40,44 @@
         "label": "SPECIAL",
         "total_facilities": 6,
         "submenu": [
-          {"label": "물놀이장", "url": "/special/swimming-pool"},
-          {"label": "바베큐", "url": "/special/barbecue"},
-          {"label": "잔디광장", "url": "/special/sports"},
-          {"label": "카페", "url": "/special/cafe"},
-          {"label": "내부식당", "url": "/special/trail"},
-          {"label": "키즈존", "url": "/special/playground"}
+          {
+            "label": "물놀이장",
+            "url": "/special/swimming-pool"
+          },
+          {
+            "label": "바베큐",
+            "url": "/special/barbecue"
+          },
+          {
+            "label": "잔디광장",
+            "url": "/special/sports"
+          },
+          {
+            "label": "카페",
+            "url": "/special/cafe"
+          },
+          {
+            "label": "내부식당",
+            "url": "/special/restaurant"
+          },
+          {
+            "label": "키즈존",
+            "url": "/special/playground"
+          }
         ]
       },
       {
         "id": "reserve",
         "label": "RESERVE",
         "submenu": [
-          {"label": "예약안내", "url": "/reservation"}
+          {
+            "label": "예약안내",
+            "url": "/reservation"
+          }
         ]
       }
     ]
   },
-
   "pages_analyzed": {
     "home": {
       "url": "/index.html",
@@ -111,7 +136,6 @@
       ]
     }
   },
-
   "technical_stack": {
     "framework": "Vanilla JavaScript (no framework detected)",
     "css": "Custom CSS (no framework detected)",
@@ -138,7 +162,6 @@
       "optimization": "webp used for travel page images"
     }
   },
-
   "design_features": {
     "responsive": true,
     "mobile_menu": "Hamburger menu button",
@@ -147,7 +170,6 @@
     "cta_buttons": "실시간예약 (Real-time reservation) - multiple placements",
     "multilingual": "Korean + English subtitles/taglines"
   },
-
   "user_flow": {
     "primary": [
       "Home → Browse rooms/facilities → View details → Reserve (Naver Maps)",
