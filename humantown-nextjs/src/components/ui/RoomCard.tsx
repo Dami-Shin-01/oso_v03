@@ -22,22 +22,26 @@ export default function RoomCard({ room, variant = 'default' }: RoomCardProps) {
 
   return (
     <div className={`room-card ${variant === 'compact' ? 'room-card-compact' : ''}`}>
-      {/* Clickable overlay */}
-      <Link href={roomUrl} className="link" aria-label={room.name}></Link>
+      {/* Clickable overlay - Removed to allow button clicks */}
+      {/* <Link href={roomUrl} className="link" aria-label={room.name}></Link> */}
 
       {/* Main Image */}
-      <div
-        className="img"
-        style={{ backgroundImage: `url('${mainImage}')` }}
-        role="img"
-        aria-label={`${room.name} 객실 대표 이미지`}
-      ></div>
+      <Link href={roomUrl}>
+        <div
+          className="img"
+          style={{ backgroundImage: `url('${mainImage}')` }}
+          role="img"
+          aria-label={`${room.name} 객실 대표 이미지`}
+        ></div>
+      </Link>
 
       {/* Room Info Wrapper */}
       <div className="room_inner_wrap clear">
         {/* Left: Text Content */}
         <div className="room_inner_box">
-          <strong>{room.name}</strong>
+          <Link href={roomUrl}>
+            <strong>{room.name}</strong>
+          </Link>
           <p>
             {room.size_pyeong && `${room.size_pyeong}평`}
             {room.capacity && (

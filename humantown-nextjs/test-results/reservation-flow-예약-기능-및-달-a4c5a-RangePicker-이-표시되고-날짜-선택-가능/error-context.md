@@ -1,0 +1,200 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - heading "오소캠핑바베큐 (Oso Camping BBQ) 홈" [level=1] [ref=e5]:
+        - link "오소캠핑바베큐 (Oso Camping BBQ) 홈" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - text: OSO CAMPING BBQ
+      - navigation "메인 메뉴" [ref=e7]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - button "ABOUT" [ref=e11]
+            - menu:
+              - list:
+                - menuitem "시설소개"
+                - menuitem "전경보기"
+          - listitem [ref=e12]:
+            - button "ROOMS" [ref=e13]
+            - menu:
+              - list:
+                - menuitem "공간목록"
+          - listitem [ref=e14]:
+            - button "SPECIAL" [ref=e15]
+            - menu:
+              - list:
+                - menuitem "물놀이장"
+                - menuitem "바베큐"
+                - menuitem "잔디광장"
+                - menuitem "카페"
+                - menuitem "식당"
+                - menuitem "키즈존"
+        - list [ref=e17]:
+          - listitem [ref=e18]:
+            - button "RESERVE" [ref=e19]
+            - menu:
+              - list:
+                - menuitem "예약하기"
+                - menuitem "예약안내"
+                - menuitem "예약조회"
+      - button "메뉴 열기" [ref=e20] [cursor=pointer]
+  - complementary "모바일 메뉴":
+    - navigation "메인 메뉴" [ref=e26]:
+      - listitem [ref=e27]:
+        - button "ABOUT" [ref=e28] [cursor=pointer]
+        - menu:
+          - menuitem "시설소개" [ref=e29] [cursor=pointer]
+          - menuitem "전경보기" [ref=e30] [cursor=pointer]
+      - listitem [ref=e31]:
+        - button "ROOMS" [ref=e32] [cursor=pointer]
+        - menu:
+          - menuitem "공간목록" [ref=e33] [cursor=pointer]
+      - listitem [ref=e34]:
+        - button "SPECIAL" [ref=e35] [cursor=pointer]
+        - menu:
+          - menuitem "물놀이장" [ref=e36] [cursor=pointer]
+          - menuitem "바베큐" [ref=e37] [cursor=pointer]
+          - menuitem "잔디광장" [ref=e38] [cursor=pointer]
+          - menuitem "카페" [ref=e39] [cursor=pointer]
+          - menuitem "식당" [ref=e40] [cursor=pointer]
+          - menuitem "키즈존" [ref=e41] [cursor=pointer]
+      - listitem [ref=e42]:
+        - button "RESERVE" [ref=e43] [cursor=pointer]
+        - menu:
+          - menuitem "예약하기" [ref=e44] [cursor=pointer]
+          - menuitem "예약안내" [ref=e45] [cursor=pointer]
+          - menuitem "예약조회" [ref=e46] [cursor=pointer]
+  - main [ref=e47]:
+    - generic [ref=e50]:
+      - link "← 프라이빗룸 1 상세 보기" [ref=e52] [cursor=pointer]:
+        - /url: /rooms/26269
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - img "프라이빗룸 1" [ref=e56]
+          - generic [ref=e57]:
+            - heading "프라이빗룸 1" [level=1] [ref=e58]
+            - paragraph [ref=e59]: Private Room 1
+            - generic [ref=e60]:
+              - generic [ref=e61]:
+                - paragraph [ref=e62]: 공간 크기
+                - paragraph [ref=e63]: 30평 (99m²)
+              - generic [ref=e64]:
+                - paragraph [ref=e65]: 수용 인원
+                - paragraph [ref=e66]: 기준 8명 / 최대 12명
+        - generic [ref=e67]:
+          - heading "예약하기" [level=2] [ref=e68]
+          - generic [ref=e69]:
+            - generic [ref=e70]:
+              - generic [ref=e71]:
+                - generic [ref=e72]: 체크인 / 체크아웃 *
+                - button "큰 달력으로 보기" [ref=e73]
+              - button "날짜를 선택하세요" [ref=e75]:
+                - generic [ref=e76]:
+                  - generic [ref=e77]: 날짜를 선택하세요
+                  - img [ref=e78]
+            - generic [ref=e80]:
+              - generic [ref=e81]: 인원수 *
+              - combobox "인원수 *" [ref=e82]:
+                - option "1명"
+                - option "2명"
+                - option "3명"
+                - option "4명"
+                - option "5명"
+                - option "6명"
+                - option "7명"
+                - option "8명" [selected]
+                - option "9명"
+                - option "10명"
+                - option "11명"
+                - option "12명"
+            - generic [ref=e83]:
+              - generic [ref=e84]: 예약자 이름 *
+              - textbox "예약자 이름 *" [ref=e85]:
+                - /placeholder: 홍길동
+            - generic [ref=e86]:
+              - generic [ref=e87]: 이메일 *
+              - textbox "이메일 *" [ref=e88]:
+                - /placeholder: example@email.com
+            - generic [ref=e89]:
+              - generic [ref=e90]: 전화번호 *
+              - textbox "전화번호 *" [ref=e91]:
+                - /placeholder: 010-1234-5678
+            - generic [ref=e92]:
+              - generic [ref=e93]: 특별 요청사항 (선택)
+              - textbox "특별 요청사항 (선택)" [ref=e94]:
+                - /placeholder: 추가 요청사항이 있으시면 입력해주세요
+            - button "₩0 예약하기" [ref=e95]
+            - paragraph [ref=e96]: 예약 확정 후 이메일로 예약 확인서가 발송됩니다.
+  - contentinfo [ref=e97]:
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - generic "대표 전화번호" [ref=e100]: T. 0507-1380-0203
+        - region "주소 및 사업자 정보" [ref=e101]:
+          - paragraph [ref=e102]: 경기 평택시 지산로 282-31
+          - paragraph [ref=e103]: 사업자등록번호 330-81-03775
+          - paragraph [ref=e104]: 대표 Design On a Dot
+      - navigation "하단 메뉴" [ref=e105]:
+        - list [ref=e106]:
+          - listitem [ref=e107]:
+            - generic [ref=e108]: ABOUT
+            - list [ref=e109]:
+              - listitem [ref=e110]:
+                - link "시설소개" [ref=e111] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e112]:
+                - link "전경보기" [ref=e113] [cursor=pointer]:
+                  - /url: /view
+          - listitem [ref=e114]:
+            - generic [ref=e115]: ROOMS
+            - list [ref=e116]:
+              - listitem [ref=e117]:
+                - link "공간목록" [ref=e118] [cursor=pointer]:
+                  - /url: /rooms
+          - listitem [ref=e119]:
+            - generic [ref=e120]: SPECIAL
+            - list [ref=e121]:
+              - listitem [ref=e122]:
+                - link "물놀이장" [ref=e123] [cursor=pointer]:
+                  - /url: /special/swimming-pool
+              - listitem [ref=e124]:
+                - link "바베큐" [ref=e125] [cursor=pointer]:
+                  - /url: /special/barbecue
+              - listitem [ref=e126]:
+                - link "잔디광장" [ref=e127] [cursor=pointer]:
+                  - /url: /special/sports
+              - listitem [ref=e128]:
+                - link "카페" [ref=e129] [cursor=pointer]:
+                  - /url: /special/cafe
+              - listitem [ref=e130]:
+                - link "식당" [ref=e131] [cursor=pointer]:
+                  - /url: /special/restaurant
+              - listitem [ref=e132]:
+                - link "키즈존" [ref=e133] [cursor=pointer]:
+                  - /url: /special/playground
+          - listitem [ref=e134]:
+            - generic [ref=e135]: RESERVE
+            - list [ref=e136]:
+              - listitem [ref=e137]:
+                - link "예약하기" [ref=e138] [cursor=pointer]:
+                  - /url: /rooms
+              - listitem [ref=e139]:
+                - link "예약안내" [ref=e140] [cursor=pointer]:
+                  - /url: /reservation
+              - listitem [ref=e141]:
+                - link "예약조회" [ref=e142] [cursor=pointer]:
+                  - /url: /reservations/check
+      - link "개인정보처리방침 보기" [ref=e144] [cursor=pointer]:
+        - /url: /privacy
+        - text: 개인정보처리방침
+      - generic "저작권 정보" [ref=e145]: Copyright © Design On a Dot. All rights reserved.
+  - generic "빠른 예약 버튼" [ref=e146]:
+    - link "빠른 예약하기 - 객실 선택" [ref=e147] [cursor=pointer]:
+      - /url: /rooms
+      - text: 빠른
+      - text: 예약
+  - button "Open Next.js Dev Tools" [ref=e153] [cursor=pointer]:
+    - img [ref=e154]
+  - alert [ref=e157]
+```
