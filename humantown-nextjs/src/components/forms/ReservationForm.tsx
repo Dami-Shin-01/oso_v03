@@ -14,6 +14,7 @@ import { z } from 'zod';
 import { DateRange } from 'react-day-picker';
 import { differenceInDays } from 'date-fns';
 import DateRangePicker from '@/components/ui/DateRangePicker';
+import LargeCalendarView from '@/components/ui/LargeCalendarView';
 import type { Room, ReservationFormData } from '@/types';
 
 // Validation schema
@@ -55,6 +56,7 @@ export default function ReservationForm({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [nights, setNights] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
+  const [calendarSize, setCalendarSize] = useState<'compact' | 'large'>('compact');
 
   const {
     register,
@@ -176,19 +178,39 @@ export default function ReservationForm({
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
       {/* Date Selection */}
       <div>
-        <label className="block mb-2 text-sm font-medium text-gray-700">
-          체크인 / 체크아웃 <span className="text-red-500">*</span>
-        </label>
+        <div className="flex items-center justify-between mb-2">
+          <label className="text-sm font-medium text-gray-700">
+            체크인 / 체크아웃 <span className="text-red-500">*</span>
+          </label>
+          <button
+            type="button"
+            onClick={() => setCalendarSize(prev => prev === 'compact' ? 'large' : 'compact')}
+            className="text-sm text-gray-600 hover:text-gray-900 underline"
+          >
+            {calendarSize === 'compact' ? '큰 달력으로 보기' : '작은 달력으로 보기'}
+          </button>
+        </div>
         <Controller
           name="check_in"
           control={control}
           render={({ field }) => (
-            <DateRangePicker
-              value={dateRange}
-              onChange={handleDateRangeChange}
-              unavailableDates={unavailableDates}
-              error={errors.check_in?.message || errors.check_out?.message}
-            />
+            <>
+              {calendarSize === 'compact' ? (
+                <DateRangePicker
+                  value={dateRange}
+                  onChange={handleDateRangeChange}
+                  unavailableDates={unavailableDates}
+                  error={errors.check_in?.message || errors.check_out?.message}
+                />
+              ) : (
+                <LargeCalendarView
+                  value={dateRange}
+                  onChange={handleDateRangeChange}
+                  unavailableDates={unavailableDates}
+                  error={errors.check_in?.message || errors.check_out?.message}
+                />
+              )}
+            </>
           )}
         />
         {nights > 0 && (

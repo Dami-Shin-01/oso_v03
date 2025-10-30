@@ -44,7 +44,11 @@ export const navigationItems: NavigationItem[] = [
   {
     id: "reserve",
     label: "RESERVE",
-    submenu: [{ label: "예약안내", url: "/reservation" }],
+    submenu: [
+      { label: "예약하기", url: "/rooms" },
+      { label: "예약안내", url: "/reservation" },
+      { label: "예약조회", url: "/reservations/check" },
+    ],
   },
 ];
 
