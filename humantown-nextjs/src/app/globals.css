@@ -1022,7 +1022,7 @@ a:hover {
 
 /* ===== FACILITY CARD BASE STYLES ===== */
 .facility-card {
-  opacity: 0.5;
+  opacity: 1; /* Changed from 0.5 to 1 for better visibility */
   transition: opacity 0.3s ease;
 }
 
@@ -1255,10 +1255,15 @@ a:hover {
 .room-card {
   position: relative;
   background: #fff;
+  /* opacity removed - cards should be visible by default */
+}
+
+/* Only apply opacity animation to Swiper slides */
+.room-card.swiper-slide {
   opacity: 0 !important;
 }
 
-.room-card.swiper-slide-visible {
+.room-card.swiper-slide.swiper-slide-visible {
   opacity: 1 !important;
 }
 

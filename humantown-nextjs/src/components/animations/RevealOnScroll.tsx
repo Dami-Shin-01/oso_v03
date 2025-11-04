@@ -17,7 +17,7 @@ export default function RevealOnScroll({
   duration = 0.6,
 }: RevealOnScrollProps) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const isInView = useInView(ref, { once: true, margin: '0px' }); // Changed from '-100px' to '0px' to trigger immediately
 
   const directions = {
     up: { y: 40, x: 0 },

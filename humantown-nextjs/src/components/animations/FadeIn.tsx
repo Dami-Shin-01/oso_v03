@@ -17,7 +17,7 @@ export default function FadeIn({
   className = '',
 }: FadeInProps) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-50px' });
+  const isInView = useInView(ref, { once: true, margin: '0px' }); // Changed from '-50px' to '0px' to trigger immediately
 
   return (
     <motion.div
